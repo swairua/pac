@@ -8,7 +8,6 @@ import {
   CardContent,
   CardMedia,
   IconButton,
-  useTheme,
 } from '@mui/material';
 import {
   Recycling,
@@ -24,8 +23,6 @@ import {
 import { Link } from 'react-router-dom';
 
 function HomePage() {
-  const theme = useTheme();
-
   const featuredServices = [
     {
       icon: <CompareArrows />,
