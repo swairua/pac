@@ -1,4 +1,3 @@
-import * as React from "react";
 import { Outlet, Routes, Route } from "react-router-dom";
 import type {} from "@mui/x-date-pickers/themeAugmentation";
 import type {} from "@mui/x-charts/themeAugmentation";

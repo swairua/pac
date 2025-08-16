@@ -14,7 +14,7 @@ export default function CrmSalesChart() {
   const [timeRange, setTimeRange] = React.useState("year");
 
   const handleTimeRangeChange = (
-    event: React.MouseEvent<HTMLElement>,
+    _event: React.MouseEvent<HTMLElement>,
     newTimeRange: string | null,
   ) => {
     if (newTimeRange !== null) {
@@ -23,7 +23,6 @@ export default function CrmSalesChart() {
   };
 
   // Generate monthly data
-  const currentYear = new Date().getFullYear();
   const monthNames = [
     "Jan",
     "Feb",
@@ -66,11 +65,6 @@ export default function CrmSalesChart() {
   const xAxisData = {
     scaleType: "band" as const,
     data: monthNames,
-    tickLabelStyle: {
-      angle: 0,
-      textAnchor: "middle",
-      fontSize: 12,
-    },
   };
 
   // Format y-axis labels to show $ and K for thousands
@@ -158,11 +152,7 @@ export default function CrmSalesChart() {
             margin={{ top: 10, bottom: 30, left: 60, right: 10 }}
             slotProps={{
               legend: {
-                position: { vertical: "top", horizontal: "middle" },
-                itemMarkWidth: 10,
-                itemMarkHeight: 10,
-                markGap: 5,
-                itemGap: 10,
+                position: { vertical: "top", horizontal: "center" },
               },
             }}
           />
