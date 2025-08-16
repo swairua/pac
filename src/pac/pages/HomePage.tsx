@@ -26,7 +26,6 @@ import { Link } from 'react-router-dom';
 
 function HomePage() {
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
   const featuredServices = [
     {
