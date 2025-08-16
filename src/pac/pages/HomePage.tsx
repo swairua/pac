@@ -231,7 +231,7 @@ function HomePage() {
           </Typography>
           <Grid container spacing={2}>
             {benefits.map((benefit, index) => (
-              <Grid size xs={12} sm={6} md={4} key={index}>
+              <Grid size={{ xs: 12, sm: 6, md: 4 }} key={index}>
                 <Box
                   sx={{
                     display: 'flex',
@@ -289,7 +289,7 @@ function HomePage() {
           
           <Grid container spacing={4}>
             {featuredServices.map((service, index) => (
-              <Grid size xs={12} sm={6} md={4} key={index}>
+              <Grid size={{ xs: 12, sm: 6, md: 4 }} key={index}>
                 <Card
                   sx={{
                     height: '100%',
