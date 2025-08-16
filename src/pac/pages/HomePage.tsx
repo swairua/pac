@@ -189,6 +189,25 @@ function HomePage() {
         </Container>
       </Box>
 
+      {/* Intro Section */}
+      <Box sx={{ py: 8, backgroundColor: 'white' }}>
+        <Container maxWidth="lg">
+          <Typography
+            variant="h6"
+            sx={{
+              textAlign: 'center',
+              lineHeight: 1.8,
+              color: '#333',
+              maxWidth: 900,
+              mx: 'auto',
+              fontSize: { xs: '1.1rem', md: '1.25rem' },
+            }}
+          >
+            At PAC Recycle Works, we specialize in conveyor-based material recovery and circular waste solutions for industrial and warehousing operations. From real-time sorting to e-waste processing and compliance management, our services help you reduce waste, unlock material value, and meet environmental standards with reliability and transparency.
+          </Typography>
+        </Container>
+      </Box>
+
       {/* Benefits Section */}
       <Box sx={{ py: 6, backgroundColor: '#f8f9fa' }}>
         <Container maxWidth="lg">
