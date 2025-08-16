@@ -85,7 +85,7 @@ function RecyclingConsulting() {
       >
         <Container maxWidth="lg" sx={{ mx: 'auto' }}>
           <Grid container spacing={4} alignItems="center">
-            <Grid item xs={12} md={8}>
+            <Grid size={{ xs: 12, md: 8 }}>
               <Typography
                 variant="h2"
                 component="h1"
@@ -123,7 +123,7 @@ function RecyclingConsulting() {
                 Schedule Consultation
               </Button>
             </Grid>
-            <Grid item xs={12} md={4}>
+            <Grid size={{ xs: 12, md: 4 }}>
               <Box
                 sx={{
                   height: 300,
