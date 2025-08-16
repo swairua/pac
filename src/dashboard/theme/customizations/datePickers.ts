@@ -31,7 +31,7 @@ export const datePickersCustomizations: PickerComponents<Theme> = {
   MuiPickersArrowSwitcher: {
     styleOverrides: {
       spacer: { width: 16 },
-      button: ({ theme }) => ({
+      button: ({ theme }: { theme: Theme }) => ({
         backgroundColor: "transparent",
         color: (theme.vars || theme).palette.grey[500],
         ...theme.applyStyles("dark", {
@@ -50,7 +50,7 @@ export const datePickersCustomizations: PickerComponents<Theme> = {
   },
   MuiMonthCalendar: {
     styleOverrides: {
-      button: ({ theme }) => ({
+      button: ({ theme }: { theme: Theme }) => ({
         fontSize: theme.typography.body1.fontSize,
         color: (theme.vars || theme).palette.grey[600],
         padding: theme.spacing(0.5),
@@ -92,7 +92,7 @@ export const datePickersCustomizations: PickerComponents<Theme> = {
   },
   MuiYearCalendar: {
     styleOverrides: {
-      button: ({ theme }) => ({
+      button: ({ theme }: { theme: Theme }) => ({
         fontSize: theme.typography.body1.fontSize,
         color: (theme.vars || theme).palette.grey[600],
         padding: theme.spacing(0.5),
@@ -135,7 +135,7 @@ export const datePickersCustomizations: PickerComponents<Theme> = {
   },
   MuiPickersDay: {
     styleOverrides: {
-      root: ({ theme }) => ({
+      root: ({ theme }: { theme: Theme }) => ({
         fontSize: theme.typography.body1.fontSize,
         color: (theme.vars || theme).palette.grey[600],
         padding: theme.spacing(0.5),
