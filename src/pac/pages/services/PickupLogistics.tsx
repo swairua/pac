@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   Box,
   Container,
@@ -117,7 +116,7 @@ function PickupLogistics() {
       >
         <Container maxWidth="lg" sx={{ mx: 'auto' }}>
           <Grid container spacing={4} alignItems="center">
-            <Grid item xs={12} md={8}>
+            <Grid size={{ xs: 12, md: 8 }}>
               <Typography
                 variant="h2"
                 component="h1"
@@ -157,7 +156,7 @@ function PickupLogistics() {
                 Schedule Pickup
               </Button>
             </Grid>
-            <Grid item xs={12} md={4}>
+            <Grid size={{ xs: 12, md: 4 }}>
               <Box
                 sx={{
                   height: 300,
@@ -202,7 +201,7 @@ function PickupLogistics() {
           </Typography>
           <Grid container spacing={4}>
             {services.map((service, index) => (
-              <Grid item xs={12} sm={6} md={3} key={index}>
+              <Grid size={{ xs: 12, sm: 6, md: 3 }} key={index}>
                 <Card
                   sx={{
                     height: '100%',
@@ -265,7 +264,7 @@ function PickupLogistics() {
           </Typography>
           <Grid container spacing={4}>
             {vehicleTypes.map((vehicle, index) => (
-              <Grid item xs={12} sm={6} md={3} key={index}>
+              <Grid size={{ xs: 12, sm: 6, md: 3 }} key={index}>
                 <Card
                   sx={{
                     height: '100%',
@@ -314,7 +313,7 @@ function PickupLogistics() {
       <Box sx={{ py: 8 }}>
         <Container maxWidth="lg">
           <Grid container spacing={6}>
-            <Grid item xs={12} md={6}>
+            <Grid size={{ xs: 12, md: 6 }}>
               <Typography
                 variant="h4"
                 component="h2"
@@ -346,7 +345,7 @@ function PickupLogistics() {
                 </List>
               </Paper>
             </Grid>
-            <Grid item xs={12} md={6}>
+            <Grid size={{ xs: 12, md: 6 }}>
               <Typography
                 variant="h4"
                 component="h2"
@@ -421,7 +420,7 @@ function PickupLogistics() {
                 features: ['Secure documentation', 'Digital signatures', 'Audit trails', 'Compliance certificates']
               }
             ].map((feature, index) => (
-              <Grid item xs={12} md={4} key={index}>
+              <Grid size={{ xs: 12, md: 4 }} key={index}>
                 <Card
                   sx={{
                     height: '100%',
@@ -492,7 +491,7 @@ function PickupLogistics() {
       >
         <Container maxWidth="lg">
           <Grid container spacing={4} alignItems="center">
-            <Grid item xs={12} md={8}>
+            <Grid size={{ xs: 12, md: 8 }}>
               <Typography variant="h4" sx={{ fontWeight: 'bold', mb: 2, color: '#c62828' }}>
                 24/7 Emergency Pickup Service
               </Typography>
@@ -507,7 +506,7 @@ function PickupLogistics() {
                 <Chip label="Same-Day Service" color="error" />
               </Box>
             </Grid>
-            <Grid item xs={12} md={4}>
+            <Grid size={{ xs: 12, md: 4 }}>
               <Box sx={{ textAlign: 'center' }}>
                 <Typography variant="h3" sx={{ fontWeight: 'bold', color: '#d32f2f', mb: 1 }}>
                   (555) 123-4568
