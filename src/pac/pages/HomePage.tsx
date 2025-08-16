@@ -83,24 +83,21 @@ function HomePage() {
       {/* Hero Section */}
       <Box
         sx={{
-          background: 'linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)',
-          minHeight: '70vh',
+          background: 'linear-gradient(rgba(30, 60, 114, 0.8), rgba(42, 82, 152, 0.8)), url("https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&h=1080&fit=crop&crop=center")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed',
+          minHeight: '100vh',
+          width: '100vw',
+          marginLeft: 'calc(-50vw + 50%)',
+          marginRight: 'calc(-50vw + 50%)',
           display: 'flex',
           alignItems: 'center',
           position: 'relative',
           overflow: 'hidden',
-          '&::before': {
-            content: '""',
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            background: 'url("data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.03"%3E%3Ccircle cx="30" cy="30" r="2"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
-          },
         }}
       >
-        <Container maxWidth="lg" sx={{ position: 'relative', zIndex: 1 }}>
+        <Container maxWidth="lg" sx={{ position: 'relative', zIndex: 1, mx: 'auto' }}>
           <Grid container spacing={4} alignItems="center">
             <Grid item xs={12} md={8}>
               <Typography
@@ -346,7 +343,12 @@ function HomePage() {
       {/* CTA Section */}
       <Box
         sx={{
-          background: 'linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)',
+          background: 'linear-gradient(rgba(30, 60, 114, 0.9), rgba(42, 82, 152, 0.9)), url("https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=1920&h=600&fit=crop&crop=center")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          width: '100vw',
+          marginLeft: 'calc(-50vw + 50%)',
+          marginRight: 'calc(-50vw + 50%)',
           py: 8,
           color: 'white',
         }}

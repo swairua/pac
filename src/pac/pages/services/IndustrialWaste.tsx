@@ -101,12 +101,17 @@ function IndustrialWaste() {
       {/* Hero Section */}
       <Box
         sx={{
-          background: 'linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)',
+          background: 'linear-gradient(rgba(30, 60, 114, 0.8), rgba(42, 82, 152, 0.8)), url("https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=1920&h=800&fit=crop&crop=center")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          width: '100vw',
+          marginLeft: 'calc(-50vw + 50%)',
+          marginRight: 'calc(-50vw + 50%)',
           py: 8,
           color: 'white',
         }}
       >
-        <Container maxWidth="lg">
+        <Container maxWidth="lg" sx={{ mx: 'auto' }}>
           <Grid container spacing={4} alignItems="center">
             <Grid item xs={12} md={8}>
               <Typography
