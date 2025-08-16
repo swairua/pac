@@ -104,10 +104,10 @@ function PieCenterLabel({ primaryText, secondaryText }: PieCenterLabelProps) {
 
   return (
     <React.Fragment>
-      <StyledText variant="primary" x={left + width / 2} y={primaryY}>
+      <StyledText x={left + width / 2} y={primaryY} style={{ fontSize: '1.25rem' }}>
         {primaryText}
       </StyledText>
-      <StyledText variant="secondary" x={left + width / 2} y={secondaryY}>
+      <StyledText x={left + width / 2} y={secondaryY} style={{ fontSize: '0.875rem' }}>
         {secondaryText}
       </StyledText>
     </React.Fragment>
