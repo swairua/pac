@@ -39,7 +39,7 @@ function Services() {
     {
       icon: <Assignment />,
       title: 'Recycling Consulting & Audits',
-      description: 'Comprehensive waste stream analysis and recycling program optimization to maximize efficiency and compliance.',
+      description: 'Our audit team provides practical waste stream evaluation, facility layout optimization, and zero-waste strategy design. We offer flow analysis, financial ROI modeling, and staff education—turning operational inefficiencies into recoverable income.',
       features: ['Waste Stream Analysis', 'Cost Optimization', 'Compliance Review', 'Custom Solutions'],
       image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=500',
       link: '/services/recycling-consulting',
