@@ -14,6 +14,7 @@ import {
   Drawer,
   List,
   ListItem,
+  ListItemButton,
   ListItemText,
   Collapse,
 } from '@mui/material';
@@ -100,37 +101,38 @@ function Header() {
       <List>
         {navigationItems.map((item) => (
           <div key={item.name}>
-            <ListItem
-              button
-              onClick={
-                item.hasDropdown
-                  ? handleMobileServicesToggle
-                  : () => {
-                      navigate(item.path);
-                      setMobileOpen(false);
-                    }
-              }
-            >
-              <ListItemText primary={item.name} />
-              {item.hasDropdown && (
-                mobileServicesOpen ? <ExpandLess /> : <ExpandMore />
-              )}
+            <ListItem disablePadding>
+              <ListItemButton
+                onClick={
+                  item.hasDropdown
+                    ? handleMobileServicesToggle
+                    : () => {
+                        navigate(item.path);
+                        setMobileOpen(false);
+                      }
+                }
+              >
+                <ListItemText primary={item.name} />
+                {item.hasDropdown && (
+                  mobileServicesOpen ? <ExpandLess /> : <ExpandMore />
+                )}
+              </ListItemButton>
             </ListItem>
             {item.hasDropdown && (
               <Collapse in={mobileServicesOpen} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
                   {services.map((service) => (
-                    <ListItem
-                      key={service.path}
-                      button
-                      sx={{ pl: 4 }}
-                      onClick={() => {
-                        navigate(service.path);
-                        setMobileOpen(false);
-                        setMobileServicesOpen(false);
-                      }}
-                    >
-                      <ListItemText primary={service.name} />
+                    <ListItem key={service.path} disablePadding>
+                      <ListItemButton
+                        sx={{ pl: 4 }}
+                        onClick={() => {
+                          navigate(service.path);
+                          setMobileOpen(false);
+                          setMobileServicesOpen(false);
+                        }}
+                      >
+                        <ListItemText primary={service.name} />
+                      </ListItemButton>
                     </ListItem>
                   ))}
                 </List>
