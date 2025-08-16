@@ -66,7 +66,7 @@ export default function CrmSalesChart() {
     data: monthNames,
     tickLabelStyle: {
       angle: 0,
-      textAnchor: "center",
+      textAnchor: "center" as const,
       fontSize: 12,
     },
   };
