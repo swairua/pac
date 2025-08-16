@@ -48,7 +48,7 @@ function Services() {
     {
       icon: <Factory />,
       title: 'Industrial Waste Handling',
-      description: 'Specialized processing and management of industrial waste streams with focus on safety and environmental compliance.',
+      description: 'Handling non-hazardous industrial by-products such as packaging film, pallets, and protective wrapping, we offer safe onsite collection, staging, and routing for recycling or responsible disposal.',
       features: ['Hazardous Materials', 'Bulk Processing', 'Safety Protocols', 'Documentation'],
       image: 'https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=500',
       link: '/services/industrial-waste',
