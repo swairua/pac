@@ -15,11 +15,8 @@ import {
 } from '@mui/material';
 import {
   Nature,
-  CheckCircle,
   Build,
-  Recycling,
   LocalFireDepartment,
-  Engineering,
   Carpenter,
   Park,
 } from '@mui/icons-material';

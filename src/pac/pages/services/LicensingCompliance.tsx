@@ -15,7 +15,6 @@ import {
   Alert,
 } from '@mui/material';
 import {
-  CheckCircle,
   Security,
   Description,
   Support,

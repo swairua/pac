@@ -20,7 +20,6 @@ import {
   TableRow,
 } from '@mui/material';
 import {
-  LocalShipping,
   CheckCircle,
   Schedule,
   GpsFixed,
