@@ -20,8 +20,6 @@ import {
   Inventory,
   LocalShipping,
   Assessment,
-  Security,
-  Schedule,
 } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
 

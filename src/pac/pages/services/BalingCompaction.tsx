@@ -16,9 +16,7 @@ import {
 import {
   Build,
   CheckCircle,
-  Speed,
   Compress,
-  LocalShipping,
   TrendingUp,
   Scale,
   Engineering,
