@@ -22,7 +22,6 @@ export default function CrmSalesChart() {
   };
 
   // Generate monthly data
-  const _currentYear = new Date().getFullYear();
   const monthNames = [
     "Jan",
     "Feb",
