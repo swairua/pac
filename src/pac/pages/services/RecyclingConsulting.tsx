@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   Box,
   Container,
@@ -15,14 +14,11 @@ import {
   Chip,
 } from '@mui/material';
 import {
-  Assignment,
   CheckCircle,
   Analytics,
   Assessment,
   TrendingUp,
   PieChart,
-  BarChart,
-  Recycling,
 } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
 
