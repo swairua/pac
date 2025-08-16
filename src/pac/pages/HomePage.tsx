@@ -9,7 +9,6 @@ import {
   CardMedia,
   IconButton,
   useTheme,
-  useMediaQuery,
 } from '@mui/material';
 import {
   Recycling,
