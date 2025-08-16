@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   Box,
   Container,
@@ -15,14 +14,11 @@ import {
   Chip,
 } from '@mui/material';
 import {
-  Assignment,
   CheckCircle,
   Analytics,
   Assessment,
   TrendingUp,
   PieChart,
-  BarChart,
-  Recycling,
 } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
 
@@ -89,7 +85,7 @@ function RecyclingConsulting() {
       >
         <Container maxWidth="lg" sx={{ mx: 'auto' }}>
           <Grid container spacing={4} alignItems="center">
-            <Grid item xs={12} md={8}>
+            <Grid size={{ xs: 12, md: 8 }}>
               <Typography
                 variant="h2"
                 component="h1"
@@ -127,7 +123,7 @@ function RecyclingConsulting() {
                 Schedule Consultation
               </Button>
             </Grid>
-            <Grid item xs={12} md={4}>
+            <Grid size={{ xs: 12, md: 4 }}>
               <Box
                 sx={{
                   height: 300,
@@ -172,7 +168,7 @@ function RecyclingConsulting() {
           </Typography>
           <Grid container spacing={4}>
             {services.map((service, index) => (
-              <Grid item xs={12} sm={6} md={3} key={index}>
+              <Grid size={{ xs: 12, sm: 6, md: 3 }} key={index}>
                 <Card
                   sx={{
                     height: '100%',
@@ -222,7 +218,7 @@ function RecyclingConsulting() {
       <Box sx={{ py: 8, backgroundColor: '#f8f9fa' }}>
         <Container maxWidth="lg">
           <Grid container spacing={6}>
-            <Grid item xs={12} md={6}>
+            <Grid size={{ xs: 12, md: 6 }}>
               <Typography
                 variant="h4"
                 component="h2"
@@ -254,7 +250,7 @@ function RecyclingConsulting() {
                 </List>
               </Paper>
             </Grid>
-            <Grid item xs={12} md={6}>
+            <Grid size={{ xs: 12, md: 6 }}>
               <Typography
                 variant="h4"
                 component="h2"
@@ -269,7 +265,7 @@ function RecyclingConsulting() {
               <Paper sx={{ p: 4, borderRadius: 3 }}>
                 <Grid container spacing={2}>
                   {industries.map((industry, index) => (
-                    <Grid item xs={12} sm={6} key={index}>
+                    <Grid size={{ xs: 12, sm: 6 }} key={index}>
                       <Chip
                         label={industry}
                         variant="outlined"
@@ -336,7 +332,7 @@ function RecyclingConsulting() {
                 image: 'https://images.unsplash.com/photo-1553163147-622ab57be1c7?w=400'
               }
             ].map((process, index) => (
-              <Grid item xs={12} sm={6} md={3} key={index}>
+              <Grid size={{ xs: 12, sm: 6, md: 3 }} key={index}>
                 <Card
                   sx={{
                     height: '100%',

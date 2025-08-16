@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   Box,
   Container,
@@ -31,12 +30,15 @@ function Footer() {
         pt: 6,
         pb: 3,
         mt: 'auto',
+        width: '100vw',
+        marginLeft: 'calc(-50vw + 50%)',
+        marginRight: 'calc(-50vw + 50%)',
       }}
     >
-      <Container maxWidth="lg">
+      <Container maxWidth="xl" sx={{ px: { xs: 3, md: 6 } }}>
         <Grid container spacing={4}>
           {/* Company Info */}
-          <Grid item xs={12} md={4}>
+          <Grid size={{ xs: 12, md: 4 }}>
             <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
               <Recycling sx={{ fontSize: 32, color: '#00bcd4', mr: 1 }} />
               <Box>
@@ -66,7 +68,7 @@ function Footer() {
           </Grid>
 
           {/* Quick Links */}
-          <Grid item xs={12} sm={6} md={2}>
+          <Grid size={{ xs: 12, sm: 6, md: 2 }}>
             <Typography variant="h6" sx={{ mb: 2, fontWeight: 'bold' }}>
               Quick Links
             </Typography>
@@ -120,7 +122,7 @@ function Footer() {
           </Grid>
 
           {/* Services */}
-          <Grid item xs={12} sm={6} md={3}>
+          <Grid size={{ xs: 12, sm: 6, md: 3 }}>
             <Typography variant="h6" sx={{ mb: 2, fontWeight: 'bold' }}>
               Our Services
             </Typography>
@@ -174,7 +176,7 @@ function Footer() {
           </Grid>
 
           {/* Contact Info */}
-          <Grid item xs={12} md={3}>
+          <Grid size={{ xs: 12, md: 3 }}>
             <Typography variant="h6" sx={{ mb: 2, fontWeight: 'bold' }}>
               Contact Info
             </Typography>

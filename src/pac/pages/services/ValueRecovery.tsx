@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   Box,
   Container,
@@ -140,7 +139,7 @@ function ValueRecovery() {
       >
         <Container maxWidth="lg" sx={{ mx: 'auto' }}>
           <Grid container spacing={4} alignItems="center">
-            <Grid item xs={12} md={8}>
+            <Grid size={{ xs: 12, md: 8 }}>
               <Typography
                 variant="h2"
                 component="h1"
@@ -180,7 +179,7 @@ function ValueRecovery() {
                 Maximize Your Returns
               </Button>
             </Grid>
-            <Grid item xs={12} md={4}>
+            <Grid size={{ xs: 12, md: 4 }}>
               <Box
                 sx={{
                   height: 300,
@@ -225,7 +224,7 @@ function ValueRecovery() {
           </Typography>
           <Grid container spacing={4}>
             {services.map((service, index) => (
-              <Grid item xs={12} sm={6} md={3} key={index}>
+              <Grid size={{ xs: 12, sm: 6, md: 3 }} key={index}>
                 <Card
                   sx={{
                     height: '100%',
@@ -333,7 +332,7 @@ function ValueRecovery() {
           </Typography>
           <Grid container spacing={4}>
             {materialCategories.map((category, index) => (
-              <Grid item xs={12} sm={6} md={3} key={index}>
+              <Grid size={{ xs: 12, sm: 6, md: 3 }} key={index}>
                 <Card
                   sx={{
                     height: '100%',
@@ -408,7 +407,7 @@ function ValueRecovery() {
           </Typography>
           <Grid container spacing={4}>
             {revenuePrograms.map((program, index) => (
-              <Grid item xs={12} md={4} key={index}>
+              <Grid size={{ xs: 12, md: 4 }} key={index}>
                 <Card
                   sx={{
                     height: '100%',
@@ -486,7 +485,7 @@ function ValueRecovery() {
       >
         <Container maxWidth="lg">
           <Grid container spacing={4} alignItems="center">
-            <Grid item xs={12} md={8}>
+            <Grid size={{ xs: 12, md: 8 }}>
               <Typography variant="h4" sx={{ fontWeight: 'bold', mb: 2, color: '#2e7d32' }}>
                 Proven Results & Returns
               </Typography>
@@ -501,7 +500,7 @@ function ValueRecovery() {
                 <Chip label="Transparent Reporting" sx={{ backgroundColor: '#4caf50', color: 'white' }} />
               </Box>
             </Grid>
-            <Grid item xs={12} md={4}>
+            <Grid size={{ xs: 12, md: 4 }}>
               <Box sx={{ textAlign: 'center' }}>
                 <AttachMoney sx={{ fontSize: 80, color: '#4caf50', mb: 2 }} />
                 <Typography variant="h6" sx={{ color: '#2e7d32', fontWeight: 'bold' }}>
