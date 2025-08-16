@@ -14,7 +14,7 @@ export default function CrmSalesChart() {
   const [timeRange, setTimeRange] = React.useState("year");
 
   const handleTimeRangeChange = (
-    event: React.MouseEvent<HTMLElement>,
+    _event: React.MouseEvent<HTMLElement>,
     newTimeRange: string | null,
   ) => {
     if (newTimeRange !== null) {
@@ -23,7 +23,7 @@ export default function CrmSalesChart() {
   };
 
   // Generate monthly data
-  const currentYear = new Date().getFullYear();
+  const _currentYear = new Date().getFullYear();
   const monthNames = [
     "Jan",
     "Feb",
