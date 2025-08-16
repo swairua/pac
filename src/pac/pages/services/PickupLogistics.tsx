@@ -506,7 +506,7 @@ function PickupLogistics() {
                 <Chip label="Same-Day Service" color="error" />
               </Box>
             </Grid>
-            <Grid item xs={12} md={4}>
+            <Grid size={{ xs: 12, md: 4 }}>
               <Box sx={{ textAlign: 'center' }}>
                 <Typography variant="h3" sx={{ fontWeight: 'bold', color: '#d32f2f', mb: 1 }}>
                   (555) 123-4568
