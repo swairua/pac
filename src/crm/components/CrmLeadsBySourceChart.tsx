@@ -16,7 +16,7 @@ const leadSources = [
 ];
 
 export default function CrmLeadsBySourceChart() {
-  const theme = useTheme();
+  const _theme = useTheme();
 
   return (
     <Card
