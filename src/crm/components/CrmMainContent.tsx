@@ -117,10 +117,10 @@ export default function CrmMainContent() {
 
       {/* Tables & Other content */}
       <Grid container spacing={2} sx={{ mb: 3 }}>
-        <Grid item xs={12} lg={8}>
+        <Grid size={{ xs: 12, lg: 8 }}>
           <CrmRecentDealsTable />
         </Grid>
-        <Grid item xs={12} lg={4}>
+        <Grid size={{ xs: 12, lg: 4 }}>
           <Stack spacing={2}>
             <CrmUpcomingTasks />
             <CrmActivitiesTimeline />
@@ -130,7 +130,7 @@ export default function CrmMainContent() {
 
       {/* Map row */}
       <Grid container spacing={2} sx={{ mb: 3 }}>
-        <Grid item xs={12}>
+        <Grid size={{ xs: 12 }}>
           <CrmCustomerDistributionMap />
         </Grid>
       </Grid>
