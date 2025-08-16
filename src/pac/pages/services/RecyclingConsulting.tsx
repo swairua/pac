@@ -265,7 +265,7 @@ function RecyclingConsulting() {
               <Paper sx={{ p: 4, borderRadius: 3 }}>
                 <Grid container spacing={2}>
                   {industries.map((industry, index) => (
-                    <Grid item xs={12} sm={6} key={index}>
+                    <Grid size={{ xs: 12, sm: 6 }} key={index}>
                       <Chip
                         label={industry}
                         variant="outlined"
