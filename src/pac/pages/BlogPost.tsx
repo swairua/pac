@@ -5,7 +5,6 @@ import {
   Button,
   Chip,
   Avatar,
-  Divider,
   Paper,
 } from '@mui/material';
 import { ArrowBack, Person, CalendarToday, AccessTime } from '@mui/icons-material';
