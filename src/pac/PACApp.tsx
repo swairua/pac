@@ -40,6 +40,7 @@ function PACApp() {
         <Route path="/services/pallet-wood-recycling" element={<PalletWoodRecycling />} />
         <Route path="/services/value-recovery" element={<ValueRecovery />} />
         <Route path="/services/licensing-compliance" element={<LicensingCompliance />} />
+        <Route path="/services/conveyor-dismantling" element={<ConveyorDismantling />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="/contact" element={<Contact />} />
