@@ -9,7 +9,6 @@ import {
   CardMedia,
   IconButton,
   useTheme,
-  useMediaQuery,
 } from '@mui/material';
 import {
   Recycling,
@@ -18,9 +17,7 @@ import {
   Assignment,
   Computer,
   CompareArrows,
-  Gavel,
   Build,
-  TrendingUp,
   ArrowForward,
   CheckCircle,
 } from '@mui/icons-material';
@@ -28,7 +25,6 @@ import { Link } from 'react-router-dom';
 
 function HomePage() {
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
   const featuredServices = [
     {

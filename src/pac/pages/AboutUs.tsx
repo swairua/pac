@@ -14,7 +14,6 @@ import {
 } from '@mui/material';
 import {
   CheckCircle,
-  Timeline,
   GroupWork,
   EmojiEvents,
   Security,

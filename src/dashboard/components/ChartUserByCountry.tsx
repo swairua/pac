@@ -53,45 +53,14 @@ const countries = [
 ];
 
 interface StyledTextProps {
-  variant: "primary" | "secondary";
+  variant?: "primary" | "secondary";
 }
 
 const StyledText = styled("text", {
   shouldForwardProp: (prop) => prop !== "variant",
-})<StyledTextProps>(({ theme }) => ({
-  textAnchor: "center",
-  dominantBaseline: "central",
-  fill: (theme.vars || theme).palette.text.secondary,
-  variants: [
-    {
-      props: {
-        variant: "primary",
-      },
-      style: {
-        fontSize: theme.typography.h5.fontSize,
-      },
-    },
-    {
-      props: ({ variant }) => variant !== "primary",
-      style: {
-        fontSize: theme.typography.body2.fontSize,
-      },
-    },
-    {
-      props: {
-        variant: "primary",
-      },
-      style: {
-        fontWeight: theme.typography.h5.fontWeight,
-      },
-    },
-    {
-      props: ({ variant }) => variant !== "primary",
-      style: {
-        fontWeight: theme.typography.body2.fontWeight,
-      },
-    },
-  ],
+})<StyledTextProps>(() => ({
+  fill: "#666",
+  fontSize: "14px",
 }));
 
 interface PieCenterLabelProps {
@@ -106,10 +75,10 @@ function PieCenterLabel({ primaryText, secondaryText }: PieCenterLabelProps) {
 
   return (
     <React.Fragment>
-      <StyledText variant="primary" x={left + width / 2} y={primaryY}>
+      <StyledText x={left + width / 2} y={primaryY} style={{ fontSize: '1.25rem' }}>
         {primaryText}
       </StyledText>
-      <StyledText variant="secondary" x={left + width / 2} y={secondaryY}>
+      <StyledText x={left + width / 2} y={secondaryY} style={{ fontSize: '0.875rem' }}>
         {secondaryText}
       </StyledText>
     </React.Fragment>

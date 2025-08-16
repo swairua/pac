@@ -18,8 +18,6 @@ import {
   Factory,
   CheckCircle,
   Security,
-  LocalShipping,
-  Warning,
   Engineering,
   Science,
   Shield,

@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import { CssBaseline, ThemeProvider } from '@mui/material';
+import { CssBaseline } from '@mui/material';
 import AppTheme from '../shared-theme/AppTheme';
 import HomePage from './pages/HomePage';
 import AboutUs from './pages/AboutUs';
