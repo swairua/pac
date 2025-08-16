@@ -18,6 +18,7 @@ import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
 import Contact from './pages/Contact';
 import TermsConditions from './pages/TermsConditions';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
@@ -44,6 +45,7 @@ function PACApp() {
         <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/terms" element={<TermsConditions />} />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
       </Routes>
       <Footer />
     </AppTheme>
