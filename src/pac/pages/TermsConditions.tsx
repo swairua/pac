@@ -208,13 +208,13 @@ function TermsConditions() {
               <strong>PAC Recycle Works LLC</strong>
             </Typography>
             <Typography variant="body1" sx={{ mb: 1 }}>
-              123 Industrial Blvd, Recycling City, RC 12345
+              6611 Supply Row Unit A, Houston, Texas 77011
             </Typography>
             <Typography variant="body1" sx={{ mb: 1 }}>
-              Phone: (555) 123-4567
+              Phone: +1 (832) 630-0738
             </Typography>
             <Typography variant="body1" sx={{ mb: 1 }}>
-              Email: legal@pacrecycleworks.com
+              Email: contact@pacrecycleworks.com
             </Typography>
           </Box>
         </Paper>
