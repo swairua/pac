@@ -105,7 +105,7 @@ function HomePage() {
       >
         <Container maxWidth="lg" sx={{ position: 'relative', zIndex: 1, mx: 'auto' }}>
           <Grid container spacing={4} alignItems="center">
-            <Grid item xs={12} md={8}>
+            <Grid size xs={12} md={8}>
               <Typography
                 variant="h2"
                 component="h1"
@@ -167,7 +167,7 @@ function HomePage() {
                 </Button>
               </Box>
             </Grid>
-            <Grid item xs={12} md={4}>
+            <Grid size xs={12} md={4}>
               <Box
                 sx={{
                   display: 'flex',
@@ -231,7 +231,7 @@ function HomePage() {
           </Typography>
           <Grid container spacing={2}>
             {benefits.map((benefit, index) => (
-              <Grid item xs={12} sm={6} md={4} key={index}>
+              <Grid size xs={12} sm={6} md={4} key={index}>
                 <Box
                   sx={{
                     display: 'flex',
@@ -289,7 +289,7 @@ function HomePage() {
           
           <Grid container spacing={4}>
             {featuredServices.map((service, index) => (
-              <Grid item xs={12} sm={6} md={4} key={index}>
+              <Grid size xs={12} sm={6} md={4} key={index}>
                 <Card
                   sx={{
                     height: '100%',
@@ -379,7 +379,7 @@ function HomePage() {
       >
         <Container maxWidth="lg">
           <Grid container spacing={4} alignItems="center">
-            <Grid item xs={12} md={8}>
+            <Grid size xs={12} md={8}>
               <Typography variant="h4" component="h2" sx={{ fontWeight: 'bold', mb: 2 }}>
                 Ready to Transform Your Waste Management?
               </Typography>
@@ -388,7 +388,7 @@ function HomePage() {
                 can help your business achieve its sustainability and profitability goals.
               </Typography>
             </Grid>
-            <Grid item xs={12} md={4}>
+            <Grid size xs={12} md={4}>
               <Box sx={{ textAlign: { xs: 'center', md: 'right' } }}>
                 <Button
                   variant="contained"
