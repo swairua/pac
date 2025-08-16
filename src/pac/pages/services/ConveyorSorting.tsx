@@ -107,9 +107,7 @@ function ConveyorSorting() {
                   mb: 4,
                 }}
               >
-                State-of-the-art automated sorting technology that maximizes material recovery 
-                rates while minimizing contamination. Our AI-powered systems deliver industry-leading 
-                accuracy and throughput for all material types.
+                We operate high-capacity conveyor sorting lines purpose-built for warehouse and distribution center waste streams. From intake to bale, every load is processed to maximize recovery rates and reduce disposal costs. Our systems combine automated sorting tools with manual quality control so that plastics, corrugate, films, metals and mixed materials are accurately separated and routed to the correct downstream markets.
               </Typography>
               <Button
                 variant="contained"
