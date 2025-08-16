@@ -16,10 +16,8 @@ import {
 import {
   Computer,
   CheckCircle,
-  Security,
   DeleteForever,
   Description,
-  Assignment,
   Shield,
   Recycling,
 } from '@mui/icons-material';
