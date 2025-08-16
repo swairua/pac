@@ -111,7 +111,7 @@ function HomePage() {
                   lineHeight: 1.2,
                 }}
               >
-                Sustainable Waste Management & Recycling Solutions
+                Efficient, Sustainable & Compliant Conveyor-Based Recycling
               </Typography>
               <Typography
                 variant="h6"
@@ -122,8 +122,7 @@ function HomePage() {
                   lineHeight: 1.5,
                 }}
               >
-                At PAC Recycle Works, we provide comprehensive recycling and waste management 
-                solutions that help businesses achieve sustainability goals while maximizing value recovery.
+                Transforming warehouse waste into value through precision sorting, logistics expertise, and environmental integrity.
               </Typography>
               <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap' }}>
                 <Button
