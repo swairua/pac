@@ -500,7 +500,7 @@ function ValueRecovery() {
                 <Chip label="Transparent Reporting" sx={{ backgroundColor: '#4caf50', color: 'white' }} />
               </Box>
             </Grid>
-            <Grid item xs={12} md={4}>
+            <Grid size={{ xs: 12, md: 4 }}>
               <Box sx={{ textAlign: 'center' }}>
                 <AttachMoney sx={{ fontSize: 80, color: '#4caf50', mb: 2 }} />
                 <Typography variant="h6" sx={{ color: '#2e7d32', fontWeight: 'bold' }}>
