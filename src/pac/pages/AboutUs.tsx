@@ -25,24 +25,24 @@ import {
 function AboutUs() {
   const values = [
     {
-      icon: <Nature />,
-      title: 'Environmental Responsibility',
-      description: 'We are committed to protecting the environment through sustainable waste management practices and zero-landfill solutions.',
+      icon: <Build />,
+      title: 'Innovation in Recycling',
+      description: 'Advanced conveyor sorting, baling, and compaction technologies to maximize efficiency.',
     },
     {
       icon: <Security />,
-      title: 'Compliance & Safety',
-      description: 'All our operations meet or exceed EPA standards, ensuring complete regulatory compliance and workplace safety.',
+      title: 'Compliance & Trust',
+      description: 'Robust licensing, reporting, and ESG documentation for full regulatory confidence.',
     },
     {
       icon: <TrendingUp />,
-      title: 'Value Maximization',
-      description: 'We help businesses recover maximum value from their waste streams through innovative processing and resale programs.',
+      title: 'Value Recovery',
+      description: 'Monetize surplus assets, pallets, and e-waste with resale and recycling networks.',
     },
     {
       icon: <GroupWork />,
-      title: 'Partnership Approach',
-      description: 'We work closely with our clients to develop customized solutions that meet their specific business needs.',
+      title: 'Sustainable Partnerships',
+      description: 'Long-term consulting and audits tailored to client operations and goals.',
     },
   ];
 
@@ -75,10 +75,10 @@ function AboutUs() {
   ];
 
   const stats = [
-    { number: '500+', label: 'Clients Served' },
-    { number: '95%', label: 'Waste Diverted from Landfills' },
-    { number: '1M+', label: 'Tons Processed Annually' },
-    { number: '24/7', label: 'Customer Support' },
+    { number: '5,000+', label: 'Tons Diverted from landfills annually' },
+    { number: '100%', label: 'Certified E-Waste Processing' },
+    { number: '50+', label: 'Industries Trusted by Nationwide' },
+    { number: '24/7', label: 'Our Commitment to Sustainability' },
   ];
 
   const certifications = [
@@ -123,8 +123,10 @@ function AboutUs() {
               lineHeight: 1.6,
             }}
           >
-            Leading the industry in sustainable waste management and recycling solutions since 2015. 
-            We transform waste into value while protecting our environment for future generations.
+            PAC Recycle Works LLC is a sustainability-driven recycling and material recovery company,
+            specializing in secure, compliant, and cost-effective solutions for businesses and industries.
+            We combine cutting-edge conveyor-based sorting, responsible e-waste handling, and value recovery
+            to help clients achieve measurable ESG goals.
           </Typography>
         </Container>
       </Box>
@@ -221,7 +223,7 @@ function AboutUs() {
               color: '#1e3c72',
             }}
           >
-            Our Core Values
+            Who We Are
           </Typography>
           <Grid container spacing={4}>
             {values.map((value, index) => (
@@ -266,7 +268,7 @@ function AboutUs() {
         </Container>
       </Box>
 
-      {/* Company Timeline */}
+      {/* Our Commitment */}
       <Box sx={{ py: 8, backgroundColor: '#f8f9fa' }}>
         <Container maxWidth="lg">
           <Typography
@@ -279,111 +281,14 @@ function AboutUs() {
               color: '#1e3c72',
             }}
           >
-            Our Journey
+            Our Commitment
           </Typography>
-          <Box sx={{ position: 'relative' }}>
-            {milestones.map((milestone, index) => (
-              <Box key={index} sx={{ display: 'flex', mb: 4, alignItems: 'flex-start' }}>
-                <Box
-                  sx={{
-                    backgroundColor: '#00bcd4',
-                    color: 'white',
-                    borderRadius: '50%',
-                    width: 80,
-                    height: 80,
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    fontWeight: 'bold',
-                    fontSize: '1.1rem',
-                    mr: 3,
-                    flexShrink: 0,
-                  }}
-                >
-                  {milestone.year}
-                </Box>
-                <Paper
-                  sx={{
-                    p: 3,
-                    flexGrow: 1,
-                    borderRadius: 2,
-                    boxShadow: 2,
-                  }}
-                >
-                  <Typography variant="h6" component="h3" sx={{ fontWeight: 'bold', mb: 1 }}>
-                    {milestone.title}
-                  </Typography>
-                  <Typography variant="body1" sx={{ color: '#666' }}>
-                    {milestone.description}
-                  </Typography>
-                </Paper>
-              </Box>
-            ))}
-          </Box>
-        </Container>
-      </Box>
-
-      {/* Certifications */}
-      <Box sx={{ py: 8 }}>
-        <Container maxWidth="lg">
-          <Typography
-            variant="h4"
-            component="h2"
-            sx={{
-              textAlign: 'center',
-              fontWeight: 'bold',
-              mb: 6,
-              color: '#1e3c72',
-            }}
-          >
-            Certifications & Compliance
-          </Typography>
-          <Grid container spacing={4}>
-            <Grid size={{ xs: 12, md: 6 }}>
-              <Card sx={{ p: 3, borderRadius: 3, boxShadow: 3 }}>
-                <CardContent>
-                  <Typography variant="h5" component="h3" sx={{ fontWeight: 'bold', mb: 3 }}>
-                    Industry Certifications
-                  </Typography>
-                  <List>
-                    {certifications.map((cert, index) => (
-                      <ListItem key={index} sx={{ py: 0.5 }}>
-                        <ListItemIcon>
-                          <CheckCircle sx={{ color: '#00bcd4' }} />
-                        </ListItemIcon>
-                        <ListItemText primary={cert} />
-                      </ListItem>
-                    ))}
-                  </List>
-                </CardContent>
-              </Card>
-            </Grid>
-            <Grid size={{ xs: 12, md: 6 }}>
-              <Card sx={{ p: 3, borderRadius: 3, boxShadow: 3 }}>
-                <CardContent>
-                  <Typography variant="h5" component="h3" sx={{ fontWeight: 'bold', mb: 3 }}>
-                    Quality Assurance
-                  </Typography>
-                  <Typography variant="body1" sx={{ mb: 3, lineHeight: 1.6 }}>
-                    Our commitment to excellence is reflected in our comprehensive quality 
-                    management system and continuous improvement processes.
-                  </Typography>
-                  <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
-                    <EmojiEvents sx={{ color: '#00bcd4', mr: 2 }} />
-                    <Typography variant="body1">Industry Leadership Award 2023</Typography>
-                  </Box>
-                  <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
-                    <Security sx={{ color: '#00bcd4', mr: 2 }} />
-                    <Typography variant="body1">Zero Safety Incidents Record</Typography>
-                  </Box>
-                  <Box sx={{ display: 'flex', alignItems: 'center' }}>
-                    <Build sx={{ color: '#00bcd4', mr: 2 }} />
-                    <Typography variant="body1">Continuous Process Improvement</Typography>
-                  </Box>
-                </CardContent>
-              </Card>
-            </Grid>
-          </Grid>
+          <Paper sx={{ p: 6, borderRadius: 3, textAlign: 'center' }}>
+            <Typography variant="h6" sx={{ lineHeight: 1.8, color: '#666' }}>
+              We don't just recycle materials—we create sustainable cycles of value, compliance,
+              and impact for the communities we serve.
+            </Typography>
+          </Paper>
         </Container>
       </Box>
     </Box>
