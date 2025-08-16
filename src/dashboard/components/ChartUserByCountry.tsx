@@ -53,7 +53,7 @@ const countries = [
 ];
 
 interface StyledTextProps {
-  variant: "primary" | "secondary";
+  variant?: "primary" | "secondary";
 }
 
 const StyledText = styled("text", {
