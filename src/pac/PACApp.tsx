@@ -14,6 +14,7 @@ import EWasteCollection from './pages/services/EWasteCollection';
 import PalletWoodRecycling from './pages/services/PalletWoodRecycling';
 import ValueRecovery from './pages/services/ValueRecovery';
 import LicensingCompliance from './pages/services/LicensingCompliance';
+import ConveyorDismantling from './pages/services/ConveyorDismantling';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
 import Contact from './pages/Contact';
