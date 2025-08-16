@@ -139,7 +139,7 @@ function LicensingCompliance() {
       >
         <Container maxWidth="lg" sx={{ mx: 'auto' }}>
           <Grid container spacing={4} alignItems="center">
-            <Grid item xs={12} md={8}>
+            <Grid size={{ xs: 12, md: 8 }}>
               <Typography
                 variant="h2"
                 component="h1"
@@ -179,7 +179,7 @@ function LicensingCompliance() {
                 Get Compliance Review
               </Button>
             </Grid>
-            <Grid item xs={12} md={4}>
+            <Grid size={{ xs: 12, md: 4 }}>
               <Box
                 sx={{
                   height: 300,
@@ -247,7 +247,7 @@ function LicensingCompliance() {
           </Typography>
           <Grid container spacing={4}>
             {services.map((service, index) => (
-              <Grid item xs={12} sm={6} md={3} key={index}>
+              <Grid size={{ xs: 12, sm: 6, md: 3 }} key={index}>
                 <Card
                   sx={{
                     height: '100%',
@@ -310,7 +310,7 @@ function LicensingCompliance() {
           </Typography>
           <Grid container spacing={4}>
             {regulations.map((section, index) => (
-              <Grid item xs={12} md={4} key={index}>
+              <Grid size={{ xs: 12, md: 4 }} key={index}>
                 <Paper sx={{ p: 4, borderRadius: 3, height: '100%' }}>
                   <Typography variant="h5" sx={{ fontWeight: 'bold', mb: 3, color: '#d32f2f' }}>
                     {section.category}
@@ -357,7 +357,7 @@ function LicensingCompliance() {
           </Typography>
           <Grid container spacing={4}>
             {complianceAreas.map((area, index) => (
-              <Grid item xs={12} sm={6} md={3} key={index}>
+              <Grid size={{ xs: 12, sm: 6, md: 3 }} key={index}>
                 <Card
                   sx={{
                     height: '100%',
@@ -440,7 +440,7 @@ function LicensingCompliance() {
           <Paper sx={{ p: 4, borderRadius: 3 }}>
             <Grid container spacing={3}>
               {penalties.map((penalty, index) => (
-                <Grid item xs={12} md={6} key={index}>
+                <Grid size={{ xs: 12, md: 6 }} key={index}>
                   <Box
                     sx={{
                       display: 'flex',
@@ -482,7 +482,7 @@ function LicensingCompliance() {
       >
         <Container maxWidth="lg">
           <Grid container spacing={4} alignItems="center">
-            <Grid item xs={12} md={8}>
+            <Grid size={{ xs: 12, md: 8 }}>
               <Typography variant="h4" sx={{ fontWeight: 'bold', mb: 2, color: '#2e7d32' }}>
                 Compliance Benefits
               </Typography>
@@ -497,7 +497,7 @@ function LicensingCompliance() {
                 <Chip label="Operational Excellence" sx={{ backgroundColor: '#4caf50', color: 'white' }} />
               </Box>
             </Grid>
-            <Grid item xs={12} md={4}>
+            <Grid size={{ xs: 12, md: 4 }}>
               <Box sx={{ textAlign: 'center' }}>
                 <Security sx={{ fontSize: 80, color: '#4caf50', mb: 2 }} />
                 <Typography variant="h6" sx={{ color: '#2e7d32', fontWeight: 'bold' }}>
