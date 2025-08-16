@@ -18,9 +18,7 @@ import {
   Assignment,
   Computer,
   CompareArrows,
-  Gavel,
   Build,
-  TrendingUp,
   ArrowForward,
   CheckCircle,
 } from '@mui/icons-material';
