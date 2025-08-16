@@ -407,7 +407,7 @@ function ValueRecovery() {
           </Typography>
           <Grid container spacing={4}>
             {revenuePrograms.map((program, index) => (
-              <Grid item xs={12} md={4} key={index}>
+              <Grid size={{ xs: 12, md: 4 }} key={index}>
                 <Card
                   sx={{
                     height: '100%',
