@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   Box,
   Container,
@@ -113,7 +112,7 @@ function IndustrialWaste() {
       >
         <Container maxWidth="lg" sx={{ mx: 'auto' }}>
           <Grid container spacing={4} alignItems="center">
-            <Grid item xs={12} md={8}>
+            <Grid size={{ xs: 12, md: 8 }}>
               <Typography
                 variant="h2"
                 component="h1"
@@ -153,7 +152,7 @@ function IndustrialWaste() {
                 Get Expert Assessment
               </Button>
             </Grid>
-            <Grid item xs={12} md={4}>
+            <Grid size={{ xs: 12, md: 4 }}>
               <Box
                 sx={{
                   height: 300,
@@ -221,7 +220,7 @@ function IndustrialWaste() {
           </Typography>
           <Grid container spacing={4}>
             {services.map((service, index) => (
-              <Grid item xs={12} sm={6} md={3} key={index}>
+              <Grid size={{ xs: 12, sm: 6, md: 3 }} key={index}>
                 <Card
                   sx={{
                     height: '100%',
@@ -271,7 +270,7 @@ function IndustrialWaste() {
       <Box sx={{ py: 8, backgroundColor: '#f8f9fa' }}>
         <Container maxWidth="lg">
           <Grid container spacing={6}>
-            <Grid item xs={12} md={6}>
+            <Grid size={{ xs: 12, md: 6 }}>
               <Typography
                 variant="h4"
                 component="h2"
@@ -286,7 +285,7 @@ function IndustrialWaste() {
               <Paper sx={{ p: 4, borderRadius: 3 }}>
                 <Grid container spacing={2}>
                   {wasteTypes.map((type, index) => (
-                    <Grid item xs={12} sm={6} key={index}>
+                    <Grid size={{ xs: 12, sm: 6 }} key={index}>
                       <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
                         <CheckCircle sx={{ color: '#00bcd4', mr: 1, fontSize: 20 }} />
                         <Typography variant="body2" sx={{ fontWeight: 500 }}>
@@ -298,7 +297,7 @@ function IndustrialWaste() {
                 </Grid>
               </Paper>
             </Grid>
-            <Grid item xs={12} md={6}>
+            <Grid size={{ xs: 12, md: 6 }}>
               <Typography
                 variant="h4"
                 component="h2"
@@ -351,7 +350,7 @@ function IndustrialWaste() {
           </Typography>
           <Grid container spacing={4}>
             {processSteps.map((step, index) => (
-              <Grid item xs={12} sm={6} md={3} key={index}>
+              <Grid size={{ xs: 12, sm: 6, md: 3 }} key={index}>
                 <Card
                   sx={{
                     height: '100%',
@@ -418,7 +417,7 @@ function IndustrialWaste() {
       >
         <Container maxWidth="lg">
           <Grid container spacing={4} alignItems="center">
-            <Grid item xs={12} md={8}>
+            <Grid size={{ xs: 12, md: 8 }}>
               <Typography variant="h4" sx={{ fontWeight: 'bold', mb: 2, color: '#1565c0' }}>
                 24/7 Emergency Response
               </Typography>
@@ -433,7 +432,7 @@ function IndustrialWaste() {
                 <Chip label="24/7 Availability" color="primary" />
               </Box>
             </Grid>
-            <Grid item xs={12} md={4}>
+            <Grid size={{ xs: 12, md: 4 }}>
               <Box sx={{ textAlign: 'center' }}>
                 <Typography variant="h3" sx={{ fontWeight: 'bold', color: '#d32f2f', mb: 1 }}>
                   (555) 123-4568

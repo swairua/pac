@@ -134,7 +134,7 @@ function AboutUs() {
       <Box sx={{ py: 8 }}>
         <Container maxWidth="lg">
           <Grid container spacing={6}>
-            <Grid item xs={12} md={6}>
+            <Grid size={{ xs: 12, md: 6 }}>
               <Card
                 sx={{
                   height: '100%',
@@ -155,7 +155,7 @@ function AboutUs() {
                 </CardContent>
               </Card>
             </Grid>
-            <Grid item xs={12} md={6}>
+            <Grid size={{ xs: 12, md: 6 }}>
               <Card
                 sx={{
                   height: '100%',
@@ -185,7 +185,7 @@ function AboutUs() {
         <Container maxWidth="lg">
           <Grid container spacing={4}>
             {stats.map((stat, index) => (
-              <Grid item xs={6} md={3} key={index}>
+              <Grid size={{ xs: 6, md: 3 }} key={index}>
                 <Box sx={{ textAlign: 'center' }}>
                   <Typography
                     variant="h2"
@@ -226,7 +226,7 @@ function AboutUs() {
           </Typography>
           <Grid container spacing={4}>
             {values.map((value, index) => (
-              <Grid item xs={12} md={6} key={index}>
+              <Grid size={{ xs: 12, md: 6 }} key={index}>
                 <Card
                   sx={{
                     height: '100%',
@@ -340,7 +340,7 @@ function AboutUs() {
             Certifications & Compliance
           </Typography>
           <Grid container spacing={4}>
-            <Grid item xs={12} md={6}>
+            <Grid size={{ xs: 12, md: 6 }}>
               <Card sx={{ p: 3, borderRadius: 3, boxShadow: 3 }}>
                 <CardContent>
                   <Typography variant="h5" component="h3" sx={{ fontWeight: 'bold', mb: 3 }}>
@@ -359,7 +359,7 @@ function AboutUs() {
                 </CardContent>
               </Card>
             </Grid>
-            <Grid item xs={12} md={6}>
+            <Grid size={{ xs: 12, md: 6 }}>
               <Card sx={{ p: 3, borderRadius: 3, boxShadow: 3 }}>
                 <CardContent>
                   <Typography variant="h5" component="h3" sx={{ fontWeight: 'bold', mb: 3 }}>

@@ -92,7 +92,7 @@ export default function CrmMainContent() {
       {/* Stats Cards row */}
       <Grid container spacing={2} sx={{ mb: 3 }}>
         {statCardsData.map((card, index) => (
-          <Grid key={index} item xs={12} sm={6} lg={3}>
+          <Grid key={index} size={{ xs: 12, sm: 6, lg: 3 }}>
             <CrmStatCard
               title={card.title}
               value={card.value}
@@ -107,20 +107,20 @@ export default function CrmMainContent() {
 
       {/* Charts row */}
       <Grid container spacing={2} sx={{ mb: 3 }}>
-        <Grid item xs={12} md={8}>
+        <Grid size={{ xs: 12, md: 8 }}>
           <CrmSalesChart />
         </Grid>
-        <Grid item xs={12} md={4}>
+        <Grid size={{ xs: 12, md: 4 }}>
           <CrmLeadsBySourceChart />
         </Grid>
       </Grid>
 
       {/* Tables & Other content */}
       <Grid container spacing={2} sx={{ mb: 3 }}>
-        <Grid item xs={12} lg={8}>
+        <Grid size={{ xs: 12, lg: 8 }}>
           <CrmRecentDealsTable />
         </Grid>
-        <Grid item xs={12} lg={4}>
+        <Grid size={{ xs: 12, lg: 4 }}>
           <Stack spacing={2}>
             <CrmUpcomingTasks />
             <CrmActivitiesTimeline />
@@ -130,7 +130,7 @@ export default function CrmMainContent() {
 
       {/* Map row */}
       <Grid container spacing={2} sx={{ mb: 3 }}>
-        <Grid item xs={12}>
+        <Grid size={{ xs: 12 }}>
           <CrmCustomerDistributionMap />
         </Grid>
       </Grid>
