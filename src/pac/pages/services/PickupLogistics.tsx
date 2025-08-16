@@ -491,7 +491,7 @@ function PickupLogistics() {
       >
         <Container maxWidth="lg">
           <Grid container spacing={4} alignItems="center">
-            <Grid item xs={12} md={8}>
+            <Grid size={{ xs: 12, md: 8 }}>
               <Typography variant="h4" sx={{ fontWeight: 'bold', mb: 2, color: '#c62828' }}>
                 24/7 Emergency Pickup Service
               </Typography>
