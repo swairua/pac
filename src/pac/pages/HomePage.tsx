@@ -70,12 +70,11 @@ function HomePage() {
   ];
 
   const benefits = [
-    'EPA Certified & Compliant',
-    'Zero Landfill Guarantee',
-    '24/7 Logistics Support',
-    'Comprehensive Reporting',
-    'Sustainable Solutions',
-    'Cost-Effective Processing'
+    'Full-service, end-to-end material recovery across major categories',
+    'State-of-the-art conveyor and sorting technologies',
+    'In-depth compliance and ESG documentation',
+    'Dedicated logistics and value recovery networks',
+    'Focus on sustainability, transparency, and savings'
   ];
 
   return (
