@@ -89,7 +89,7 @@ function ConveyorDismantling() {
       >
         <Container maxWidth="lg" sx={{ mx: 'auto' }}>
           <Grid container spacing={4} alignItems="center">
-            <Grid item xs={12} md={8}>
+            <Grid size={{ xs: 12, md: 8 }}>
               <Typography
                 variant="h2"
                 component="h1"
@@ -127,7 +127,7 @@ function ConveyorDismantling() {
                 Request Quote
               </Button>
             </Grid>
-            <Grid item xs={12} md={4}>
+            <Grid size={{ xs: 12, md: 4 }}>
               <Box
                 sx={{
                   height: 300,
@@ -164,7 +164,7 @@ function ConveyorDismantling() {
           </Typography>
           <Grid container spacing={4}>
             {services.map((service, index) => (
-              <Grid item xs={12} sm={6} md={6} key={index}>
+              <Grid size={{ xs: 12, sm: 6, md: 6 }} key={index}>
                 <Card
                   sx={{
                     height: '100%',
@@ -214,7 +214,7 @@ function ConveyorDismantling() {
       <Box sx={{ py: 8, backgroundColor: '#f8f9fa' }}>
         <Container maxWidth="lg">
           <Grid container spacing={6}>
-            <Grid item xs={12} md={6}>
+            <Grid size={{ xs: 12, md: 6 }}>
               <Typography
                 variant="h4"
                 component="h2"
@@ -255,7 +255,7 @@ function ConveyorDismantling() {
                 </List>
               </Paper>
             </Grid>
-            <Grid item xs={12} md={6}>
+            <Grid size={{ xs: 12, md: 6 }}>
               <Typography
                 variant="h4"
                 component="h2"
