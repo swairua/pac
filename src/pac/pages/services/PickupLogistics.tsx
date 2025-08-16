@@ -313,7 +313,7 @@ function PickupLogistics() {
       <Box sx={{ py: 8 }}>
         <Container maxWidth="lg">
           <Grid container spacing={6}>
-            <Grid item xs={12} md={6}>
+            <Grid size={{ xs: 12, md: 6 }}>
               <Typography
                 variant="h4"
                 component="h2"
