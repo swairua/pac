@@ -259,7 +259,7 @@ function Blog() {
           </Typography>
           <Grid container spacing={4}>
             {blogPosts.map((post) => (
-              <Grid item xs={12} md={6} key={post.id}>
+              <Grid size={{ xs: 12, md: 6 }} key={post.id}>
                 <Card
                   sx={{
                     height: '100%',
