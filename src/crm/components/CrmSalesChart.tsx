@@ -1,4 +1,3 @@
-import * as React from "react";
 import { useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
@@ -65,11 +64,6 @@ export default function CrmSalesChart() {
   const xAxisData = {
     scaleType: "band" as const,
     data: monthNames,
-    tickLabelStyle: {
-      angle: 0,
-      textAnchor: "center" as const,
-      fontSize: 12,
-    },
   };
 
   // Format y-axis labels to show $ and K for thousands
