@@ -194,7 +194,7 @@ function Contact() {
         <Container maxWidth="lg">
           <Grid container spacing={6}>
             {/* Contact Form */}
-            <Grid item xs={12} md={7}>
+            <Grid size xs={12} md={7}>
               <Paper sx={{ p: 4, borderRadius: 3, boxShadow: 3 }}>
                 <Typography variant="h4" component="h2" sx={{ fontWeight: 'bold', mb: 4, color: '#1e3c72' }}>
                   Get a Free Consultation
@@ -202,7 +202,7 @@ function Contact() {
                 
                 <form onSubmit={handleSubmit}>
                   <Grid container spacing={3}>
-                    <Grid item xs={12} sm={6}>
+                    <Grid size xs={12} sm={6}>
                       <TextField
                         fullWidth
                         label="Full Name"
@@ -213,7 +213,7 @@ function Contact() {
                         variant="outlined"
                       />
                     </Grid>
-                    <Grid item xs={12} sm={6}>
+                    <Grid size xs={12} sm={6}>
                       <TextField
                         fullWidth
                         label="Email Address"
@@ -225,7 +225,7 @@ function Contact() {
                         variant="outlined"
                       />
                     </Grid>
-                    <Grid item xs={12} sm={6}>
+                    <Grid size xs={12} sm={6}>
                       <TextField
                         fullWidth
                         label="Company Name"
@@ -235,7 +235,7 @@ function Contact() {
                         variant="outlined"
                       />
                     </Grid>
-                    <Grid item xs={12} sm={6}>
+                    <Grid size xs={12} sm={6}>
                       <TextField
                         fullWidth
                         label="Phone Number"
@@ -245,7 +245,7 @@ function Contact() {
                         variant="outlined"
                       />
                     </Grid>
-                    <Grid item xs={12}>
+                    <Grid size xs={12}>
                       <FormControl fullWidth>
                         <InputLabel>Service of Interest</InputLabel>
                         <Select
@@ -261,7 +261,7 @@ function Contact() {
                         </Select>
                       </FormControl>
                     </Grid>
-                    <Grid item xs={12}>
+                    <Grid size xs={12}>
                       <TextField
                         fullWidth
                         label="Message"
@@ -274,7 +274,7 @@ function Contact() {
                         variant="outlined"
                       />
                     </Grid>
-                    <Grid item xs={12}>
+                    <Grid size xs={12}>
                       <Button
                         type="submit"
                         variant="contained"
@@ -297,7 +297,7 @@ function Contact() {
             </Grid>
 
             {/* Contact Information */}
-            <Grid item xs={12} md={5}>
+            <Grid size xs={12} md={5}>
               <Box sx={{ pl: { md: 2 } }}>
                 <Typography variant="h4" component="h2" sx={{ fontWeight: 'bold', mb: 4, color: '#1e3c72' }}>
                   Get in Touch
@@ -305,7 +305,7 @@ function Contact() {
                 
                 <Grid container spacing={3}>
                   {contactInfo.map((info, index) => (
-                    <Grid item xs={12} key={index}>
+                    <Grid size xs={12} key={index}>
                       <Card sx={{ borderRadius: 2, boxShadow: 2 }}>
                         <CardContent sx={{ p: 3 }}>
                           <Box sx={{ display: 'flex', alignItems: 'flex-start', gap: 2 }}>
