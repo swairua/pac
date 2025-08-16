@@ -30,7 +30,7 @@ function Services() {
     {
       icon: <CompareArrows />,
       title: 'Conveyor-Based Material Sorting',
-      description: 'Advanced automated sorting systems using AI and machine learning to achieve maximum material recovery rates with minimal contamination.',
+      description: 'We operate precision conveyor systems optimized for high-speed separation of plastics, cardboard, shrink wrap, metals, and mixed warehouse by-products. Combining automated sensors with manual oversight, we deliver clean, value-grade material streams.',
       features: ['99%+ Accuracy', 'High-Speed Processing', 'Multiple Material Types', 'Real-time Monitoring'],
       image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500',
       link: '/services/conveyor-sorting',
