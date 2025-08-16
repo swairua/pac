@@ -376,12 +376,17 @@ function ConveyorSorting() {
       {/* Benefits */}
       <Box
         sx={{
-          background: 'linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)',
+          background: 'linear-gradient(rgba(30, 60, 114, 0.8), rgba(42, 82, 152, 0.8)), url("https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=1920&h=600&fit=crop&crop=center")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          width: '100vw',
+          marginLeft: 'calc(-50vw + 50%)',
+          marginRight: 'calc(-50vw + 50%)',
           py: 8,
           color: 'white',
         }}
       >
-        <Container maxWidth="lg">
+        <Container maxWidth="lg" sx={{ mx: 'auto' }}>
           <Typography
             variant="h4"
             component="h2"
