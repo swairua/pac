@@ -285,7 +285,7 @@ function IndustrialWaste() {
               <Paper sx={{ p: 4, borderRadius: 3 }}>
                 <Grid container spacing={2}>
                   {wasteTypes.map((type, index) => (
-                    <Grid item xs={12} sm={6} key={index}>
+                    <Grid size={{ xs: 12, sm: 6 }} key={index}>
                       <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
                         <CheckCircle sx={{ color: '#00bcd4', mr: 1, fontSize: 20 }} />
                         <Typography variant="body2" sx={{ fontWeight: 500 }}>

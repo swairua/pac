@@ -234,7 +234,7 @@ function ConveyorSorting() {
               <Paper sx={{ p: 4, borderRadius: 3 }}>
                 <Grid container spacing={3}>
                   {specifications.map((spec, index) => (
-                    <Grid item xs={12} sm={6} key={index}>
+                    <Grid size={{ xs: 12, sm: 6 }} key={index}>
                       <Box>
                         <Typography variant="body2" color="text.secondary" sx={{ mb: 0.5 }}>
                           {spec.label}
