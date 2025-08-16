@@ -167,7 +167,7 @@ function HomePage() {
                 </Button>
               </Box>
             </Grid>
-            <Grid size xs={12} md={4}>
+            <Grid size={{ xs: 12, md: 4 }}>
               <Box
                 sx={{
                   display: 'flex',
@@ -388,7 +388,7 @@ function HomePage() {
                 can help your business achieve its sustainability and profitability goals.
               </Typography>
             </Grid>
-            <Grid size xs={12} md={4}>
+            <Grid size={{ xs: 12, md: 4 }}>
               <Box sx={{ textAlign: { xs: 'center', md: 'right' } }}>
                 <Button
                   variant="contained"
