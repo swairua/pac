@@ -184,20 +184,20 @@ function Footer() {
               <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
                 <LocationOn sx={{ color: '#00bcd4', fontSize: 20 }} />
                 <Typography variant="body2">
-                  123 Industrial Blvd<br />
-                  Recycling City, RC 12345
+                  6611 Supply Row Unit A<br />
+                  Houston, Texas 77011
                 </Typography>
               </Box>
               <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
                 <Phone sx={{ color: '#00bcd4', fontSize: 20 }} />
                 <Typography variant="body2">
-                  (555) 123-4567
+                  +1 (832) 630-0738
                 </Typography>
               </Box>
               <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
                 <Email sx={{ color: '#00bcd4', fontSize: 20 }} />
                 <Typography variant="body2">
-                  info@pacrecycleworks.com
+                  contact@pacrecycleworks.com
                 </Typography>
               </Box>
             </Box>
