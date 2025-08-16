@@ -129,7 +129,7 @@ function HomePage() {
                   variant="contained"
                   size="large"
                   component={Link}
-                  to="/contact"
+                  to="/services"
                   sx={{
                     backgroundColor: '#00bcd4',
                     '&:hover': { backgroundColor: '#0097a7' },
@@ -138,13 +138,13 @@ function HomePage() {
                     py: 1.5,
                   }}
                 >
-                  Get Started Today
+                  Explore Our Services
                 </Button>
                 <Button
                   variant="outlined"
                   size="large"
                   component={Link}
-                  to="/services"
+                  to="/contact"
                   sx={{
                     borderColor: 'white',
                     color: 'white',
@@ -157,7 +157,7 @@ function HomePage() {
                     py: 1.5,
                   }}
                 >
-                  Our Services
+                  Get a Quote
                 </Button>
               </Box>
             </Grid>
