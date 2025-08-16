@@ -105,7 +105,7 @@ function HomePage() {
       >
         <Container maxWidth="lg" sx={{ position: 'relative', zIndex: 1, mx: 'auto' }}>
           <Grid container spacing={4} alignItems="center">
-            <Grid size xs={12} md={8}>
+            <Grid size={{ xs: 12, md: 8 }}>
               <Typography
                 variant="h2"
                 component="h1"
@@ -379,7 +379,7 @@ function HomePage() {
       >
         <Container maxWidth="lg">
           <Grid container spacing={4} alignItems="center">
-            <Grid size xs={12} md={8}>
+            <Grid size={{ xs: 12, md: 8 }}>
               <Typography variant="h4" component="h2" sx={{ fontWeight: 'bold', mb: 2 }}>
                 Ready to Transform Your Waste Management?
               </Typography>
