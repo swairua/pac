@@ -75,12 +75,17 @@ function ConveyorSorting() {
       {/* Hero Section */}
       <Box
         sx={{
-          background: 'linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)',
+          background: 'linear-gradient(rgba(30, 60, 114, 0.8), rgba(42, 82, 152, 0.8)), url("https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1920&h=800&fit=crop&crop=center")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          width: '100vw',
+          marginLeft: 'calc(-50vw + 50%)',
+          marginRight: 'calc(-50vw + 50%)',
           py: 8,
           color: 'white',
         }}
       >
-        <Container maxWidth="lg">
+        <Container maxWidth="lg" sx={{ mx: 'auto' }}>
           <Grid container spacing={4} alignItems="center">
             <Grid item xs={12} md={8}>
               <Typography
@@ -102,9 +107,7 @@ function ConveyorSorting() {
                   mb: 4,
                 }}
               >
-                State-of-the-art automated sorting technology that maximizes material recovery 
-                rates while minimizing contamination. Our AI-powered systems deliver industry-leading 
-                accuracy and throughput for all material types.
+                We operate high-capacity conveyor sorting lines purpose-built for warehouse and distribution center waste streams. From intake to bale, every load is processed to maximize recovery rates and reduce disposal costs. Our systems combine automated sorting tools with manual quality control so that plastics, corrugate, films, metals and mixed materials are accurately separated and routed to the correct downstream markets.
               </Typography>
               <Button
                 variant="contained"
@@ -371,12 +374,17 @@ function ConveyorSorting() {
       {/* Benefits */}
       <Box
         sx={{
-          background: 'linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)',
+          background: 'linear-gradient(rgba(30, 60, 114, 0.8), rgba(42, 82, 152, 0.8)), url("https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=1920&h=600&fit=crop&crop=center")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          width: '100vw',
+          marginLeft: 'calc(-50vw + 50%)',
+          marginRight: 'calc(-50vw + 50%)',
           py: 8,
           color: 'white',
         }}
       >
-        <Container maxWidth="lg">
+        <Container maxWidth="lg" sx={{ mx: 'auto' }}>
           <Typography
             variant="h4"
             component="h2"

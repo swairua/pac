@@ -34,48 +34,54 @@ function HomePage() {
   const featuredServices = [
     {
       icon: <CompareArrows />,
-      title: 'Material Sorting',
-      description: 'Advanced conveyor-based sorting systems for maximum efficiency',
+      title: 'Conveyor-Based Material Sorting',
+      description: 'Precision conveyor systems optimized for high-speed separation of plastics, cardboard, shrink wrap, metals, and mixed warehouse by-products',
       image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400',
       link: '/services/conveyor-sorting'
     },
     {
       icon: <Assignment />,
-      title: 'Recycling Consulting',
-      description: 'Expert audits and consulting to optimize your recycling programs',
+      title: 'Recycling Consulting & Audits',
+      description: 'Practical waste stream evaluation, facility layout optimization, and zero-waste strategy design with ROI modeling',
       image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400',
       link: '/services/recycling-consulting'
     },
     {
       icon: <Factory />,
-      title: 'Industrial Waste',
-      description: 'Comprehensive industrial waste handling and processing solutions',
+      title: 'Industrial Waste Handling',
+      description: 'Safe onsite collection, staging, and routing for recycling or responsible disposal of non-hazardous industrial by-products',
       image: 'https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=400',
       link: '/services/industrial-waste'
     },
     {
-      icon: <Computer />,
-      title: 'E-Waste Processing',
-      description: 'Secure and environmentally responsible e-waste collection',
-      image: 'https://images.unsplash.com/photo-1580910051074-3eb694886505?w=400',
-      link: '/services/e-waste-collection'
+      icon: <LocalShipping />,
+      title: 'Pickup & Logistics Services',
+      description: 'Fleet-driven logistics solution with GPS tracking, digital manifests, and optimized routing for efficient material movement',
+      image: 'https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=400',
+      link: '/services/pickup-logistics'
     },
     {
-      icon: <TrendingUp />,
-      title: 'Value Recovery',
-      description: 'Maximize returns through strategic value recovery and resale',
-      image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400',
-      link: '/services/value-recovery'
+      icon: <Build />,
+      title: 'Baling & Compaction',
+      description: 'Densify cardboard, plastics, and scrap metals into market-ready bales with correct weight and density specifications',
+      image: 'https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=400',
+      link: '/services/baling-compaction'
+    },
+    {
+      icon: <Computer />,
+      title: 'E-Waste Collection & Processing',
+      description: 'Secure e-waste solutions from collection to certified destruction or component recovery with full documentation',
+      image: 'https://images.unsplash.com/photo-1580910051074-3eb694886505?w=400',
+      link: '/services/e-waste-collection'
     }
   ];
 
   const benefits = [
-    'EPA Certified & Compliant',
-    'Zero Landfill Guarantee',
-    '24/7 Logistics Support',
-    'Comprehensive Reporting',
-    'Sustainable Solutions',
-    'Cost-Effective Processing'
+    'Full-service, end-to-end material recovery across major categories',
+    'State-of-the-art conveyor and sorting technologies',
+    'In-depth compliance and ESG documentation',
+    'Dedicated logistics and value recovery networks',
+    'Focus on sustainability, transparency, and savings'
   ];
 
   return (
@@ -83,24 +89,21 @@ function HomePage() {
       {/* Hero Section */}
       <Box
         sx={{
-          background: 'linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)',
-          minHeight: '70vh',
+          background: 'linear-gradient(rgba(30, 60, 114, 0.8), rgba(42, 82, 152, 0.8)), url("https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&h=1080&fit=crop&crop=center")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed',
+          minHeight: '100vh',
+          width: '100vw',
+          marginLeft: 'calc(-50vw + 50%)',
+          marginRight: 'calc(-50vw + 50%)',
           display: 'flex',
           alignItems: 'center',
           position: 'relative',
           overflow: 'hidden',
-          '&::before': {
-            content: '""',
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            background: 'url("data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.03"%3E%3Ccircle cx="30" cy="30" r="2"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
-          },
         }}
       >
-        <Container maxWidth="lg" sx={{ position: 'relative', zIndex: 1 }}>
+        <Container maxWidth="lg" sx={{ position: 'relative', zIndex: 1, mx: 'auto' }}>
           <Grid container spacing={4} alignItems="center">
             <Grid item xs={12} md={8}>
               <Typography
@@ -114,7 +117,7 @@ function HomePage() {
                   lineHeight: 1.2,
                 }}
               >
-                Sustainable Waste Management & Recycling Solutions
+                Efficient, Sustainable & Compliant Conveyor-Based Recycling
               </Typography>
               <Typography
                 variant="h6"
@@ -125,15 +128,14 @@ function HomePage() {
                   lineHeight: 1.5,
                 }}
               >
-                At PAC Recycle Works, we provide comprehensive recycling and waste management 
-                solutions that help businesses achieve sustainability goals while maximizing value recovery.
+                Transforming warehouse waste into value through precision sorting, logistics expertise, and environmental integrity.
               </Typography>
               <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap' }}>
                 <Button
                   variant="contained"
                   size="large"
                   component={Link}
-                  to="/contact"
+                  to="/services"
                   sx={{
                     backgroundColor: '#00bcd4',
                     '&:hover': { backgroundColor: '#0097a7' },
@@ -142,13 +144,13 @@ function HomePage() {
                     py: 1.5,
                   }}
                 >
-                  Get Started Today
+                  Explore Our Services
                 </Button>
                 <Button
                   variant="outlined"
                   size="large"
                   component={Link}
-                  to="/services"
+                  to="/contact"
                   sx={{
                     borderColor: 'white',
                     color: 'white',
@@ -161,7 +163,7 @@ function HomePage() {
                     py: 1.5,
                   }}
                 >
-                  Our Services
+                  Get a Quote
                 </Button>
               </Box>
             </Grid>
@@ -190,6 +192,25 @@ function HomePage() {
               </Box>
             </Grid>
           </Grid>
+        </Container>
+      </Box>
+
+      {/* Intro Section */}
+      <Box sx={{ py: 8, backgroundColor: 'white' }}>
+        <Container maxWidth="lg">
+          <Typography
+            variant="h6"
+            sx={{
+              textAlign: 'center',
+              lineHeight: 1.8,
+              color: '#333',
+              maxWidth: 900,
+              mx: 'auto',
+              fontSize: { xs: '1.1rem', md: '1.25rem' },
+            }}
+          >
+            At PAC Recycle Works, we specialize in conveyor-based material recovery and circular waste solutions for industrial and warehousing operations. From real-time sorting to e-waste processing and compliance management, our services help you reduce waste, unlock material value, and meet environmental standards with reliability and transparency.
+          </Typography>
         </Container>
       </Box>
 
@@ -268,7 +289,7 @@ function HomePage() {
           
           <Grid container spacing={4}>
             {featuredServices.map((service, index) => (
-              <Grid item xs={12} sm={6} lg={4} key={index}>
+              <Grid item xs={12} sm={6} md={4} key={index}>
                 <Card
                   sx={{
                     height: '100%',
@@ -346,7 +367,12 @@ function HomePage() {
       {/* CTA Section */}
       <Box
         sx={{
-          background: 'linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)',
+          background: 'linear-gradient(rgba(30, 60, 114, 0.9), rgba(42, 82, 152, 0.9)), url("https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=1920&h=600&fit=crop&crop=center")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          width: '100vw',
+          marginLeft: 'calc(-50vw + 50%)',
+          marginRight: 'calc(-50vw + 50%)',
           py: 8,
           color: 'white',
         }}

@@ -77,12 +77,17 @@ function RecyclingConsulting() {
       {/* Hero Section */}
       <Box
         sx={{
-          background: 'linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)',
+          background: 'linear-gradient(rgba(30, 60, 114, 0.8), rgba(42, 82, 152, 0.8)), url("https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1920&h=800&fit=crop&crop=center")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          width: '100vw',
+          marginLeft: 'calc(-50vw + 50%)',
+          marginRight: 'calc(-50vw + 50%)',
           py: 8,
           color: 'white',
         }}
       >
-        <Container maxWidth="lg">
+        <Container maxWidth="lg" sx={{ mx: 'auto' }}>
           <Grid container spacing={4} alignItems="center">
             <Grid item xs={12} md={8}>
               <Typography
@@ -104,9 +109,7 @@ function RecyclingConsulting() {
                   mb: 4,
                 }}
               >
-                Transform your waste management strategy with expert consulting services. 
-                Our comprehensive audits and optimization programs help businesses achieve 
-                significant cost savings while maximizing environmental impact.
+                PAC Recycle Works LLC provides pragmatic consulting to transform waste liabilities into recoverable assets. We audit material flows, quantify waste streams, and design tailored interventions—everything from simple segregation layouts to full conveyor integration plans. Our audits produce actionable roadmaps with ROI projections, implementation timelines, and recommended vendor lists.
               </Typography>
               <Button
                 variant="contained"

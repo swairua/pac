@@ -30,7 +30,7 @@ function Services() {
     {
       icon: <CompareArrows />,
       title: 'Conveyor-Based Material Sorting',
-      description: 'Advanced automated sorting systems using AI and machine learning to achieve maximum material recovery rates with minimal contamination.',
+      description: 'We operate precision conveyor systems optimized for high-speed separation of plastics, cardboard, shrink wrap, metals, and mixed warehouse by-products. Combining automated sensors with manual oversight, we deliver clean, value-grade material streams.',
       features: ['99%+ Accuracy', 'High-Speed Processing', 'Multiple Material Types', 'Real-time Monitoring'],
       image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500',
       link: '/services/conveyor-sorting',
@@ -39,7 +39,7 @@ function Services() {
     {
       icon: <Assignment />,
       title: 'Recycling Consulting & Audits',
-      description: 'Comprehensive waste stream analysis and recycling program optimization to maximize efficiency and compliance.',
+      description: 'Our audit team provides practical waste stream evaluation, facility layout optimization, and zero-waste strategy design. We offer flow analysis, financial ROI modeling, and staff education—turning operational inefficiencies into recoverable income.',
       features: ['Waste Stream Analysis', 'Cost Optimization', 'Compliance Review', 'Custom Solutions'],
       image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=500',
       link: '/services/recycling-consulting',
@@ -48,7 +48,7 @@ function Services() {
     {
       icon: <Factory />,
       title: 'Industrial Waste Handling',
-      description: 'Specialized processing and management of industrial waste streams with focus on safety and environmental compliance.',
+      description: 'Handling non-hazardous industrial by-products such as packaging film, pallets, and protective wrapping, we offer safe onsite collection, staging, and routing for recycling or responsible disposal.',
       features: ['Hazardous Materials', 'Bulk Processing', 'Safety Protocols', 'Documentation'],
       image: 'https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=500',
       link: '/services/industrial-waste',

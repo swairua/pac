@@ -14,6 +14,7 @@ import EWasteCollection from './pages/services/EWasteCollection';
 import PalletWoodRecycling from './pages/services/PalletWoodRecycling';
 import ValueRecovery from './pages/services/ValueRecovery';
 import LicensingCompliance from './pages/services/LicensingCompliance';
+import ConveyorDismantling from './pages/services/ConveyorDismantling';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
 import Contact from './pages/Contact';
@@ -39,6 +40,7 @@ function PACApp() {
         <Route path="/services/pallet-wood-recycling" element={<PalletWoodRecycling />} />
         <Route path="/services/value-recovery" element={<ValueRecovery />} />
         <Route path="/services/licensing-compliance" element={<LicensingCompliance />} />
+        <Route path="/services/conveyor-dismantling" element={<ConveyorDismantling />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="/contact" element={<Contact />} />

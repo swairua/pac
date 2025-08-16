@@ -12,64 +12,64 @@ import {
   ListItemText,
   Button,
   Paper,
-  Alert,
+  Chip,
 } from '@mui/material';
 import {
-  Computer,
+  Build,
   CheckCircle,
+  Engineering,
+  Inventory,
+  LocalShipping,
+  Assessment,
   Security,
-  DeleteForever,
-  Description,
-  Assignment,
-  Shield,
-  Recycling,
+  Schedule,
 } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
 
-function EWasteCollection() {
+function ConveyorDismantling() {
   const services = [
     {
-      icon: <Computer />,
-      title: 'IT Equipment Collection',
-      description: 'Computers, servers, laptops, tablets, and networking equipment'
+      icon: <Assessment />,
+      title: 'Site Assessment & Project Planning',
+      description: 'Detailed teardown sequencing, lift plans, and timeline coordination to minimize impact on production and safety risks'
     },
     {
-      icon: <DeleteForever />,
-      title: 'Secure Data Destruction',
-      description: 'DOD-compliant data wiping and physical destruction services'
+      icon: <Build />,
+      title: 'Safe Dismantling & Lifting',
+      description: 'Certified rigging and mechanical teams perform the physical breakdown with lockout/tagout protocols and dust/spill controls'
     },
     {
-      icon: <Description />,
-      title: 'Compliance Documentation',
-      description: 'Certificates of destruction and environmental compliance reports'
+      icon: <Inventory />,
+      title: 'Component Inventory & Tagging',
+      description: 'Every part is cataloged for possible refurbishment, resale, or scrap, with serial and condition notes'
     },
     {
-      icon: <Recycling />,
-      title: 'Material Recovery',
-      description: 'Precious metals and rare earth element recovery and refining'
+      icon: <LocalShipping />,
+      title: 'Transport & Temporary Storage',
+      description: 'Secure crating and transport planning or temporary storage at our facility pending disposition'
     }
   ];
 
-  const acceptedItems = [
-    'Desktop Computers & Workstations',
-    'Laptops & Tablets',
-    'Servers & Networking Equipment',
-    'Monitors & Displays',
-    'Printers & Copiers',
-    'Mobile Phones & Smartphones',
-    'Audio/Video Equipment',
-    'Medical Electronics',
-    'Industrial Controls',
-    'Test & Measurement Equipment'
+  const benefits = [
+    'Minimal Production Downtime',
+    'Safe & Compliant Dismantling',
+    'Component Value Recovery',
+    'Environmental Compliance',
+    'Complete Documentation',
+    'Certified Rigging Teams',
+    'Secure Storage Options',
+    'Equipment Resale Support'
   ];
 
-  const certifications = [
-    'R2 (Responsible Recycling) Certified',
-    'ISO 14001 Environmental Management',
-    'NIST 800-88 Data Sanitization Standards',
-    'DOD 5220.22-M Data Wiping Protocol',
-    'SOC 2 Type II Security Compliance',
-    'EPA Hazardous Waste Management'
+  const processSteps = [
+    'Initial Site Assessment',
+    'Safety Planning & Permits',
+    'Component Inventory',
+    'Safe Dismantling Process',
+    'Parts Cataloging & Tagging',
+    'Transport & Storage',
+    'Value Recovery Analysis',
+    'Final Documentation'
   ];
 
   return (
@@ -77,7 +77,7 @@ function EWasteCollection() {
       {/* Hero Section */}
       <Box
         sx={{
-          background: 'linear-gradient(rgba(30, 60, 114, 0.8), rgba(42, 82, 152, 0.8)), url("https://images.unsplash.com/photo-1580910051074-3eb694886505?w=1920&h=800&fit=crop&crop=center")',
+          background: 'linear-gradient(rgba(30, 60, 114, 0.8), rgba(42, 82, 152, 0.8)), url("https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&h=800&fit=crop&crop=center")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           width: '100vw',
@@ -99,7 +99,7 @@ function EWasteCollection() {
                   fontSize: { xs: '2.5rem', md: '3rem' },
                 }}
               >
-                E-Waste Collection & Processing
+                Conveyor Dismantling & Removal
               </Typography>
               <Typography
                 variant="h6"
@@ -109,9 +109,7 @@ function EWasteCollection() {
                   mb: 4,
                 }}
               >
-                Secure, compliant, and environmentally responsible electronic waste disposal. 
-                We ensure your sensitive data is completely destroyed while maximizing material 
-                recovery and maintaining full regulatory compliance.
+                Retiring or replacing conveyors requires precision planning and safe execution. Our dismantling teams develop a project plan, secure appropriate lifting gear, and follow strict safety and environmental controls to dismantle conveyors with minimal downtime.
               </Typography>
               <Button
                 variant="contained"
@@ -126,7 +124,7 @@ function EWasteCollection() {
                   py: 1.5,
                 }}
               >
-                Schedule Pickup
+                Request Quote
               </Button>
             </Grid>
             <Grid item xs={12} md={4}>
@@ -142,45 +140,14 @@ function EWasteCollection() {
                   justifyContent: 'center',
                 }}
               >
-                <img
-                  src="https://images.unsplash.com/photo-1580910051074-3eb694886505?w=500"
-                  alt="E-Waste Collection & Processing"
-                  style={{
-                    width: '100%',
-                    height: '100%',
-                    objectFit: 'cover',
-                  }}
-                />
+                <Engineering sx={{ fontSize: 120, color: '#00bcd4' }} />
               </Box>
             </Grid>
           </Grid>
         </Container>
       </Box>
 
-      {/* Security Alert */}
-      <Box sx={{ py: 4, backgroundColor: '#fff3cd' }}>
-        <Container maxWidth="lg">
-          <Alert
-            severity="warning"
-            sx={{
-              fontSize: '1.1rem',
-              backgroundColor: 'transparent',
-              border: '2px solid #ffc107',
-              '& .MuiAlert-icon': {
-                color: '#ff8f00',
-              },
-            }}
-          >
-            <Typography variant="h6" component="div" sx={{ fontWeight: 'bold', mb: 1 }}>
-              Data Security is Our Priority
-            </Typography>
-            All electronic devices undergo secure data destruction using DOD-approved methods 
-            before processing. We provide certificates of destruction for your compliance records.
-          </Alert>
-        </Container>
-      </Box>
-
-      {/* Our Services */}
+      {/* Services Section */}
       <Box sx={{ py: 8 }}>
         <Container maxWidth="lg">
           <Typography
@@ -193,11 +160,11 @@ function EWasteCollection() {
               color: '#1e3c72',
             }}
           >
-            Comprehensive E-Waste Services
+            Our Dismantling Services
           </Typography>
           <Grid container spacing={4}>
             {services.map((service, index) => (
-              <Grid item xs={12} sm={6} md={3} key={index}>
+              <Grid item xs={12} sm={6} md={6} key={index}>
                 <Card
                   sx={{
                     height: '100%',
@@ -243,7 +210,7 @@ function EWasteCollection() {
         </Container>
       </Box>
 
-      {/* Accepted Items & Certifications */}
+      {/* Process Overview */}
       <Box sx={{ py: 8, backgroundColor: '#f8f9fa' }}>
         <Container maxWidth="lg">
           <Grid container spacing={6}>
@@ -257,17 +224,26 @@ function EWasteCollection() {
                   color: '#1e3c72',
                 }}
               >
-                What We Accept
+                Our Process
               </Typography>
               <Paper sx={{ p: 4, borderRadius: 3 }}>
                 <List>
-                  {acceptedItems.map((item, index) => (
+                  {processSteps.map((step, index) => (
                     <ListItem key={index} sx={{ py: 1 }}>
                       <ListItemIcon>
-                        <CheckCircle sx={{ color: '#00bcd4' }} />
+                        <Chip
+                          label={index + 1}
+                          sx={{
+                            backgroundColor: '#00bcd4',
+                            color: 'white',
+                            fontWeight: 'bold',
+                            width: 32,
+                            height: 32,
+                          }}
+                        />
                       </ListItemIcon>
                       <ListItemText 
-                        primary={item}
+                        primary={step}
                         sx={{
                           '& .MuiListItemText-primary': {
                             fontWeight: 500,
@@ -289,17 +265,17 @@ function EWasteCollection() {
                   color: '#1e3c72',
                 }}
               >
-                Certifications & Compliance
+                Key Benefits
               </Typography>
               <Paper sx={{ p: 4, borderRadius: 3 }}>
                 <List>
-                  {certifications.map((cert, index) => (
+                  {benefits.map((benefit, index) => (
                     <ListItem key={index} sx={{ py: 1 }}>
                       <ListItemIcon>
-                        <Shield sx={{ color: '#00bcd4' }} />
+                        <CheckCircle sx={{ color: '#00bcd4' }} />
                       </ListItemIcon>
                       <ListItemText 
-                        primary={cert}
+                        primary={benefit}
                         sx={{
                           '& .MuiListItemText-primary': {
                             fontWeight: 500,
@@ -315,106 +291,15 @@ function EWasteCollection() {
         </Container>
       </Box>
 
-      {/* Process */}
-      <Box sx={{ py: 8 }}>
-        <Container maxWidth="lg">
-          <Typography
-            variant="h4"
-            component="h2"
-            sx={{
-              textAlign: 'center',
-              fontWeight: 'bold',
-              mb: 6,
-              color: '#1e3c72',
-            }}
-          >
-            Our Secure E-Waste Process
-          </Typography>
-          <Grid container spacing={4}>
-            {[
-              {
-                step: '1',
-                title: 'Secure Collection',
-                description: 'Chain of custody documentation begins at pickup with secure transport'
-              },
-              {
-                step: '2',
-                title: 'Data Destruction',
-                description: 'DOD-compliant data wiping and physical destruction of storage devices'
-              },
-              {
-                step: '3',
-                title: 'Material Processing',
-                description: 'Disassembly and sorting of components for maximum material recovery'
-              },
-              {
-                step: '4',
-                title: 'Documentation',
-                description: 'Certificates of destruction and compliance reports provided'
-              }
-            ].map((process, index) => (
-              <Grid item xs={12} sm={6} md={3} key={index}>
-                <Card
-                  sx={{
-                    p: 3,
-                    borderRadius: 3,
-                    height: '100%',
-                    textAlign: 'center',
-                    border: '2px solid #e0e0e0',
-                    '&:hover': {
-                      borderColor: '#00bcd4',
-                      transform: 'translateY(-2px)',
-                    },
-                    transition: 'all 0.3s ease',
-                  }}
-                >
-                  <Box
-                    sx={{
-                      width: 60,
-                      height: 60,
-                      borderRadius: '50%',
-                      backgroundColor: '#00bcd4',
-                      color: 'white',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      mx: 'auto',
-                      mb: 2,
-                      fontSize: '1.5rem',
-                      fontWeight: 'bold',
-                    }}
-                  >
-                    {process.step}
-                  </Box>
-                  <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 2 }}>
-                    {process.title}
-                  </Typography>
-                  <Typography variant="body2" color="text.secondary">
-                    {process.description}
-                  </Typography>
-                </Card>
-              </Grid>
-            ))}
-          </Grid>
-        </Container>
-      </Box>
-
       {/* CTA */}
-      <Box
-        sx={{
-          background: 'linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)',
-          py: 8,
-          color: 'white',
-        }}
-      >
+      <Box sx={{ py: 8, backgroundColor: 'white' }}>
         <Container maxWidth="lg">
           <Box sx={{ textAlign: 'center' }}>
-            <Typography variant="h4" component="h2" sx={{ fontWeight: 'bold', mb: 3 }}>
-              Secure E-Waste Disposal Made Simple
+            <Typography variant="h4" component="h2" sx={{ fontWeight: 'bold', mb: 3, color: '#1e3c72' }}>
+              Need Professional Conveyor Dismantling?
             </Typography>
-            <Typography variant="h6" sx={{ mb: 4, opacity: 0.9, maxWidth: 600, mx: 'auto' }}>
-              Don't let outdated electronics become a security risk. Schedule your secure 
-              e-waste pickup today and get complete peace of mind.
+            <Typography variant="h6" sx={{ mb: 4, color: '#666', maxWidth: 600, mx: 'auto' }}>
+              Contact us today to discuss your conveyor dismantling project and receive a detailed quote with timeline and component recovery plan.
             </Typography>
             <Box sx={{ display: 'flex', gap: 2, justifyContent: 'center', flexWrap: 'wrap' }}>
               <Button
@@ -429,7 +314,7 @@ function EWasteCollection() {
                   py: 1.5,
                 }}
               >
-                Schedule Pickup
+                Get Quote
               </Button>
               <Button
                 variant="outlined"
@@ -437,10 +322,10 @@ function EWasteCollection() {
                 component={Link}
                 to="/services"
                 sx={{
-                  borderColor: 'white',
-                  color: 'white',
+                  borderColor: '#00bcd4',
+                  color: '#00bcd4',
                   '&:hover': {
-                    backgroundColor: 'rgba(255,255,255,0.1)',
+                    backgroundColor: 'rgba(0,188,212,0.1)',
                   },
                   px: 4,
                   py: 1.5,
@@ -456,4 +341,4 @@ function EWasteCollection() {
   );
 }
 
-export default EWasteCollection;
+export default ConveyorDismantling;
