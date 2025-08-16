@@ -230,7 +230,8 @@ function Footer() {
               Terms & Conditions
             </Link>
             <Link
-              href="#"
+              component={RouterLink}
+              to="/privacy"
               color="rgba(255,255,255,0.8)"
               underline="hover"
               variant="body2"
