@@ -34,38 +34,45 @@ function HomePage() {
   const featuredServices = [
     {
       icon: <CompareArrows />,
-      title: 'Material Sorting',
-      description: 'Advanced conveyor-based sorting systems for maximum efficiency',
+      title: 'Conveyor-Based Material Sorting',
+      description: 'Precision conveyor systems optimized for high-speed separation of plastics, cardboard, shrink wrap, metals, and mixed warehouse by-products',
       image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400',
       link: '/services/conveyor-sorting'
     },
     {
       icon: <Assignment />,
-      title: 'Recycling Consulting',
-      description: 'Expert audits and consulting to optimize your recycling programs',
+      title: 'Recycling Consulting & Audits',
+      description: 'Practical waste stream evaluation, facility layout optimization, and zero-waste strategy design with ROI modeling',
       image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400',
       link: '/services/recycling-consulting'
     },
     {
       icon: <Factory />,
-      title: 'Industrial Waste',
-      description: 'Comprehensive industrial waste handling and processing solutions',
+      title: 'Industrial Waste Handling',
+      description: 'Safe onsite collection, staging, and routing for recycling or responsible disposal of non-hazardous industrial by-products',
       image: 'https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=400',
       link: '/services/industrial-waste'
     },
     {
-      icon: <Computer />,
-      title: 'E-Waste Processing',
-      description: 'Secure and environmentally responsible e-waste collection',
-      image: 'https://images.unsplash.com/photo-1580910051074-3eb694886505?w=400',
-      link: '/services/e-waste-collection'
+      icon: <LocalShipping />,
+      title: 'Pickup & Logistics Services',
+      description: 'Fleet-driven logistics solution with GPS tracking, digital manifests, and optimized routing for efficient material movement',
+      image: 'https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=400',
+      link: '/services/pickup-logistics'
     },
     {
-      icon: <TrendingUp />,
-      title: 'Value Recovery',
-      description: 'Maximize returns through strategic value recovery and resale',
-      image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400',
-      link: '/services/value-recovery'
+      icon: <Build />,
+      title: 'Baling & Compaction',
+      description: 'Densify cardboard, plastics, and scrap metals into market-ready bales with correct weight and density specifications',
+      image: 'https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=400',
+      link: '/services/baling-compaction'
+    },
+    {
+      icon: <Computer />,
+      title: 'E-Waste Collection & Processing',
+      description: 'Secure e-waste solutions from collection to certified destruction or component recovery with full documentation',
+      image: 'https://images.unsplash.com/photo-1580910051074-3eb694886505?w=400',
+      link: '/services/e-waste-collection'
     }
   ];
 
