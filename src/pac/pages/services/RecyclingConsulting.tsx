@@ -109,9 +109,7 @@ function RecyclingConsulting() {
                   mb: 4,
                 }}
               >
-                Transform your waste management strategy with expert consulting services. 
-                Our comprehensive audits and optimization programs help businesses achieve 
-                significant cost savings while maximizing environmental impact.
+                PAC Recycle Works LLC provides pragmatic consulting to transform waste liabilities into recoverable assets. We audit material flows, quantify waste streams, and design tailored interventions—everything from simple segregation layouts to full conveyor integration plans. Our audits produce actionable roadmaps with ROI projections, implementation timelines, and recommended vendor lists.
               </Typography>
               <Button
                 variant="contained"
