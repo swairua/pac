@@ -73,7 +73,7 @@ function RecyclingConsulting() {
       {/* Hero Section */}
       <Box
         sx={{
-          background: 'linear-gradient(rgba(30, 60, 114, 0.8), rgba(42, 82, 152, 0.8)), url("https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1920&h=800&fit=crop&crop=center")',
+          background: 'linear-gradient(rgba(30, 60, 114, 0.8), rgba(42, 82, 152, 0.8)), url("https://images.pexels.com/photos/7947663/pexels-photo-7947663.jpeg?w=1920&h=800&fit=crop&crop=center")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           width: '100vw',
@@ -137,7 +137,7 @@ function RecyclingConsulting() {
                 }}
               >
                 <img
-                  src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500"
+                  src="https://images.pexels.com/photos/7947663/pexels-photo-7947663.jpeg?w=500"
                   alt="Recycling Consulting"
                   style={{
                     width: '100%',
@@ -311,7 +311,7 @@ function RecyclingConsulting() {
                 step: '1',
                 title: 'Initial Assessment',
                 description: 'Comprehensive evaluation of current waste streams and processes',
-                image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400'
+                image: 'https://images.pexels.com/photos/28532233/pexels-photo-28532233.jpeg?w=400'
               },
               {
                 step: '2',

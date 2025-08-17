@@ -486,10 +486,9 @@ Contact: contact@pacrecycleworks.com | +1 (832) 630-0738
                         variant="outlined"
                         sx={{
                           '& .MuiOutlinedInput-root': {
-                            minHeight: '200px',
                             alignItems: 'flex-start',
                             '& textarea': {
-                              minHeight: '180px !important',
+                              minHeight: '180px',
                               resize: 'vertical',
                             }
                           }

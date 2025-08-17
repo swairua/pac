@@ -422,17 +422,27 @@ function BlogPost() {
         
         if (trimmedLine.startsWith('- ')) {
           return (
-            <Typography key={index} component="li" sx={{ ml: 3, mb: 1 }}>
-              {trimmedLine.replace('- ', '').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')}
-            </Typography>
+            <Typography
+              key={index}
+              component="li"
+              sx={{ ml: 3, mb: 1 }}
+              dangerouslySetInnerHTML={{
+                __html: trimmedLine.replace('- ', '').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+              }}
+            />
           );
         }
         
         if (trimmedLine.match(/^\d+\./)) {
           return (
-            <Typography key={index} component="li" sx={{ ml: 3, mb: 1, listStyleType: 'decimal' }}>
-              {trimmedLine.replace(/^\d+\.\s*/, '').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')}
-            </Typography>
+            <Typography
+              key={index}
+              component="li"
+              sx={{ ml: 3, mb: 1, listStyleType: 'decimal' }}
+              dangerouslySetInnerHTML={{
+                __html: trimmedLine.replace(/^\d+\.\s*/, '').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+              }}
+            />
           );
         }
         

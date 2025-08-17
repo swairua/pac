@@ -74,7 +74,7 @@ function EWasteCollection() {
       {/* Hero Section */}
       <Box
         sx={{
-          background: 'linear-gradient(rgba(30, 60, 114, 0.8), rgba(42, 82, 152, 0.8)), url("https://images.unsplash.com/photo-1580910051074-3eb694886505?w=1920&h=800&fit=crop&crop=center")',
+          background: 'linear-gradient(rgba(30, 60, 114, 0.8), rgba(42, 82, 152, 0.8)), url("https://images.pexels.com/photos/2628105/pexels-photo-2628105.jpeg?w=1920&h=800&fit=crop&crop=center")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           width: '100vw',
@@ -140,7 +140,7 @@ function EWasteCollection() {
                 }}
               >
                 <img
-                  src="https://images.unsplash.com/photo-1580910051074-3eb694886505?w=500"
+                  src="https://images.pexels.com/photos/32923609/pexels-photo-32923609.jpeg?w=500"
                   alt="E-Waste Collection & Processing"
                   style={{
                     width: '100%',

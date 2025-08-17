@@ -68,25 +68,25 @@ function PickupLogistics() {
       type: 'Standard Trucks',
       capacity: '10-15 tons',
       description: 'General waste and recyclables',
-      image: 'https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=400'
+      image: 'https://images.pexels.com/photos/11115604/pexels-photo-11115604.jpeg?w=400'
     },
     {
       type: 'Flatbed Trailers',
       capacity: '25-40 tons',
       description: 'Large equipment and bulk materials',
-      image: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=400'
+      image: 'https://images.pexels.com/photos/16656654/pexels-photo-16656654.jpeg?w=400'
     },
     {
       type: 'Specialized Containers',
       capacity: '5-20 tons',
       description: 'Hazardous and sensitive materials',
-      image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400'
+      image: 'https://images.pexels.com/photos/16207911/pexels-photo-16207911.jpeg?w=400'
     },
     {
       type: 'Roll-off Containers',
       capacity: '10-40 cubic yards',
       description: 'Construction and demolition debris',
-      image: 'https://images.unsplash.com/photo-1519273954205-cff4bd8b78ae?w=400'
+      image: 'https://images.pexels.com/photos/8783861/pexels-photo-8783861.jpeg?w=400'
     }
   ];
 
@@ -103,7 +103,7 @@ function PickupLogistics() {
       {/* Hero Section */}
       <Box
         sx={{
-          background: 'linear-gradient(rgba(30, 60, 114, 0.8), rgba(42, 82, 152, 0.8)), url("https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=1920&h=800&fit=crop&crop=center")',
+          background: 'linear-gradient(rgba(30, 60, 114, 0.8), rgba(42, 82, 152, 0.8)), url("https://images.pexels.com/photos/13682408/pexels-photo-13682408.jpeg?w=1920&h=800&fit=crop&crop=center")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           width: '100vw',
@@ -169,7 +169,7 @@ function PickupLogistics() {
                 }}
               >
                 <img
-                  src="https://images.unsplash.com/photo-1595273670150-bd0c3c392e46?w=500"
+                  src="https://images.pexels.com/photos/2226457/pexels-photo-2226457.jpeg?w=500"
                   alt="Pickup & Logistics Services"
                   style={{
                     width: '100%',

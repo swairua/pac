@@ -28,42 +28,42 @@ function HomePage() {
       icon: <CompareArrows />,
       title: 'Conveyor-Based Material Sorting',
       description: 'Precision conveyor systems optimized for high-speed separation of plastics, cardboard, shrink wrap, metals, and mixed warehouse by-products',
-      image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400',
+      image: 'https://images.pexels.com/photos/10039994/pexels-photo-10039994.jpeg?w=400',
       link: '/services/conveyor-sorting'
     },
     {
       icon: <Assignment />,
       title: 'Recycling Consulting & Audits',
       description: 'Practical waste stream evaluation, facility layout optimization, and zero-waste strategy design with ROI modeling',
-      image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400',
+      image: 'https://images.pexels.com/photos/7947663/pexels-photo-7947663.jpeg?w=400',
       link: '/services/recycling-consulting'
     },
     {
       icon: <Factory />,
       title: 'Industrial Waste Handling',
       description: 'Safe onsite collection, staging, and routing for recycling or responsible disposal of non-hazardous industrial by-products',
-      image: 'https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=400',
+      image: 'https://images.pexels.com/photos/4741906/pexels-photo-4741906.jpeg?w=400',
       link: '/services/industrial-waste'
     },
     {
       icon: <LocalShipping />,
       title: 'Pickup & Logistics Services',
       description: 'Fleet-driven logistics solution with GPS tracking, digital manifests, and optimized routing for efficient material movement',
-      image: 'https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=400',
+      image: 'https://images.pexels.com/photos/13682408/pexels-photo-13682408.jpeg?w=400',
       link: '/services/pickup-logistics'
     },
     {
       icon: <Build />,
       title: 'Baling & Compaction',
       description: 'Densify cardboard, plastics, and scrap metals into market-ready bales with correct weight and density specifications',
-      image: 'https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=400',
+      image: 'https://images.pexels.com/photos/2967770/pexels-photo-2967770.jpeg?w=400',
       link: '/services/baling-compaction'
     },
     {
       icon: <Computer />,
       title: 'E-Waste Collection & Processing',
       description: 'Secure e-waste solutions from collection to certified destruction or component recovery with full documentation',
-      image: 'https://images.unsplash.com/photo-1580910051074-3eb694886505?w=400',
+      image: 'https://images.pexels.com/photos/2628105/pexels-photo-2628105.jpeg?w=400',
       link: '/services/e-waste-collection'
     }
   ];
@@ -82,7 +82,7 @@ function HomePage() {
       {/* Hero Section */}
       <Box
         sx={{
-          background: 'linear-gradient(rgba(30, 60, 114, 0.8), rgba(42, 82, 152, 0.8)), url("https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&h=1080&fit=crop&crop=center")',
+          background: 'linear-gradient(rgba(30, 60, 114, 0.8), rgba(42, 82, 152, 0.8)), url("https://images.pexels.com/photos/10039994/pexels-photo-10039994.jpeg?w=1920&h=1080&fit=crop&crop=center")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed',

@@ -89,25 +89,25 @@ function ValueRecovery() {
       category: 'High-Value Metals',
       materials: ['Copper', 'Aluminum', 'Stainless Steel', 'Brass'],
       avgReturn: '$800-2,400/ton',
-      image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400'
+      image: 'https://images.pexels.com/photos/27312813/pexels-photo-27312813.jpeg?w=400'
     },
     {
       category: 'Paper Products',
       materials: ['Office Paper', 'Cardboard', 'Newspapers', 'Magazines'],
       avgReturn: '$60-150/ton',
-      image: 'https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=400'
+      image: 'https://images.pexels.com/photos/6169029/pexels-photo-6169029.jpeg?w=400'
     },
     {
       category: 'Plastic Resins',
       materials: ['PET Bottles', 'HDPE', 'PP Films', 'Mixed Plastics'],
       avgReturn: '$180-420/ton',
-      image: 'https://images.unsplash.com/photo-1572010160670-e54c77a2b120?w=400'
+      image: 'https://images.pexels.com/photos/3735205/pexels-photo-3735205.jpeg?w=400'
     },
     {
       category: 'Electronic Components',
       materials: ['Circuit Boards', 'Precious Metals', 'Rare Earth Elements'],
       avgReturn: '$1,200-8,500/ton',
-      image: 'https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400'
+      image: 'https://images.pexels.com/photos/2628105/pexels-photo-2628105.jpeg?w=400'
     }
   ];
 
@@ -127,7 +127,7 @@ function ValueRecovery() {
       {/* Hero Section */}
       <Box
         sx={{
-          background: 'linear-gradient(rgba(30, 60, 114, 0.8), rgba(42, 82, 152, 0.8)), url("https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1920&h=800&fit=crop&crop=center")',
+          background: 'linear-gradient(rgba(30, 60, 114, 0.8), rgba(42, 82, 152, 0.8)), url("https://images.pexels.com/photos/47047/gold-ingots-golden-treasure-47047.jpeg?w=1920&h=800&fit=crop&crop=center")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           width: '100vw',
@@ -193,7 +193,7 @@ function ValueRecovery() {
                 }}
               >
                 <img
-                  src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=500"
+                  src="https://images.pexels.com/photos/47047/gold-ingots-golden-treasure-47047.jpeg?w=500"
                   alt="Value Recovery & Resale"
                   style={{
                     width: '100%',

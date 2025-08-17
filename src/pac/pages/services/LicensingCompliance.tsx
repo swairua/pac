@@ -89,25 +89,25 @@ function LicensingCompliance() {
       area: 'Waste Classification',
       description: 'Proper identification and classification of all waste types',
       requirements: ['Hazardous waste determination', 'Universal waste classification', 'Special waste categories'],
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400'
+      image: 'https://images.pexels.com/photos/8296977/pexels-photo-8296977.jpeg?w=400'
     },
     {
       area: 'Transportation',
       description: 'DOT compliance for hazardous and non-hazardous material transport',
       requirements: ['Driver certification', 'Vehicle placarding', 'Shipping documentation'],
-      image: 'https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=400'
+      image: 'https://images.pexels.com/photos/11115604/pexels-photo-11115604.jpeg?w=400'
     },
     {
       area: 'Documentation',
       description: 'Complete record keeping and reporting requirements',
       requirements: ['Manifest tracking', 'Biennial reports', 'Exception reporting'],
-      image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400'
+      image: 'https://images.pexels.com/photos/8296977/pexels-photo-8296977.jpeg?w=400'
     },
     {
       area: 'Facility Operations',
       description: 'Compliance with all facility operating permits and requirements',
       requirements: ['Permit conditions', 'Inspection protocols', 'Emergency procedures'],
-      image: 'https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=400'
+      image: 'https://images.pexels.com/photos/4741906/pexels-photo-4741906.jpeg?w=400'
     }
   ];
 
@@ -144,7 +144,7 @@ function LicensingCompliance() {
       {/* Hero Section */}
       <Box
         sx={{
-          background: 'linear-gradient(rgba(30, 60, 114, 0.8), rgba(42, 82, 152, 0.8)), url("https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1920&h=800&fit=crop&crop=center")',
+          background: 'linear-gradient(rgba(30, 60, 114, 0.8), rgba(42, 82, 152, 0.8)), url("https://images.pexels.com/photos/8296977/pexels-photo-8296977.jpeg?w=1920&h=800&fit=crop&crop=center")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           width: '100vw',
@@ -210,7 +210,7 @@ function LicensingCompliance() {
                 }}
               >
                 <img
-                  src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=500"
+                  src="https://images.pexels.com/photos/8296977/pexels-photo-8296977.jpeg?w=500"
                   alt="Licensing & Compliance Support"
                   style={{
                     width: '100%',

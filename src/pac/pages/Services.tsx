@@ -32,7 +32,7 @@ function Services() {
       title: 'Conveyor-Based Material Sorting',
       description: 'We operate precision conveyor systems optimized for high-speed separation of plastics, cardboard, shrink wrap, metals, and mixed warehouse by-products. Combining automated sensors with manual oversight, we deliver clean, value-grade material streams.',
       features: ['99%+ Accuracy', 'High-Speed Processing', 'Multiple Material Types', 'Real-time Monitoring'],
-      image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500',
+      image: 'https://images.pexels.com/photos/10039994/pexels-photo-10039994.jpeg?w=500',
       link: '/services/conveyor-sorting',
       category: 'Processing'
     },
@@ -41,7 +41,7 @@ function Services() {
       title: 'Recycling Consulting & Audits',
       description: 'Our audit team provides practical waste stream evaluation, facility layout optimization, and zero-waste strategy design. We offer flow analysis, financial ROI modeling, and staff education—turning operational inefficiencies into recoverable income.',
       features: ['Waste Stream Analysis', 'Cost Optimization', 'Compliance Review', 'Custom Solutions'],
-      image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=500',
+      image: 'https://images.pexels.com/photos/7947663/pexels-photo-7947663.jpeg?w=500',
       link: '/services/recycling-consulting',
       category: 'Consulting'
     },
@@ -50,7 +50,7 @@ function Services() {
       title: 'Industrial Waste Handling',
       description: 'Handling non-hazardous industrial by-products such as packaging film, pallets, and protective wrapping, we offer safe onsite collection, staging, and routing for recycling or responsible disposal.',
       features: ['Hazardous Materials', 'Bulk Processing', 'Safety Protocols', 'Documentation'],
-      image: 'https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=500',
+      image: 'https://images.pexels.com/photos/4741906/pexels-photo-4741906.jpeg?w=500',
       link: '/services/industrial-waste',
       category: 'Processing'
     },
@@ -59,7 +59,7 @@ function Services() {
       title: 'Pickup & Logistics Services',
       description: '24/7 collection and transportation services with GPS tracking and optimized routing for maximum efficiency.',
       features: ['24/7 Availability', 'GPS Tracking', 'Scheduled Pickups', 'Emergency Response'],
-      image: 'https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=500',
+      image: 'https://images.pexels.com/photos/13682408/pexels-photo-13682408.jpeg?w=500',
       link: '/services/pickup-logistics',
       category: 'Logistics'
     },
@@ -68,7 +68,7 @@ function Services() {
       title: 'Baling & Compaction',
       description: 'Professional baling and compaction services to optimize material density and transportation efficiency.',
       features: ['Material Optimization', 'Transport Efficiency', 'Quality Control', 'Custom Sizing'],
-      image: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=500',
+      image: 'https://images.pexels.com/photos/2967770/pexels-photo-2967770.jpeg?w=500',
       link: '/services/baling-compaction',
       category: 'Processing'
     },
@@ -77,7 +77,7 @@ function Services() {
       title: 'E-Waste Collection & Processing',
       description: 'Secure and environmentally responsible electronic waste collection, data destruction, and material recovery.',
       features: ['Data Security', 'Certified Destruction', 'Material Recovery', 'Compliance Reports'],
-      image: 'https://images.unsplash.com/photo-1580910051074-3eb694886505?w=500',
+      image: 'https://images.pexels.com/photos/2628105/pexels-photo-2628105.jpeg?w=500',
       link: '/services/e-waste-collection',
       category: 'Specialized'
     },
@@ -86,7 +86,7 @@ function Services() {
       title: 'Pallet & Wood Recycling',
       description: 'Comprehensive wood waste processing including pallet repair, recycling, and biomass conversion.',
       features: ['Pallet Repair', 'Wood Chipping', 'Biomass Fuel', 'Sustainable Processing'],
-      image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=500',
+      image: 'https://images.pexels.com/photos/1684989/pexels-photo-1684989.jpeg?w=500',
       link: '/services/pallet-wood-recycling',
       category: 'Specialized'
     },
@@ -95,7 +95,7 @@ function Services() {
       title: 'Value Recovery & Resale',
       description: 'Strategic material recovery and resale programs to maximize returns on your waste streams.',
       features: ['Market Analysis', 'Quality Grading', 'Resale Programs', 'Revenue Sharing'],
-      image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=500',
+      image: 'https://images.pexels.com/photos/47047/gold-ingots-golden-treasure-47047.jpeg?w=500',
       link: '/services/value-recovery',
       category: 'Financial'
     },
@@ -104,7 +104,7 @@ function Services() {
       title: 'Licensing & Compliance Support',
       description: 'Expert guidance on regulatory compliance, licensing requirements, and environmental reporting.',
       features: ['Regulatory Guidance', 'Permit Support', 'Compliance Audits', 'Documentation'],
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500',
+      image: 'https://images.pexels.com/photos/8296977/pexels-photo-8296977.jpeg?w=500',
       link: '/services/licensing-compliance',
       category: 'Consulting'
     },

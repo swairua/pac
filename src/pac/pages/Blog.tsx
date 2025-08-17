@@ -53,7 +53,7 @@ function Blog() {
       slug: 'corporate-e-waste-compliance-guide',
       title: 'Corporate E-Waste Compliance: A Complete Guide for Businesses',
       excerpt: 'Navigate the complex landscape of e-waste regulations and learn how proper electronic waste management can protect your business while supporting environmental goals.',
-      image: 'https://images.unsplash.com/photo-1553163147-622ab57be1c7?w=600',
+      image: 'https://images.pexels.com/photos/8866761/pexels-photo-8866761.jpeg?w=600',
       author: 'Michael Chen',
       date: '2024-01-08',
       category: 'Compliance',

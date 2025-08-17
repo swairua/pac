@@ -52,25 +52,25 @@ function BalingCompaction() {
       category: 'Paper Products',
       items: ['Cardboard', 'Office Paper', 'Newspapers', 'Magazines'],
       density: '800-1200 lbs/bale',
-      image: 'https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=400'
+      image: 'https://images.pexels.com/photos/6169029/pexels-photo-6169029.jpeg?w=400'
     },
     {
       category: 'Plastic Materials',
       items: ['PET Bottles', 'HDPE Containers', 'Film Plastic', 'Mixed Plastics'],
       density: '600-1000 lbs/bale',
-      image: 'https://images.unsplash.com/photo-1572010160670-e54c77a2b120?w=400'
+      image: 'https://images.pexels.com/photos/3735205/pexels-photo-3735205.jpeg?w=400'
     },
     {
       category: 'Metal Scrap',
       items: ['Aluminum Cans', 'Steel Scrap', 'Copper Wire', 'Mixed Metals'],
       density: '1500-3000 lbs/bale',
-      image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400'
+      image: 'https://images.pexels.com/photos/27312813/pexels-photo-27312813.jpeg?w=400'
     },
     {
       category: 'Textiles',
       items: ['Clothing', 'Fabric Scraps', 'Industrial Textiles', 'Rags'],
       density: '400-800 lbs/bale',
-      image: 'https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=400'
+      image: 'https://images.pexels.com/photos/9853462/pexels-photo-9853462.jpeg?w=400'
     }
   ];
 
@@ -97,7 +97,7 @@ function BalingCompaction() {
       {/* Hero Section */}
       <Box
         sx={{
-          background: 'linear-gradient(rgba(30, 60, 114, 0.8), rgba(42, 82, 152, 0.8)), url("https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=1920&h=800&fit=crop&crop=center")',
+          background: 'linear-gradient(rgba(30, 60, 114, 0.8), rgba(42, 82, 152, 0.8)), url("https://images.pexels.com/photos/2967770/pexels-photo-2967770.jpeg?w=1920&h=800&fit=crop&crop=center")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           width: '100vw',
@@ -163,7 +163,7 @@ function BalingCompaction() {
                 }}
               >
                 <img
-                  src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=500"
+                  src="https://images.pexels.com/photos/5962644/pexels-photo-5962644.jpeg?w=500"
                   alt="Baling & Compaction"
                   style={{
                     width: '100%',

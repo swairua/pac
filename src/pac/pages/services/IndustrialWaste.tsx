@@ -74,22 +74,22 @@ function IndustrialWaste() {
     {
       title: 'Site Assessment',
       description: 'Comprehensive evaluation of waste generation and handling processes',
-      image: 'https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=400'
+      image: 'https://images.pexels.com/photos/4741906/pexels-photo-4741906.jpeg?w=400'
     },
     {
       title: 'Waste Characterization',
       description: 'Detailed analysis and classification of all waste materials',
-      image: 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=400'
+      image: 'https://images.pexels.com/photos/10039994/pexels-photo-10039994.jpeg?w=400'
     },
     {
       title: 'Treatment & Processing',
       description: 'Safe processing using appropriate treatment technologies',
-      image: 'https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=400'
+      image: 'https://images.pexels.com/photos/5505172/pexels-photo-5505172.jpeg?w=400'
     },
     {
       title: 'Final Disposal',
       description: 'Responsible disposal or recycling according to regulations',
-      image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400'
+      image: 'https://images.pexels.com/photos/27312813/pexels-photo-27312813.jpeg?w=400'
     }
   ];
 
@@ -98,7 +98,7 @@ function IndustrialWaste() {
       {/* Hero Section */}
       <Box
         sx={{
-          background: 'linear-gradient(rgba(30, 60, 114, 0.8), rgba(42, 82, 152, 0.8)), url("https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=1920&h=800&fit=crop&crop=center")',
+          background: 'linear-gradient(rgba(30, 60, 114, 0.8), rgba(42, 82, 152, 0.8)), url("https://images.pexels.com/photos/4741906/pexels-photo-4741906.jpeg?w=1920&h=800&fit=crop&crop=center")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           width: '100vw',

@@ -52,28 +52,28 @@ function PalletWoodRecycling() {
       size: '48" x 40"',
       description: 'Most common pallet size for general shipping',
       condition: 'Grade A, B, C available',
-      image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=400'
+      image: 'https://images.pexels.com/photos/1684989/pexels-photo-1684989.jpeg?w=400'
     },
     {
       type: 'Euro Pallets',
       size: '47.2" x 31.5"',
       description: 'European standard pallets for international shipping',
       condition: 'EPAL certified available',
-      image: 'https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=400'
+      image: 'https://images.pexels.com/photos/230026/pexels-photo-230026.jpeg?w=400'
     },
     {
       type: 'Heavy Duty Pallets',
       size: 'Custom sizes',
       description: 'Reinforced pallets for heavy industrial applications',
       condition: 'Custom construction',
-      image: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400'
+      image: 'https://images.pexels.com/photos/1684989/pexels-photo-1684989.jpeg?w=400'
     },
     {
       type: 'Specialty Pallets',
       size: 'Various sizes',
       description: 'Custom pallets for unique shipping requirements',
       condition: 'Made to order',
-      image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400'
+      image: 'https://images.pexels.com/photos/230026/pexels-photo-230026.jpeg?w=400'
     }
   ];
 
@@ -104,7 +104,7 @@ function PalletWoodRecycling() {
       {/* Hero Section */}
       <Box
         sx={{
-          background: 'linear-gradient(rgba(30, 60, 114, 0.8), rgba(42, 82, 152, 0.8)), url("https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1920&h=800&fit=crop&crop=center")',
+          background: 'linear-gradient(rgba(30, 60, 114, 0.8), rgba(42, 82, 152, 0.8)), url("https://images.pexels.com/photos/1684989/pexels-photo-1684989.jpeg?w=1920&h=800&fit=crop&crop=center")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           width: '100vw',
@@ -170,7 +170,7 @@ function PalletWoodRecycling() {
                 }}
               >
                 <img
-                  src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=500"
+                  src="https://images.pexels.com/photos/230026/pexels-photo-230026.jpeg?w=500"
                   alt="Pallet & Wood Recycling"
                   style={{
                     width: '100%',
