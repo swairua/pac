@@ -202,19 +202,32 @@ Contact: contact@pacrecycleworks.com | +1 (832) 630-0738
 
       setLoading(false);
 
-      // For demo purposes, we'll always show success and log the email content
-      console.log('✅ Email prepared successfully!');
-      console.log('📧 Email Details that would be sent:');
-      console.log('From:', emailData.from);
-      console.log('To:', emailData.to);
-      console.log('Subject:', emailData.subject);
-      console.log('📄 Email Content:');
-      console.log(emailData.text);
+      // Check if the email service actually worked
+      if (response && response.ok) {
+        console.log('✅ Email sent successfully!');
+        console.log('📧 Email Details:');
+        console.log('From:', emailData.from);
+        console.log('To:', emailData.to);
+        console.log('Subject:', emailData.subject);
 
-      setModalType('success');
-      setModalMessage('Your quote request has been submitted successfully! We\'ll contact you within 24 hours.');
-      setModalOpen(true);
-      setSubmitted(true);
+        setModalType('success');
+        setModalMessage('Your quote request has been submitted successfully! We\'ll contact you within 24 hours.');
+        setModalOpen(true);
+        setSubmitted(true);
+      } else {
+        // Email service failed - show warning
+        console.log('⚠️ Email service unavailable, showing warning');
+        console.log('📧 Email content logged for manual processing:');
+        console.log('From:', emailData.from);
+        console.log('To:', emailData.to);
+        console.log('Subject:', emailData.subject);
+        console.log('Content:', emailData.text);
+
+        setModalType('warning');
+        setModalMessage('Your request has been received but email delivery encountered an issue. Please call us directly for immediate assistance.');
+        setModalOpen(true);
+        setSubmitted(true);
+      }
 
     } catch (error) {
       setLoading(false);
