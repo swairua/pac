@@ -19,6 +19,7 @@ import BlogPost from './pages/BlogPost';
 import Contact from './pages/Contact';
 import TermsConditions from './pages/TermsConditions';
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import NonCompliancePenalties from './pages/NonCompliancePenalties';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
@@ -46,6 +47,7 @@ function PACApp() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/terms" element={<TermsConditions />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
+        <Route path="/compliance-penalties" element={<NonCompliancePenalties />} />
       </Routes>
       <Footer />
     </AppTheme>
