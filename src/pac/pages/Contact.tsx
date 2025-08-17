@@ -133,7 +133,7 @@ function Contact() {
 
             <div style="background: #1e3c72; color: white; padding: 15px; border-radius: 0 0 8px 8px; text-align: center; font-size: 12px;">
               <p style="margin: 0;">This quote request was submitted through the PAC Recycle Works website</p>
-              <p style="margin: 5px 0 0 0;">📧 contact@pacrecycleworks.com | 📞 +1 (832) 630-0738</p>
+              <p style="margin: 5px 0 0 0;">📧 contact@pacrecycleworks.com | 📞 +18326300738</p>
             </div>
           </div>
         `,
@@ -154,7 +154,7 @@ ${formData.message || 'No message provided'}
 This quote request was submitted through the PAC Recycle Works website.
 Please respond within 24 hours for optimal customer service.
 
-Contact: contact@pacrecycleworks.com | +1 (832) 630-0738
+Contact: contact@pacrecycleworks.com | +18326300738
         `,
         timestamp: new Date().toISOString()
       };
@@ -235,8 +235,8 @@ Contact: contact@pacrecycleworks.com | +1 (832) 630-0738
 
       // Show success anyway for demo purposes and log email content
       console.log('📧 EMAIL CONTENT PREPARED:');
-      console.log('From: contact@pacrecycleworks.com');
-      console.log('To: gichukisimon@gmail.com');
+      console.log('From:', formData.email);
+      console.log('To: contact@pacrecycleworks.com');
       console.log('Subject:', `Quote Request from ${formData.name} - ${formData.service || 'General Inquiry'}`);
       console.log('Form Data:', {
         name: formData.name,
