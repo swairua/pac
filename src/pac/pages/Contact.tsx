@@ -56,84 +56,121 @@ function Contact() {
     event.preventDefault();
 
     try {
-      // EmailJS configuration
-      const serviceID = 'service_pac_demo';
-      const templateID = 'template_pac_quote';
-      const publicKey = 'demo_public_key_123';
-
-      // Email template parameters
-      const templateParams = {
-        from_name: 'PAC Recycle Works Contact Form',
-        from_email: 'contact@pacrecycleworks.com',
-        to_email: 'gichukisimon@gmail.com',
-        to_name: 'Simon Gichuki',
+      const emailData = {
+        from: 'contact@pacrecycleworks.com',
+        to: 'gichukisimon@gmail.com',
         subject: `Quote Request from ${formData.name} - ${formData.service || 'General Inquiry'}`,
-        client_name: formData.name,
-        client_email: formData.email,
-        client_company: formData.company || 'Not provided',
-        client_phone: formData.phone || 'Not provided',
-        service_interest: formData.service || 'General Inquiry',
-        message: formData.message || 'No message provided',
-        submission_date: new Date().toLocaleString(),
-      };
+        html: `
+          <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
+            <div style="background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); color: white; padding: 20px; border-radius: 8px 8px 0 0; text-align: center;">
+              <h1 style="margin: 0; font-size: 24px;">PAC RECYCLE WORKS</h1>
+              <p style="margin: 5px 0 0 0; font-size: 14px; opacity: 0.9;">New Quote Request</p>
+            </div>
 
-      console.log('📧 Sending email with details:');
-      console.log('From: contact@pacrecycleworks.com');
-      console.log('To: gichukisimon@gmail.com');
-      console.log('Subject:', templateParams.subject);
-      console.log('Template Params:', templateParams);
+            <div style="padding: 20px; background-color: #f8f9fa;">
+              <h2 style="color: #1e3c72; margin-top: 0;">Client Information</h2>
+              <table style="width: 100%; border-collapse: collapse;">
+                <tr><td style="padding: 8px 0; font-weight: bold; color: #555;">Name:</td><td style="padding: 8px 0;">${formData.name}</td></tr>
+                <tr><td style="padding: 8px 0; font-weight: bold; color: #555;">Email:</td><td style="padding: 8px 0;">${formData.email}</td></tr>
+                <tr><td style="padding: 8px 0; font-weight: bold; color: #555;">Company:</td><td style="padding: 8px 0;">${formData.company || 'Not provided'}</td></tr>
+                <tr><td style="padding: 8px 0; font-weight: bold; color: #555;">Phone:</td><td style="padding: 8px 0;">${formData.phone || 'Not provided'}</td></tr>
+                <tr><td style="padding: 8px 0; font-weight: bold; color: #555;">Service Interest:</td><td style="padding: 8px 0;">${formData.service || 'General Inquiry'}</td></tr>
+              </table>
 
-      // For demo purposes, we'll simulate the email sending
-      // In production, you would use:
-      // await emailjs.send(serviceID, templateID, templateParams, publicKey);
+              <h3 style="color: #1e3c72; margin-top: 20px;">Message</h3>
+              <div style="background: white; padding: 15px; border-radius: 4px; border-left: 4px solid #00bcd4;">
+                ${formData.message || 'No message provided'}
+              </div>
 
-      // Simulate email sending delay
-      await new Promise(resolve => setTimeout(resolve, 2000));
+              <div style="margin-top: 20px; padding: 15px; background: #e3f2fd; border-radius: 4px;">
+                <p style="margin: 0; font-size: 14px; color: #1565c0;">
+                  <strong>Action Required:</strong> Please respond to this quote request within 24 hours for optimal customer service.
+                </p>
+              </div>
+            </div>
 
-      // Create a sample email content for demonstration
-      const sampleEmailContent = `
-=== PAC RECYCLE WORKS - QUOTE REQUEST ===
-
-From: contact@pacrecycleworks.com
-To: gichukisimon@gmail.com
-Subject: ${templateParams.subject}
-Date: ${templateParams.submission_date}
-
----
-
-Dear Simon,
-
-You have received a new quote request through the PAC Recycle Works website:
+            <div style="background: #1e3c72; color: white; padding: 15px; border-radius: 0 0 8px 8px; text-align: center; font-size: 12px;">
+              <p style="margin: 0;">This quote request was submitted through the PAC Recycle Works website</p>
+              <p style="margin: 5px 0 0 0;">📧 contact@pacrecycleworks.com | 📞 +1 (832) 630-0738</p>
+            </div>
+          </div>
+        `,
+        text: `
+PAC RECYCLE WORKS - Quote Request
 
 Client Information:
-• Name: ${templateParams.client_name}
-• Email: ${templateParams.client_email}
-• Company: ${templateParams.client_company}
-• Phone: ${templateParams.client_phone}
-• Service Interest: ${templateParams.service_interest}
+• Name: ${formData.name}
+• Email: ${formData.email}
+• Company: ${formData.company || 'Not provided'}
+• Phone: ${formData.phone || 'Not provided'}
+• Service Interest: ${formData.service || 'General Inquiry'}
 
 Message:
-${templateParams.message}
+${formData.message || 'No message provided'}
 
 ---
 This quote request was submitted through the PAC Recycle Works website.
 Please respond within 24 hours for optimal customer service.
 
-Best regards,
-PAC Recycle Works Contact System
-contact@pacrecycleworks.com
-+1 (832) 630-0738
-      `;
+Contact: contact@pacrecycleworks.com | +1 (832) 630-0738
+        `,
+        timestamp: new Date().toISOString()
+      };
 
-      console.log('📧 SAMPLE EMAIL CONTENT:');
-      console.log(sampleEmailContent);
+      console.log('📧 Attempting to send email:', emailData);
 
-      alert(`📧 DEMO: Email would be sent to gichukisimon@gmail.com\n\nCheck the browser console to see the email content that would be delivered.`);
+      // Try using a real email service - Formspree as an example
+      const response = await fetch('https://formspree.io/f/xdoqjqyg', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email: emailData.to,
+          subject: emailData.subject,
+          message: emailData.text,
+          _replyto: emailData.from,
+          _subject: emailData.subject,
+          name: formData.name,
+          company: formData.company,
+          phone: formData.phone,
+          service: formData.service,
+          client_email: formData.email
+        })
+      });
 
-      setSubmitted(true);
+      if (response.ok) {
+        console.log('✅ Email sent successfully!');
+        console.log('📧 Email Details:');
+        console.log('From:', emailData.from);
+        console.log('To:', emailData.to);
+        console.log('Subject:', emailData.subject);
+        setSubmitted(true);
+      } else {
+        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+      }
+
     } catch (error) {
-      console.error('Error sending email:', error);
-      alert('There was an error sending your message. Please try again or call us directly.');
+      console.error('❌ Error sending email:', error);
+
+      // Fallback: Log the email content and provide manual instructions
+      console.log('📧 EMAIL CONTENT THAT WOULD BE SENT:');
+      console.log('From: contact@pacrecycleworks.com');
+      console.log('To: gichukisimon@gmail.com');
+      console.log('Subject:', `Quote Request from ${formData.name} - ${formData.service || 'General Inquiry'}`);
+      console.log('Body:', {
+        name: formData.name,
+        email: formData.email,
+        company: formData.company,
+        phone: formData.phone,
+        service: formData.service,
+        message: formData.message
+      });
+
+      alert(`❌ Email delivery failed. However, your form data has been logged.\n\nFor immediate assistance, please call: +1 (832) 630-0738\nor email: contact@pacrecycleworks.com\n\nError: ${error.message}`);
+
+      // Still mark as submitted so user sees the thank you page
+      setSubmitted(true);
     }
   };
 
