@@ -133,7 +133,7 @@ function Contact() {
 
             <div style="background: #1e3c72; color: white; padding: 15px; border-radius: 0 0 8px 8px; text-align: center; font-size: 12px;">
               <p style="margin: 0;">This quote request was submitted through the PAC Recycle Works website</p>
-              <p style="margin: 5px 0 0 0;">📧 contact@pacrecycleworks.com | 📞 +18326300738</p>
+              <p style="margin: 5px 0 0 0;">📧 contact@pacrecycleworks.com | 📞 +1 (832) 630-0738</p>
             </div>
           </div>
         `,
@@ -154,7 +154,7 @@ ${formData.message || 'No message provided'}
 This quote request was submitted through the PAC Recycle Works website.
 Please respond within 24 hours for optimal customer service.
 
-Contact: contact@pacrecycleworks.com | +18326300738
+Contact: contact@pacrecycleworks.com | +1 (832) 630-0738
         `,
         timestamp: new Date().toISOString()
       };
@@ -276,7 +276,7 @@ Contact: contact@pacrecycleworks.com | +18326300738
     {
       icon: <Phone />,
       title: 'Phone',
-      details: ['Main: +18326300738', 'Emergency: +18326300738'],
+      details: ['Main: +1 (832) 630-0738', 'Emergency: +1 (832) 630-0738'],
     },
     {
       icon: <Email />,
@@ -326,7 +326,7 @@ Contact: contact@pacrecycleworks.com | +18326300738
               Thank you for contacting PAC Recycle Works. We've received your message and will get back to you within 24 hours.
             </Typography>
             <Typography variant="body1" sx={{ mb: 4 }}>
-              For urgent matters, please call us directly at <strong>+18326300738</strong>.
+              For urgent matters, please call us directly at <strong>+1 (832) 630-0738</strong>.
             </Typography>
             <Button
               variant="contained"
@@ -566,7 +566,7 @@ Contact: contact@pacrecycleworks.com | +18326300738
                 <Alert severity="info" sx={{ mt: 4 }}>
                   <Typography variant="body2">
                     <strong>Emergency Service:</strong> For urgent waste management needs outside
-                  business hours, call our 24/7 emergency line at +18326300738.
+                  business hours, call our 24/7 emergency line at +1 (832) 630-0738.
                   </Typography>
                 </Alert>
               </Box>
@@ -703,7 +703,7 @@ Contact: contact@pacrecycleworks.com | +18326300738
                 width: '100%'
               }}>
                 <Typography variant="body2" sx={{ color: '#e65100', fontWeight: 'bold' }}>
-                  📞 Call us: +18326300738
+                  📞 Call us: +1 (832) 630-0738
                 </Typography>
                 <Typography variant="body2" sx={{ color: '#e65100' }}>
                   📧 Email: contact@pacrecycleworks.com
