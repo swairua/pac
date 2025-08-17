@@ -40,7 +40,11 @@ function Footer() {
           {/* Company Info */}
           <Grid size={{ xs: 12, md: 4 }}>
             <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
-              <Recycling sx={{ fontSize: 32, color: '#00bcd4', mr: 1 }} />
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Fd349fc175eab40c4b5f0f5e2d9e9ea5d%2F6e0ad208a71c4ee48926855ce2f711e6?format=webp&width=80"
+                alt="PAC Recycle Works Logo"
+                style={{ height: 40, width: 'auto', marginRight: 8 }}
+              />
               <Box>
                 <Typography variant="h6" sx={{ fontWeight: 'bold', color: '#00bcd4' }}>
                   PAC
