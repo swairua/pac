@@ -387,20 +387,19 @@ function HomePage() {
             <Grid size={{ xs: 12, md: 4 }}>
               <Box sx={{ textAlign: { xs: 'center', md: 'right' } }}>
                 <Button
-                  variant="contained"
-                  size="large"
-                  component={Link}
-                  to="/contact"
-                  sx={{
-                    backgroundColor: '#00bcd4',
-                    '&:hover': { backgroundColor: '#0097a7' },
-                    fontSize: '1.2rem',
-                    px: 4,
-                    py: 1.5,
-                  }}
-                >
-                  Get Free Consultation
-                </Button>
+                variant="contained"
+                size="large"
+                onClick={() => openDialog('General Inquiry')}
+                sx={{
+                  backgroundColor: '#00bcd4',
+                  '&:hover': { backgroundColor: '#0097a7' },
+                  fontSize: '1.2rem',
+                  px: 4,
+                  py: 1.5,
+                }}
+              >
+                Get Free Quote
+              </Button>
               </Box>
             </Grid>
           </Grid>
