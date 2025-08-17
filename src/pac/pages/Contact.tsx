@@ -626,6 +626,99 @@ Contact: contact@pacrecycleworks.com | +1 (832) 630-0738
           </Box>
         </Container>
       </Box>
+
+      {/* Status Modal */}
+      <Dialog
+        open={modalOpen}
+        onClose={handleCloseModal}
+        maxWidth="sm"
+        fullWidth
+        PaperProps={{
+          sx: {
+            borderRadius: 3,
+            textAlign: 'center',
+          }
+        }}
+      >
+        <DialogTitle sx={{ position: 'relative', pt: 4 }}>
+          <IconButton
+            onClick={handleCloseModal}
+            sx={{
+              position: 'absolute',
+              right: 8,
+              top: 8,
+              color: '#666',
+            }}
+          >
+            <Close />
+          </IconButton>
+        </DialogTitle>
+
+        <DialogContent sx={{ px: 4, pb: 2 }}>
+          <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            {getModalIcon()}
+            <Typography
+              variant="h5"
+              component="h2"
+              sx={{
+                fontWeight: 'bold',
+                mb: 2,
+                color: getModalColor(),
+              }}
+            >
+              {modalType === 'success' ? 'Message Sent!' :
+               modalType === 'warning' ? 'Delivery Issue' : 'Error Occurred'}
+            </Typography>
+            <Typography
+              variant="body1"
+              sx={{
+                mb: 3,
+                color: '#666',
+                lineHeight: 1.6,
+                textAlign: 'center',
+              }}
+            >
+              {modalMessage}
+            </Typography>
+            {modalType === 'warning' && (
+              <Box sx={{
+                backgroundColor: '#fff3e0',
+                border: '1px solid #ffcc02',
+                borderRadius: 2,
+                p: 2,
+                mb: 2,
+                width: '100%'
+              }}>
+                <Typography variant="body2" sx={{ color: '#e65100', fontWeight: 'bold' }}>
+                  📞 Call us: +1 (832) 630-0738
+                </Typography>
+                <Typography variant="body2" sx={{ color: '#e65100' }}>
+                  📧 Email: contact@pacrecycleworks.com
+                </Typography>
+              </Box>
+            )}
+          </Box>
+        </DialogContent>
+
+        <DialogActions sx={{ justifyContent: 'center', pb: 4 }}>
+          <Button
+            onClick={handleCloseModal}
+            variant="contained"
+            sx={{
+              backgroundColor: getModalColor(),
+              '&:hover': {
+                backgroundColor: modalType === 'success' ? '#45a049' :
+                               modalType === 'warning' ? '#f57c00' : '#d32f2f'
+              },
+              px: 4,
+              py: 1.5,
+              borderRadius: 2,
+            }}
+          >
+            {modalType === 'success' ? 'Great!' : 'Got it'}
+          </Button>
+        </DialogActions>
+      </Dialog>
     </Box>
   );
 }
