@@ -180,11 +180,11 @@ function Header() {
         </Button>
       </Box>
       
-      <AppBar 
-        position="static" 
-        sx={{ 
+      <AppBar
+        position="sticky"
+        sx={{
           background: 'linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)',
-          boxShadow: 'none',
+          boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
         }}
       >
         <Toolbar sx={{ justifyContent: 'space-between', py: 1 }}>
@@ -199,9 +199,9 @@ function Header() {
             }}
           >
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fd349fc175eab40c4b5f0f5e2d9e9ea5d%2F6e0ad208a71c4ee48926855ce2f711e6?format=webp&width=80"
+              src="/logo.png"
               alt="PAC Recycle Works Logo"
-              style={{ height: 40, width: 'auto', marginRight: 8 }}
+              style={{ height: 50, width: 'auto', marginRight: 8 }}
             />
             <Box>
               <Typography variant="h5" component="div" sx={{ 
