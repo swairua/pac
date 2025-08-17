@@ -5,19 +5,12 @@ import {
   Grid,
   Card,
   CardContent,
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
   Avatar,
   Paper,
 } from '@mui/material';
 import {
-  CheckCircle,
   GroupWork,
-  EmojiEvents,
   Security,
-  Nature,
   TrendingUp,
   Build,
 } from '@mui/icons-material';
@@ -46,33 +39,6 @@ function AboutUs() {
     },
   ];
 
-  const milestones = [
-    {
-      year: '2015',
-      title: 'Company Founded',
-      description: 'PAC Recycle Works LLC was established with a vision to transform waste management.',
-    },
-    {
-      year: '2017',
-      title: 'EPA Certification',
-      description: 'Achieved full EPA certification and expanded our service offerings.',
-    },
-    {
-      year: '2019',
-      title: 'Advanced Sorting Facility',
-      description: 'Opened our state-of-the-art conveyor-based material sorting facility.',
-    },
-    {
-      year: '2021',
-      title: 'E-Waste Expansion',
-      description: 'Launched comprehensive e-waste collection and processing services.',
-    },
-    {
-      year: '2023',
-      title: 'Zero Landfill Achievement',
-      description: 'Achieved 100% landfill diversion rate across all client operations.',
-    },
-  ];
 
   const stats = [
     { number: '5,000+', label: 'Tons Diverted from landfills annually' },
@@ -81,14 +47,6 @@ function AboutUs() {
     { number: '24/7', label: 'Our Commitment to Sustainability' },
   ];
 
-  const certifications = [
-    'EPA Certified Recycling Facility',
-    'ISO 14001 Environmental Management',
-    'R2 (Responsible Recycling) Certified',
-    'OHSAS 18001 Safety Management',
-    'State Waste Management License',
-    'DOT Hazardous Materials Certified',
-  ];
 
   return (
     <Box>
