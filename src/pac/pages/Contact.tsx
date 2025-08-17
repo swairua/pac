@@ -15,7 +15,6 @@ import {
   Card,
   CardContent,
   Alert,
-  CircularProgress,
 } from '@mui/material';
 import {
   Phone,
@@ -25,7 +24,6 @@ import {
   Send,
   CheckCircle,
 } from '@mui/icons-material';
-import { useContactSubmission } from '../../hooks/useDatabase';
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -37,7 +35,6 @@ function Contact() {
     message: '',
   });
   const [submitted, setSubmitted] = useState(false);
-  const { submit, isSubmitting, error } = useContactSubmission();
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = event.target;
@@ -54,17 +51,11 @@ function Contact() {
     }));
   };
 
-  const handleSubmit = async (event: React.FormEvent) => {
+  const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
-    try {
-      await submit({
-        ...formData,
-        type: 'contact'
-      });
-      setSubmitted(true);
-    } catch (error) {
-      console.error('Failed to submit contact form:', error);
-    }
+    // In a real app, this would send the data to your backend
+    console.log('Form submitted:', formData);
+    setSubmitted(true);
   };
 
   const services = [
@@ -210,12 +201,6 @@ function Contact() {
                   Get a Free Consultation
                 </Typography>
                 
-                {error && (
-                  <Alert severity="error" sx={{ mb: 3 }}>
-                    {error}
-                  </Alert>
-                )}
-
                 <form onSubmit={handleSubmit}>
                   <Grid container spacing={3}>
                     <Grid size={{ xs: 12, sm: 6 }}>
@@ -296,8 +281,7 @@ function Contact() {
                         variant="contained"
                         size="large"
                         fullWidth
-                        disabled={isSubmitting}
-                        endIcon={isSubmitting ? <CircularProgress size={20} color="inherit" /> : <Send />}
+                        endIcon={<Send />}
                         sx={{
                           backgroundColor: '#00bcd4',
                           '&:hover': { backgroundColor: '#0097a7' },
@@ -305,7 +289,7 @@ function Contact() {
                           fontSize: '1.1rem',
                         }}
                       >
-                        {isSubmitting ? 'Sending...' : 'Send Message'}
+                        Send Message
                       </Button>
                     </Grid>
                   </Grid>
