@@ -36,12 +36,12 @@ import {
 
 function Contact() {
   const [formData, setFormData] = useState({
-    name: 'John Smith',
-    email: 'john.smith@example.com',
-    company: 'Green Tech Industries',
-    phone: '+1 (555) 123-4567',
-    service: 'Industrial Waste Handling',
-    message: 'Hello! We are interested in your industrial waste handling services for our manufacturing facility. We generate approximately 50 tons of mixed materials monthly and would like to discuss recycling options and pickup logistics. Please provide a quote for comprehensive waste management services.',
+    name: '',
+    email: '',
+    company: '',
+    phone: '',
+    service: '',
+    message: '',
   });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -99,8 +99,8 @@ function Contact() {
 
     try {
       const emailData = {
-        from: 'contact@pacrecycleworks.com',
-        to: 'gichukisimon@gmail.com',
+        from: formData.email,
+        to: 'contact@pacrecycleworks.com',
         subject: `Quote Request from ${formData.name} - ${formData.service || 'General Inquiry'}`,
         html: `
           <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
@@ -168,10 +168,10 @@ Contact: contact@pacrecycleworks.com | +1 (832) 630-0738
       emailjs.init('user_demo_public_key_123');
 
       const templateParams = {
-        from_name: 'PAC Recycle Works',
-        from_email: 'contact@pacrecycleworks.com',
-        to_email: 'gichukisimon@gmail.com',
-        to_name: 'Simon Gichuki',
+        from_name: formData.name,
+        from_email: formData.email,
+        to_email: 'contact@pacrecycleworks.com',
+        to_name: 'PAC Recycle Works Team',
         subject: emailData.subject,
         client_name: formData.name,
         client_email: formData.email,
