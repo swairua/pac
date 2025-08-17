@@ -14,7 +14,6 @@ import {
   Phone,
   Email,
   LocationOn,
-  Recycling,
 } from '@mui/icons-material';
 import { Link as RouterLink } from 'react-router-dom';
 
