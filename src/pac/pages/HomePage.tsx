@@ -73,7 +73,8 @@ function HomePage() {
     'State-of-the-art conveyor and sorting technologies',
     'In-depth compliance and ESG documentation',
     'Dedicated logistics and value recovery networks',
-    'Focus on sustainability, transparency, and savings'
+    'Focus on sustainability, transparency, and savings',
+    'Expert Guidance & Responsive Support'
   ];
 
   return (

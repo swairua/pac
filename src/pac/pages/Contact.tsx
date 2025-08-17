@@ -75,17 +75,17 @@ function Contact() {
     {
       icon: <LocationOn />,
       title: 'Address',
-      details: ['123 Industrial Blvd', 'Recycling City, RC 12345', 'United States'],
+      details: ['6611 Supply Row Unit A', 'Houston, Texas 77011', 'United States'],
     },
     {
       icon: <Phone />,
       title: 'Phone',
-      details: ['Main: (555) 123-4567', 'Emergency: (555) 123-4568'],
+      details: ['Main: +1 (832) 630-0738', 'Emergency: +1 (832) 630-0738'],
     },
     {
       icon: <Email />,
       title: 'Email',
-      details: ['info@pacrecycleworks.com', 'sales@pacrecycleworks.com'],
+      details: ['contact@pacrecycleworks.com', 'sales@pacrecycleworks.com'],
     },
     {
       icon: <Schedule />,
@@ -130,7 +130,7 @@ function Contact() {
               Thank you for contacting PAC Recycle Works. We've received your message and will get back to you within 24 hours.
             </Typography>
             <Typography variant="body1" sx={{ mb: 4 }}>
-              For urgent matters, please call us directly at <strong>(555) 123-4567</strong>.
+              For urgent matters, please call us directly at <strong>+1 (832) 630-0738</strong>.
             </Typography>
             <Button
               variant="contained"
@@ -343,7 +343,7 @@ function Contact() {
                 <Alert severity="info" sx={{ mt: 4 }}>
                   <Typography variant="body2">
                     <strong>Emergency Service:</strong> For urgent waste management needs outside 
-                    business hours, call our 24/7 emergency line at (555) 123-4568.
+                    business hours, call our 24/7 emergency line at +1 (832) 630-0738.
                   </Typography>
                 </Alert>
               </Box>
