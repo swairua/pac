@@ -51,11 +51,54 @@ function Contact() {
     }));
   };
 
-  const handleSubmit = (event: React.FormEvent) => {
+  const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
-    // In a real app, this would send the data to your backend
-    console.log('Form submitted:', formData);
-    setSubmitted(true);
+
+    // Create email content
+    const emailSubject = `Quote Request from ${formData.name} - ${formData.service || 'General Inquiry'}`;
+    const emailBody = `
+=== PAC RECYCLE WORKS - QUOTE REQUEST ===
+
+Client Information:
+• Name: ${formData.name}
+• Email: ${formData.email}
+• Company: ${formData.company || 'Not provided'}
+• Phone: ${formData.phone || 'Not provided'}
+• Service Interest: ${formData.service || 'General Inquiry'}
+
+Message:
+${formData.message || 'No message provided'}
+
+---
+This quote request was submitted through the PAC Recycle Works website.
+Please respond within 24 hours for optimal customer service.
+
+Best regards,
+PAC Recycle Works Contact System
+    `;
+
+    try {
+      // In a real implementation, this would call your backend API
+      // The backend would handle sending the email with proper headers:
+      // From: contact@pacrecycleworks.com
+      // To: gichukisimon@gmail.com
+      // Subject: emailSubject
+      // Body: emailBody
+
+      console.log('Email Details:');
+      console.log('From: contact@pacrecycleworks.com');
+      console.log('To: gichukisimon@gmail.com');
+      console.log('Subject:', emailSubject);
+      console.log('Body:', emailBody);
+
+      // For now, we'll simulate the email sending
+      await new Promise(resolve => setTimeout(resolve, 1000));
+
+      setSubmitted(true);
+    } catch (error) {
+      console.error('Error sending email:', error);
+      alert('There was an error sending your message. Please try again or call us directly.');
+    }
   };
 
   const services = [
@@ -197,8 +240,12 @@ function Contact() {
             {/* Contact Form */}
             <Grid size={{ xs: 12, md: 7 }}>
               <Paper sx={{ p: 4, borderRadius: 3, boxShadow: 3 }}>
-                <Typography variant="h4" component="h2" sx={{ fontWeight: 'bold', mb: 4, color: '#1e3c72' }}>
-                  Get a Free Consultation
+                <Typography variant="h4" component="h2" sx={{ fontWeight: 'bold', mb: 2, color: '#1e3c72' }}>
+                  Request Your Free Quote
+                </Typography>
+                <Typography variant="body1" sx={{ mb: 4, color: '#666', lineHeight: 1.6 }}>
+                  Get a personalized consultation and quote for your waste management needs.
+                  Our experts will review your requirements and provide a tailored solution proposal.
                 </Typography>
                 
                 <form onSubmit={handleSubmit}>
@@ -361,30 +408,59 @@ function Contact() {
             sx={{
               textAlign: 'center',
               fontWeight: 'bold',
-              mb: 4,
+              mb: 2,
               color: '#1e3c72',
             }}
           >
             Visit Our Facility
           </Typography>
+          <Typography
+            variant="h6"
+            sx={{
+              textAlign: 'center',
+              mb: 4,
+              color: '#666',
+              fontWeight: 'normal',
+            }}
+          >
+            6611 Supply Row Unit A, Houston, Texas 77011
+          </Typography>
           <Paper sx={{ borderRadius: 3, overflow: 'hidden', boxShadow: 3 }}>
-            <Box
-              sx={{
-                height: 400,
-                background: 'linear-gradient(45deg, #e0e0e0 25%, transparent 25%), linear-gradient(-45deg, #e0e0e0 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #e0e0e0 75%), linear-gradient(-45deg, transparent 75%, #e0e0e0 75%)',
-                backgroundSize: '20px 20px',
-                backgroundPosition: '0 0, 0 10px, 10px -10px, -10px 0px',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                color: '#666',
-              }}
-            >
-              <Typography variant="h6">
-                Interactive Map Would Be Embedded Here
-              </Typography>
+            <Box sx={{ height: 450, width: '100%' }}>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3463.7833516982956!2d-95.2885!3d29.7245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640bdf3b3d6f55d%3A0x1234567890abcdef!2s6611%20Supply%20Row%20Unit%20A%2C%20Houston%2C%20TX%2077011!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="PAC Recycle Works Location - 6611 Supply Row Unit A, Houston, Texas 77011"
+              />
             </Box>
           </Paper>
+          <Box sx={{ mt: 3, textAlign: 'center' }}>
+            <Typography variant="body1" sx={{ mb: 2, color: '#666' }}>
+              Located in the heart of Houston's industrial district, our facility is easily accessible
+              for pickups, consultations, and material deliveries.
+            </Typography>
+            <Button
+              variant="outlined"
+              href="https://www.google.com/maps/dir//6611+Supply+Row+Unit+A,+Houston,+TX+77011"
+              target="_blank"
+              rel="noopener noreferrer"
+              sx={{
+                borderColor: '#00bcd4',
+                color: '#00bcd4',
+                '&:hover': {
+                  borderColor: '#0097a7',
+                  backgroundColor: 'rgba(0,188,212,0.1)',
+                },
+              }}
+            >
+              Get Directions
+            </Button>
+          </Box>
         </Container>
       </Box>
     </Box>
