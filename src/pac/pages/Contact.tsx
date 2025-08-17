@@ -25,7 +25,7 @@ import {
   Send,
   CheckCircle,
 } from '@mui/icons-material';
-import { useContactSubmission } from '../hooks/useDatabase';
+import { useContactSubmission } from '../../hooks/useDatabase';
 
 function Contact() {
   const [formData, setFormData] = useState({
