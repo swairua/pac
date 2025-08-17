@@ -49,6 +49,36 @@ function Contact() {
   const [modalType, setModalType] = useState<'success' | 'warning' | 'error'>('success');
   const [modalMessage, setModalMessage] = useState('');
 
+  const handleCloseModal = () => {
+    setModalOpen(false);
+  };
+
+  const getModalIcon = () => {
+    switch (modalType) {
+      case 'success':
+        return <CheckCircle sx={{ fontSize: 48, color: '#4caf50', mb: 2 }} />;
+      case 'warning':
+        return <Warning sx={{ fontSize: 48, color: '#ff9800', mb: 2 }} />;
+      case 'error':
+        return <ErrorOutline sx={{ fontSize: 48, color: '#f44336', mb: 2 }} />;
+      default:
+        return <CheckCircle sx={{ fontSize: 48, color: '#4caf50', mb: 2 }} />;
+    }
+  };
+
+  const getModalColor = () => {
+    switch (modalType) {
+      case 'success':
+        return '#4caf50';
+      case 'warning':
+        return '#ff9800';
+      case 'error':
+        return '#f44336';
+      default:
+        return '#4caf50';
+    }
+  };
+
   const handleChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = event.target;
     setFormData(prev => ({
