@@ -112,11 +112,31 @@ function LicensingCompliance() {
   ];
 
   const penalties = [
-    { violation: 'Improper Waste Classification', penalty: '$27,500 - $55,000 per day' },
-    { violation: 'Missing Documentation', penalty: '$1,100 - $5,500 per violation' },
-    { violation: 'Transportation Violations', penalty: '$5,000 - $175,000 per violation' },
-    { violation: 'Permit Violations', penalty: '$37,500 - $75,000 per day' },
-    { violation: 'Data Security Breaches', penalty: '$100 - $50,000 per record' }
+    {
+      violation: 'Improper waste classification',
+      penalty: 'EPA/TCEQ exposure typically $10,000 → $95,000+ per day',
+      details: '(statutory/administrative maxima vary by statute and recent inflation adjustments)'
+    },
+    {
+      violation: 'Missing documentation / recordkeeping',
+      penalty: 'Typical state/federal fines ≈ $1,000 → $7,500 per violation',
+      details: '(many programs treat recordkeeping as a lower-range programmatic violation; federal Clean Air Act/other statutes allow higher maxima)'
+    },
+    {
+      violation: 'Transportation (hazmat / DOT / FMCSA / PHMSA) violations',
+      penalty: 'Typical range ≈ $250 → $50,000+ per violation',
+      details: '(some serious violations escalate to six-figures) — agency and violation type determine where in the range you fall'
+    },
+    {
+      violation: 'Permit violations (operating without required permit)',
+      penalty: 'Typical state/federal exposure ≈ $10,000 → $95,000+ per day',
+      details: '(state daily penalty policies commonly $10k–$25k/day; federal statutes historically $37,500/day and in some programs adjusted upward)'
+    },
+    {
+      violation: 'Data security breaches (per-record cost)',
+      penalty: 'Industry evidence: ~$173 per compromised record',
+      details: '(2024 IBM/Ponemon average for certain record types); overall average breach cost measured in millions'
+    }
   ];
 
   return (
@@ -437,34 +457,57 @@ function LicensingCompliance() {
           <Paper sx={{ p: 4, borderRadius: 3 }}>
             <Grid container spacing={3}>
               {penalties.map((penalty, index) => (
-                <Grid size={{ xs: 12, md: 6 }} key={index}>
+                <Grid size={{ xs: 12 }} key={index}>
                   <Box
                     sx={{
-                      display: 'flex',
-                      justifyContent: 'space-between',
-                      alignItems: 'center',
-                      p: 2,
-                      border: '1px solid #e0e0e0',
+                      p: 3,
+                      border: '2px solid #e0e0e0',
                       borderRadius: 2,
                       '&:hover': {
                         backgroundColor: '#fff5f5',
                         borderColor: '#d32f2f',
                       },
+                      transition: 'all 0.3s ease',
                     }}
                   >
-                    <Box sx={{ display: 'flex', alignItems: 'center' }}>
-                      <Warning sx={{ color: '#d32f2f', mr: 2 }} />
-                      <Typography variant="body1" sx={{ fontWeight: 600 }}>
-                        {penalty.violation}
-                      </Typography>
+                    <Box sx={{ display: 'flex', alignItems: 'flex-start', gap: 2, mb: 2 }}>
+                      <Warning sx={{ color: '#d32f2f', mt: 0.5 }} />
+                      <Box sx={{ flex: 1 }}>
+                        <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 1, color: '#1e3c72' }}>
+                          {penalty.violation}
+                        </Typography>
+                        <Typography variant="body1" sx={{ color: '#d32f2f', fontWeight: 'bold', mb: 1 }}>
+                          {penalty.penalty}
+                        </Typography>
+                        <Typography variant="body2" sx={{ color: '#666', fontStyle: 'italic' }}>
+                          {penalty.details}
+                        </Typography>
+                      </Box>
                     </Box>
-                    <Typography variant="h6" sx={{ color: '#d32f2f', fontWeight: 'bold' }}>
-                      {penalty.penalty}
-                    </Typography>
                   </Box>
                 </Grid>
               ))}
             </Grid>
+
+            <Box sx={{ textAlign: 'center', mt: 4 }}>
+              <Typography variant="body1" sx={{ mb: 3, color: '#666' }}>
+                Use per-record figures for narrow per-record exposure estimates; use total-breach averages for enterprise-level exposure.
+              </Typography>
+              <Button
+                variant="contained"
+                size="large"
+                component={Link}
+                to="/compliance-penalties"
+                sx={{
+                  backgroundColor: '#d32f2f',
+                  '&:hover': { backgroundColor: '#b71c1c' },
+                  px: 4,
+                  py: 1.5,
+                }}
+              >
+                View Detailed Evidence & Sources
+              </Button>
+            </Box>
           </Paper>
         </Container>
       </Box>

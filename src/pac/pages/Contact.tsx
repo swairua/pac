@@ -15,6 +15,7 @@ import {
   Card,
   CardContent,
   Alert,
+  CircularProgress,
 } from '@mui/material';
 import {
   Phone,
@@ -24,6 +25,7 @@ import {
   Send,
   CheckCircle,
 } from '@mui/icons-material';
+import { useContactSubmission } from '../../hooks/useDatabase';
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -35,6 +37,7 @@ function Contact() {
     message: '',
   });
   const [submitted, setSubmitted] = useState(false);
+  const { submit, isSubmitting, error } = useContactSubmission();
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = event.target;
@@ -51,11 +54,17 @@ function Contact() {
     }));
   };
 
-  const handleSubmit = (event: React.FormEvent) => {
+  const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
-    // In a real app, this would send the data to your backend
-    console.log('Form submitted:', formData);
-    setSubmitted(true);
+    try {
+      await submit({
+        ...formData,
+        type: 'contact'
+      });
+      setSubmitted(true);
+    } catch (error) {
+      console.error('Failed to submit contact form:', error);
+    }
   };
 
   const services = [
@@ -75,17 +84,17 @@ function Contact() {
     {
       icon: <LocationOn />,
       title: 'Address',
-      details: ['123 Industrial Blvd', 'Recycling City, RC 12345', 'United States'],
+      details: ['6611 Supply Row Unit A', 'Houston, Texas 77011', 'United States'],
     },
     {
       icon: <Phone />,
       title: 'Phone',
-      details: ['Main: (555) 123-4567', 'Emergency: (555) 123-4568'],
+      details: ['Main: +1 (832) 630-0738', 'Emergency: +1 (832) 630-0738'],
     },
     {
       icon: <Email />,
       title: 'Email',
-      details: ['info@pacrecycleworks.com', 'sales@pacrecycleworks.com'],
+      details: ['contact@pacrecycleworks.com', 'sales@pacrecycleworks.com'],
     },
     {
       icon: <Schedule />,
@@ -130,7 +139,7 @@ function Contact() {
               Thank you for contacting PAC Recycle Works. We've received your message and will get back to you within 24 hours.
             </Typography>
             <Typography variant="body1" sx={{ mb: 4 }}>
-              For urgent matters, please call us directly at <strong>(555) 123-4567</strong>.
+              For urgent matters, please call us directly at <strong>+1 (832) 630-0738</strong>.
             </Typography>
             <Button
               variant="contained"
@@ -201,6 +210,12 @@ function Contact() {
                   Get a Free Consultation
                 </Typography>
                 
+                {error && (
+                  <Alert severity="error" sx={{ mb: 3 }}>
+                    {error}
+                  </Alert>
+                )}
+
                 <form onSubmit={handleSubmit}>
                   <Grid container spacing={3}>
                     <Grid size={{ xs: 12, sm: 6 }}>
@@ -281,7 +296,8 @@ function Contact() {
                         variant="contained"
                         size="large"
                         fullWidth
-                        endIcon={<Send />}
+                        disabled={isSubmitting}
+                        endIcon={isSubmitting ? <CircularProgress size={20} color="inherit" /> : <Send />}
                         sx={{
                           backgroundColor: '#00bcd4',
                           '&:hover': { backgroundColor: '#0097a7' },
@@ -289,7 +305,7 @@ function Contact() {
                           fontSize: '1.1rem',
                         }}
                       >
-                        Send Message
+                        {isSubmitting ? 'Sending...' : 'Send Message'}
                       </Button>
                     </Grid>
                   </Grid>
@@ -343,7 +359,7 @@ function Contact() {
                 <Alert severity="info" sx={{ mt: 4 }}>
                   <Typography variant="body2">
                     <strong>Emergency Service:</strong> For urgent waste management needs outside 
-                    business hours, call our 24/7 emergency line at (555) 123-4568.
+                    business hours, call our 24/7 emergency line at +1 (832) 630-0738.
                   </Typography>
                 </Alert>
               </Box>

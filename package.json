@@ -9,7 +9,6 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "start": "vite preview --host 0.0.0.0 --port $PORT"
-
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -21,9 +20,11 @@
     "@mui/x-data-grid-pro": "^8.3.1",
     "@mui/x-date-pickers": "^8.3.1",
     "@mui/x-tree-view": "^8.3.1",
+    "@neondatabase/serverless": "^1.0.1",
     "@react-spring/web": "^10.0.0",
     "@tailwindcss/vite": "latest",
     "dayjs": "^1.11.13",
+    "dotenv": "^17.2.1",
     "react": "latest",
     "react-dom": "latest",
     "react-router-dom": "^7.6.0",

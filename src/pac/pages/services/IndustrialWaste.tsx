@@ -164,7 +164,7 @@ function IndustrialWaste() {
                 }}
               >
                 <img
-                  src="https://images.unsplash.com/photo-1581093458791-9f3c3250e7ef?w=500"
+                  src="https://images.pexels.com/photos/4741906/pexels-photo-4741906.jpeg?w=500"
                   alt="Industrial Waste Handling"
                   style={{
                     width: '100%',

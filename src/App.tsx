@@ -4,6 +4,7 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import PACApp from "./pac/PACApp";
 import CrmDashboard from "./crm/CrmDashboard";
+import AdminDashboard from "./admin/AdminDashboard";
 
 function NotFound() {
   return (
@@ -33,6 +34,7 @@ export default function App() {
       <Routes>
         <Route path="/*" element={<PACApp />} />
         <Route path="/crm/*" element={<CrmDashboard />} />
+        <Route path="/admin" element={<AdminDashboard />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

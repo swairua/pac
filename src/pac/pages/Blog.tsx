@@ -17,6 +17,28 @@ function Blog() {
   const blogPosts = [
     {
       id: 1,
+      slug: 'conveyor-sorting-cuts-warehouse-waste-costs',
+      title: 'How Conveyor-Based Sorting Cuts Warehouse Waste Costs — and Boosts Sustainability',
+      excerpt: 'Warehouses generate large, predictable waste streams. Learn how conveyor-based sorting and downstream densification creates a triple win: lower costs, higher material recovery revenue, and better environmental performance.',
+      image: 'https://images.pexels.com/photos/9575021/pexels-photo-9575021.jpeg?w=600',
+      author: 'PAC Recycling Team',
+      date: '2024-12-27',
+      category: 'Operations',
+      readTime: '12 min read',
+    },
+    {
+      id: 2,
+      slug: 'e-waste-data-security-guide-texas-businesses',
+      title: 'E-Waste & Data Security: A Practical Guide for Texas Businesses',
+      excerpt: 'Protect your data and comply with Texas rules. Learn NIST-based sanitization, certified destruction, Certificates of Destruction, and procurement best practices for e-waste.',
+      image: 'https://images.pexels.com/photos/2644597/pexels-photo-2644597.jpeg?w=600',
+      author: 'PAC Compliance Team',
+      date: '2024-12-20',
+      category: 'Compliance',
+      readTime: '15 min read',
+    },
+    {
+      id: 3,
       slug: 'future-of-recycling-ai-automation',
       title: 'The Future of Recycling: How AI and Automation Are Transforming Waste Management',
       excerpt: 'Discover how artificial intelligence and automated sorting systems are revolutionizing the recycling industry, increasing efficiency and reducing contamination rates.',
@@ -25,60 +47,9 @@ function Blog() {
       date: '2024-01-15',
       category: 'Technology',
       readTime: '8 min read',
-      content: `
-        The recycling industry is undergoing a technological revolution that promises to transform how we handle waste and recover valuable materials. At the forefront of this transformation are artificial intelligence (AI) and automation technologies that are making recycling more efficient, accurate, and economically viable than ever before.
-
-        ## The Challenge with Traditional Recycling
-
-        Traditional recycling methods have long struggled with contamination issues and inefficient sorting processes. Manual sorting is labor-intensive, slow, and prone to human error. These limitations have resulted in lower recovery rates and higher processing costs, making recycling less economically attractive for many materials.
-
-        ## AI-Powered Optical Sorting
-
-        Modern AI-powered optical sorting systems use advanced machine learning algorithms to identify and separate different types of materials with unprecedented accuracy. These systems can:
-
-        - Achieve 99%+ sorting accuracy rates
-        - Process up to 50 tons of material per hour
-        - Identify materials by color, shape, size, and even chemical composition
-        - Learn and adapt to new material types automatically
-
-        ## The Benefits of Automation
-
-        Automated recycling systems offer numerous advantages over traditional methods:
-
-        ### Increased Efficiency
-        Automated systems can operate 24/7 without breaks, dramatically increasing throughput and reducing processing times.
-
-        ### Improved Accuracy
-        AI systems don't get tired or distracted, maintaining consistent sorting accuracy throughout their operation.
-
-        ### Cost Reduction
-        While the initial investment is significant, automated systems reduce long-term operational costs by minimizing labor requirements and increasing material recovery rates.
-
-        ### Enhanced Safety
-        Automation reduces human exposure to potentially hazardous materials and eliminates many workplace safety risks.
-
-        ## Real-World Applications
-
-        At PAC Recycle Works, we've implemented state-of-the-art conveyor-based sorting systems that exemplify these technological advances. Our facility processes mixed waste streams and achieves industry-leading recovery rates while maintaining the highest quality standards.
-
-        ## Looking Ahead
-
-        The future of recycling technology looks even more promising. Emerging technologies include:
-
-        - Robotic sorting arms with advanced gripping capabilities
-        - Chemical fingerprinting for precise material identification
-        - Blockchain technology for supply chain tracking
-        - IoT sensors for real-time monitoring and optimization
-
-        ## Conclusion
-
-        As we face increasing environmental challenges and resource scarcity, AI and automation in recycling represent crucial tools for building a sustainable future. These technologies not only improve the economics of recycling but also help us achieve higher diversion rates from landfills and maximize the value of our waste streams.
-
-        The companies that embrace these technologies today will be the leaders in tomorrow's circular economy. At PAC Recycle Works, we're committed to staying at the forefront of these innovations to provide our clients with the most advanced and effective recycling solutions available.
-      `
     },
     {
-      id: 2,
+      id: 4,
       slug: 'corporate-e-waste-compliance-guide',
       title: 'Corporate E-Waste Compliance: A Complete Guide for Businesses',
       excerpt: 'Navigate the complex landscape of e-waste regulations and learn how proper electronic waste management can protect your business while supporting environmental goals.',
@@ -87,119 +58,6 @@ function Blog() {
       date: '2024-01-08',
       category: 'Compliance',
       readTime: '12 min read',
-      content: `
-        As businesses increasingly rely on electronic devices, the challenge of managing electronic waste (e-waste) has become more critical than ever. Proper e-waste management isn't just an environmental responsibility—it's a legal requirement that can significantly impact your business operations and reputation.
-
-        ## Understanding E-Waste Regulations
-
-        E-waste regulations vary by jurisdiction, but most frameworks focus on several key areas:
-
-        ### Data Security Requirements
-        - Secure data destruction before disposal
-        - Chain of custody documentation
-        - Compliance with data protection laws (GDPR, CCPA, etc.)
-
-        ### Environmental Compliance
-        - Proper handling of hazardous materials
-        - Certified recycling processes
-        - Waste tracking and reporting
-
-        ### Corporate Responsibility
-        - Extended producer responsibility programs
-        - Sustainability reporting requirements
-        - Stakeholder accountability
-
-        ## Common Compliance Challenges
-
-        Many businesses struggle with e-waste compliance due to:
-
-        1. **Lack of Awareness**: Not understanding the full scope of applicable regulations
-        2. **Inadequate Tracking**: Poor documentation of e-waste disposal processes
-        3. **Data Security Gaps**: Insufficient data destruction protocols
-        4. **Vendor Management**: Working with non-certified disposal companies
-
-        ## Building a Compliant E-Waste Program
-
-        ### Step 1: Inventory and Assessment
-        - Catalog all electronic devices and their lifecycles
-        - Identify devices containing sensitive data
-        - Assess current disposal practices
-
-        ### Step 2: Policy Development
-        - Create comprehensive e-waste policies
-        - Establish data destruction protocols
-        - Define roles and responsibilities
-
-        ### Step 3: Vendor Selection
-        - Choose R2 or e-Stewards certified recyclers
-        - Verify proper licensing and insurance
-        - Establish service level agreements
-
-        ### Step 4: Implementation
-        - Train staff on proper procedures
-        - Implement tracking systems
-        - Establish regular pickup schedules
-
-        ### Step 5: Monitoring and Reporting
-        - Track disposal metrics
-        - Maintain compliance documentation
-        - Regular program audits
-
-        ## Best Practices for Data Security
-
-        When disposing of electronic devices, data security should be your top priority:
-
-        - Use NIST 800-88 compliant data wiping methods
-        - Require physical destruction of storage devices when necessary
-        - Obtain certificates of data destruction
-        - Maintain detailed chain of custody records
-
-        ## The Cost of Non-Compliance
-
-        Non-compliance with e-waste regulations can result in:
-
-        - Significant financial penalties
-        - Legal liability for data breaches
-        - Reputational damage
-        - Lost business opportunities
-        - Environmental remediation costs
-
-        ## Working with Professional E-Waste Partners
-
-        Partnering with certified e-waste management companies provides several advantages:
-
-        - **Expertise**: Deep knowledge of current regulations
-        - **Infrastructure**: Proper facilities and equipment
-        - **Documentation**: Comprehensive reporting and certificates
-        - **Insurance**: Protection against potential liabilities
-
-        ## ROI of Proper E-Waste Management
-
-        While compliance requires investment, proper e-waste management can provide returns through:
-
-        - Risk mitigation and reduced liability
-        - Improved sustainability metrics
-        - Enhanced brand reputation
-        - Potential revenue from material recovery
-        - Operational efficiencies
-
-        ## Future Trends in E-Waste Compliance
-
-        The regulatory landscape continues to evolve with trends including:
-
-        - Stricter data protection requirements
-        - Extended producer responsibility expansion
-        - Circular economy mandates
-        - Enhanced tracking and reporting requirements
-
-        ## Conclusion
-
-        E-waste compliance is not just about following regulations—it's about building sustainable business practices that protect your company, your customers, and the environment. By implementing comprehensive e-waste management programs and working with certified partners, businesses can turn compliance challenges into competitive advantages.
-
-        At PAC Recycle Works, we specialize in helping businesses navigate the complex world of e-waste compliance. Our certified processes and comprehensive documentation ensure that your e-waste disposal meets all regulatory requirements while maximizing material recovery and value.
-
-        Don't let e-waste compliance become a burden—make it a strategic advantage for your business.
-      `
     }
   ];
 
