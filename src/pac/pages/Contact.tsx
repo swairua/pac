@@ -1,5 +1,6 @@
 import * as React from "react";
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import {
   Box,
   Container,
@@ -54,20 +55,65 @@ function Contact() {
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
 
-    // Create email content
-    const emailSubject = `Quote Request from ${formData.name} - ${formData.service || 'General Inquiry'}`;
-    const emailBody = `
+    try {
+      // EmailJS configuration
+      const serviceID = 'service_pac_demo';
+      const templateID = 'template_pac_quote';
+      const publicKey = 'demo_public_key_123';
+
+      // Email template parameters
+      const templateParams = {
+        from_name: 'PAC Recycle Works Contact Form',
+        from_email: 'contact@pacrecycleworks.com',
+        to_email: 'gichukisimon@gmail.com',
+        to_name: 'Simon Gichuki',
+        subject: `Quote Request from ${formData.name} - ${formData.service || 'General Inquiry'}`,
+        client_name: formData.name,
+        client_email: formData.email,
+        client_company: formData.company || 'Not provided',
+        client_phone: formData.phone || 'Not provided',
+        service_interest: formData.service || 'General Inquiry',
+        message: formData.message || 'No message provided',
+        submission_date: new Date().toLocaleString(),
+      };
+
+      console.log('📧 Sending email with details:');
+      console.log('From: contact@pacrecycleworks.com');
+      console.log('To: gichukisimon@gmail.com');
+      console.log('Subject:', templateParams.subject);
+      console.log('Template Params:', templateParams);
+
+      // For demo purposes, we'll simulate the email sending
+      // In production, you would use:
+      // await emailjs.send(serviceID, templateID, templateParams, publicKey);
+
+      // Simulate email sending delay
+      await new Promise(resolve => setTimeout(resolve, 2000));
+
+      // Create a sample email content for demonstration
+      const sampleEmailContent = `
 === PAC RECYCLE WORKS - QUOTE REQUEST ===
 
+From: contact@pacrecycleworks.com
+To: gichukisimon@gmail.com
+Subject: ${templateParams.subject}
+Date: ${templateParams.submission_date}
+
+---
+
+Dear Simon,
+
+You have received a new quote request through the PAC Recycle Works website:
+
 Client Information:
-• Name: ${formData.name}
-• Email: ${formData.email}
-• Company: ${formData.company || 'Not provided'}
-• Phone: ${formData.phone || 'Not provided'}
-• Service Interest: ${formData.service || 'General Inquiry'}
+• Name: ${templateParams.client_name}
+• Email: ${templateParams.client_email}
+• Company: ${templateParams.client_company}
+• Phone: ${templateParams.client_phone}
+• Service Interest: ${templateParams.service_interest}
 
 Message:
-${formData.message || 'No message provided'}
+${templateParams.message}
 
 ---
 This quote request was submitted through the PAC Recycle Works website.
@@ -75,24 +121,14 @@ Please respond within 24 hours for optimal customer service.
 
 Best regards,
 PAC Recycle Works Contact System
-    `;
+contact@pacrecycleworks.com
++1 (832) 630-0738
+      `;
 
-    try {
-      // In a real implementation, this would call your backend API
-      // The backend would handle sending the email with proper headers:
-      // From: contact@pacrecycleworks.com
-      // To: gichukisimon@gmail.com
-      // Subject: emailSubject
-      // Body: emailBody
+      console.log('📧 SAMPLE EMAIL CONTENT:');
+      console.log(sampleEmailContent);
 
-      console.log('Email Details:');
-      console.log('From: contact@pacrecycleworks.com');
-      console.log('To: gichukisimon@gmail.com');
-      console.log('Subject:', emailSubject);
-      console.log('Body:', emailBody);
-
-      // For now, we'll simulate the email sending
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      alert(`📧 DEMO: Email would be sent to gichukisimon@gmail.com\n\nCheck the browser console to see the email content that would be delivered.`);
 
       setSubmitted(true);
     } catch (error) {
