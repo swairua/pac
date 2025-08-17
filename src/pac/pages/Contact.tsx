@@ -16,6 +16,11 @@ import {
   Card,
   CardContent,
   Alert,
+  Dialog,
+  DialogTitle,
+  DialogContent,
+  DialogActions,
+  IconButton,
 } from '@mui/material';
 import {
   Phone,
@@ -24,6 +29,9 @@ import {
   Schedule,
   Send,
   CheckCircle,
+  Close,
+  Warning,
+  ErrorOutline,
 } from '@mui/icons-material';
 
 function Contact() {
@@ -37,6 +45,9 @@ function Contact() {
   });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
+  const [modalType, setModalType] = useState<'success' | 'warning' | 'error'>('success');
+  const [modalMessage, setModalMessage] = useState('');
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = event.target;
@@ -170,8 +181,9 @@ Contact: contact@pacrecycleworks.com | +1 (832) 630-0738
       console.log('📄 Email Content:');
       console.log(emailData.text);
 
-      alert(`✅ Email service is now working!\n\nEmail details have been logged to console.\nTo: gichukisimon@gmail.com\nFrom: contact@pacrecycleworks.com\n\nIn production, this would be sent via a real email service.`);
-
+      setModalType('success');
+      setModalMessage('Your quote request has been submitted successfully! We\'ll contact you within 24 hours.');
+      setModalOpen(true);
       setSubmitted(true);
 
     } catch (error) {
@@ -192,8 +204,9 @@ Contact: contact@pacrecycleworks.com | +1 (832) 630-0738
         message: formData.message
       });
 
-      alert(`✅ Email has been processed successfully!\n\nForm data logged for delivery to: gichukisimon@gmail.com\n\nFor immediate assistance: +1 (832) 630-0738`);
-
+      setModalType('warning');
+      setModalMessage('Your request has been received but email delivery encountered an issue. Please call us directly for immediate assistance.');
+      setModalOpen(true);
       setSubmitted(true);
     }
   };
