@@ -275,7 +275,18 @@ Contact: contact@pacrecycleworks.com | +1 (832) 630-0738
             <Button
               variant="contained"
               size="large"
-              onClick={() => setSubmitted(false)}
+              onClick={() => {
+                setSubmitted(false);
+                // Reset form data
+                setFormData({
+                  name: 'John Smith',
+                  email: 'john.smith@example.com',
+                  company: 'Green Tech Industries',
+                  phone: '+1 (555) 123-4567',
+                  service: 'Industrial Waste Handling',
+                  message: 'Hello! We are interested in your industrial waste handling services for our manufacturing facility. We generate approximately 50 tons of mixed materials monthly and would like to discuss recycling options and pickup logistics. Please provide a quote for comprehensive waste management services.',
+                });
+              }}
               sx={{
                 backgroundColor: '#00bcd4',
                 '&:hover': { backgroundColor: '#0097a7' },
