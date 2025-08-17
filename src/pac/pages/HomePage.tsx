@@ -21,8 +21,11 @@ import {
   CheckCircle,
 } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
+import QuoteRequestForm from '../../components/QuoteRequestForm';
+import { useQuoteDialog } from '../../hooks/useQuoteDialog';
 
 function HomePage() {
+  const { isOpen, selectedService, openDialog, closeDialog } = useQuoteDialog();
   const featuredServices = [
     {
       icon: <CompareArrows />,
@@ -403,6 +406,13 @@ function HomePage() {
           </Grid>
         </Container>
       </Box>
+
+      {/* Quote Request Dialog */}
+      <QuoteRequestForm
+        open={isOpen}
+        onClose={closeDialog}
+        preSelectedService={selectedService}
+      />
     </Box>
   );
 }
