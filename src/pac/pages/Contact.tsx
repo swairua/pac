@@ -247,8 +247,8 @@ Contact: contact@pacrecycleworks.com | +1 (832) 630-0738
         message: formData.message
       });
 
-      setModalType('warning');
-      setModalMessage('Your request has been received but email delivery encountered an issue. Please call us directly for immediate assistance.');
+      setModalType('error');
+      setModalMessage('There was an error processing your request. Please try again or contact us directly for immediate assistance.');
       setModalOpen(true);
       setSubmitted(true);
     }
