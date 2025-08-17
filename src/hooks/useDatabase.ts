@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
-import { submitQuoteRequest, fetchQuoteRequests, updateQuoteStatus } from '../api/quotes';
-import { submitContactForm, fetchContactSubmissions } from '../api/contact';
+import { quoteAPI, contactAPI } from '../api/api';
 
 export interface QuoteRequest {
   id: number;
@@ -46,7 +45,7 @@ export function useQuoteSubmission() {
     setError(null);
     
     try {
-      const result = await submitQuoteRequest(data);
+      const result = await quoteAPI.submit(data);
       if (!result.success) {
         throw new Error(result.error);
       }
@@ -74,7 +73,7 @@ export function useQuoteRequests() {
     setError(null);
     
     try {
-      const result = await fetchQuoteRequests();
+      const result = await quoteAPI.getAll();
       if (result.success) {
         setRequests(result.data as QuoteRequest[]);
       } else {
@@ -90,7 +89,7 @@ export function useQuoteRequests() {
 
   const updateStatus = async (id: number, status: string) => {
     try {
-      const result = await updateQuoteStatus(id, status);
+      const result = await quoteAPI.updateStatus(id, status);
       if (result.success) {
         setRequests(prev => prev.map(req => 
           req.id === id ? { ...req, status, updated_at: new Date().toISOString() } : req
@@ -130,7 +129,7 @@ export function useContactSubmission() {
     setError(null);
     
     try {
-      const result = await submitContactForm(data);
+      const result = await contactAPI.submit(data);
       if (!result.success) {
         throw new Error(result.error);
       }
@@ -158,7 +157,7 @@ export function useContactSubmissions() {
     setError(null);
     
     try {
-      const result = await fetchContactSubmissions();
+      const result = await contactAPI.getAll();
       if (result.success) {
         setSubmissions(result.data as ContactSubmission[]);
       } else {
