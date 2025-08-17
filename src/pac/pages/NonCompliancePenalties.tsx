@@ -5,15 +5,9 @@ import {
   Paper,
   Grid,
   Divider,
-  Alert,
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
   Button,
 } from '@mui/material';
 import {
-  Warning,
   Gavel,
   LocalShipping,
   Description,
