@@ -199,7 +199,7 @@ function Header() {
             }}
           >
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fd349fc175eab40c4b5f0f5e2d9e9ea5d%2F6e0ad208a71c4ee48926855ce2f711e6?format=webp&width=100"
+              src="/logo.png"
               alt="PAC Recycle Works Logo"
               style={{ height: 50, width: 'auto', marginRight: 8 }}
             />
