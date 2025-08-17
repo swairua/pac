@@ -276,7 +276,7 @@ Contact: contact@pacrecycleworks.com | +1 (832) 630-0738
     {
       icon: <Phone />,
       title: 'Phone',
-      details: ['Main: +1 (832) 630-0738', 'Emergency: +1 (832) 630-0738'],
+      details: ['Main: +18326300738', 'Emergency: +18326300738'],
     },
     {
       icon: <Email />,
@@ -326,7 +326,7 @@ Contact: contact@pacrecycleworks.com | +1 (832) 630-0738
               Thank you for contacting PAC Recycle Works. We've received your message and will get back to you within 24 hours.
             </Typography>
             <Typography variant="body1" sx={{ mb: 4 }}>
-              For urgent matters, please call us directly at <strong>+1 (832) 630-0738</strong>.
+              For urgent matters, please call us directly at <strong>+18326300738</strong>.
             </Typography>
             <Button
               variant="contained"
@@ -565,8 +565,8 @@ Contact: contact@pacrecycleworks.com | +1 (832) 630-0738
 
                 <Alert severity="info" sx={{ mt: 4 }}>
                   <Typography variant="body2">
-                    <strong>Emergency Service:</strong> For urgent waste management needs outside 
-                    business hours, call our 24/7 emergency line at +1 (832) 630-0738.
+                    <strong>Emergency Service:</strong> For urgent waste management needs outside
+                  business hours, call our 24/7 emergency line at +18326300738.
                   </Typography>
                 </Alert>
               </Box>
@@ -703,7 +703,7 @@ Contact: contact@pacrecycleworks.com | +1 (832) 630-0738
                 width: '100%'
               }}>
                 <Typography variant="body2" sx={{ color: '#e65100', fontWeight: 'bold' }}>
-                  📞 Call us: +1 (832) 630-0738
+                  📞 Call us: +18326300738
                 </Typography>
                 <Typography variant="body2" sx={{ color: '#e65100' }}>
                   📧 Email: contact@pacrecycleworks.com
