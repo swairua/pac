@@ -36,7 +36,7 @@ function IndustrialWaste() {
       description: 'Professional dismantling and recycling of industrial equipment'
     },
     {
-      icon: <Shield />,
+      icon: <Engineering />,
       title: 'Compliance Management',
       description: 'Full regulatory compliance and documentation for all waste streams'
     }
