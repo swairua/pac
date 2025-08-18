@@ -82,7 +82,7 @@ function HomePage() {
       {/* Hero Section */}
       <Box
         sx={{
-          background: 'linear-gradient(rgba(30, 60, 114, 0.8), rgba(42, 82, 152, 0.8)), url("https://images.pexels.com/photos/10039994/pexels-photo-10039994.jpeg?w=1920&h=1080&fit=crop&crop=center")',
+          background: 'linear-gradient(rgba(30, 60, 114, 0.8), rgba(42, 82, 152, 0.8)), url("https://images.pexels.com/photos/3735218/pexels-photo-3735218.jpeg?w=1920&h=1080&fit=crop&crop=center")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed',
@@ -191,19 +191,60 @@ function HomePage() {
       {/* Intro Section */}
       <Box sx={{ py: 8, backgroundColor: 'white' }}>
         <Container maxWidth="lg">
-          <Typography
-            variant="h6"
-            sx={{
-              textAlign: 'center',
-              lineHeight: 1.8,
-              color: '#333',
-              maxWidth: 900,
-              mx: 'auto',
-              fontSize: { xs: '1.1rem', md: '1.25rem' },
-            }}
-          >
-            At PAC Recycle Works, we specialize in conveyor-based material recovery and circular waste solutions for industrial and warehousing operations. From real-time sorting to e-waste processing and compliance management, our services help you reduce waste, unlock material value, and meet environmental standards with reliability and transparency.
-          </Typography>
+          <Grid container spacing={6} alignItems="center">
+            <Grid size={{ xs: 12, md: 6 }}>
+              <Typography
+                variant="h6"
+                sx={{
+                  lineHeight: 1.8,
+                  color: '#333',
+                  fontSize: { xs: '1.1rem', md: '1.25rem' },
+                  mb: 4,
+                }}
+              >
+                At PAC Recycle Works, we specialize in conveyor-based material recovery and circular waste solutions for industrial and warehousing operations. From real-time sorting to e-waste processing and compliance management, our services help you reduce waste, unlock material value, and meet environmental standards with reliability and transparency.
+              </Typography>
+              <Button
+                variant="contained"
+                size="large"
+                component={Link}
+                to="/services"
+                sx={{
+                  backgroundColor: '#00bcd4',
+                  '&:hover': { backgroundColor: '#0097a7' },
+                  fontSize: '1.1rem',
+                  px: 4,
+                  py: 1.5,
+                }}
+              >
+                Learn More About Our Process
+              </Button>
+            </Grid>
+            <Grid size={{ xs: 12, md: 6 }}>
+              <Box
+                sx={{
+                  borderRadius: 3,
+                  overflow: 'hidden',
+                  boxShadow: 3,
+                  '&:hover': {
+                    transform: 'scale(1.02)',
+                    boxShadow: 6,
+                  },
+                  transition: 'all 0.3s ease',
+                }}
+              >
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F2634d5ec7c40447190f561050ea3b959%2F588502def52e43cd8500e6d5e36c5d15?format=webp&width=800"
+                  alt="PAC Recycle Works Process Overview"
+                  style={{
+                    width: '100%',
+                    height: 'auto',
+                    display: 'block',
+                  }}
+                />
+              </Box>
+            </Grid>
+          </Grid>
         </Container>
       </Box>
 
