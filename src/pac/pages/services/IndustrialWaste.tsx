@@ -20,7 +20,6 @@ import {
   Security,
   Engineering,
   Science,
-  Shield,
 } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
 
@@ -61,14 +60,6 @@ function IndustrialWaste() {
     'Process Water Treatment Residuals'
   ];
 
-  const certifications = [
-    'EPA Hazardous Waste Generator License',
-    'DOT Hazardous Materials Transportation',
-    'RCRA Treatment & Disposal Permits',
-    'OSHA Safety Compliance Certified',
-    'ISO 14001 Environmental Management',
-    'State Industrial Waste Permits'
-  ];
 
   const processSteps = [
     {

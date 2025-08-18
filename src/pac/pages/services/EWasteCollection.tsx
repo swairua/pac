@@ -18,7 +18,6 @@ import {
   CheckCircle,
   DeleteForever,
   Description,
-  Shield,
   Recycling,
 } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
@@ -60,14 +59,6 @@ function EWasteCollection() {
     'Test & Measurement Equipment'
   ];
 
-  const certifications = [
-    'R2 (Responsible Recycling) Certified',
-    'ISO 14001 Environmental Management',
-    'NIST 800-88 Data Sanitization Standards',
-    'DOD 5220.22-M Data Wiping Protocol',
-    'SOC 2 Type II Security Compliance',
-    'EPA Hazardous Waste Management'
-  ];
 
   return (
     <Box>
