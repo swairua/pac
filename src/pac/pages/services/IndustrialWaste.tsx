@@ -264,70 +264,40 @@ function IndustrialWaste() {
         </Container>
       </Box>
 
-      {/* Waste Types & Certifications */}
+      {/* Industrial Waste Types */}
       <Box sx={{ py: 8, backgroundColor: '#f8f9fa' }}>
         <Container maxWidth="lg">
-          <Grid container spacing={6}>
-            <Grid size={{ xs: 12, md: 6 }}>
-              <Typography
-                variant="h4"
-                component="h2"
-                sx={{
-                  fontWeight: 'bold',
-                  mb: 4,
-                  color: '#1e3c72',
-                }}
-              >
-                Industrial Waste Types
-              </Typography>
-              <Paper sx={{ p: 4, borderRadius: 3 }}>
-                <Grid container spacing={2}>
-                  {wasteTypes.map((type, index) => (
-                    <Grid size={{ xs: 12, sm: 6 }} key={index}>
-                      <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
-                        <CheckCircle sx={{ color: '#00bcd4', mr: 1, fontSize: 20 }} />
-                        <Typography variant="body2" sx={{ fontWeight: 500 }}>
-                          {type}
-                        </Typography>
-                      </Box>
-                    </Grid>
-                  ))}
-                </Grid>
-              </Paper>
-            </Grid>
-            <Grid size={{ xs: 12, md: 6 }}>
-              <Typography
-                variant="h4"
-                component="h2"
-                sx={{
-                  fontWeight: 'bold',
-                  mb: 4,
-                  color: '#1e3c72',
-                }}
-              >
-                Licenses & Certifications
-              </Typography>
-              <Paper sx={{ p: 4, borderRadius: 3 }}>
-                <List>
-                  {certifications.map((cert, index) => (
-                    <ListItem key={index} sx={{ py: 1 }}>
-                      <ListItemIcon>
-                        <Security sx={{ color: '#00bcd4' }} />
-                      </ListItemIcon>
-                      <ListItemText 
-                        primary={cert}
-                        sx={{
-                          '& .MuiListItemText-primary': {
-                            fontWeight: 500,
-                          }
-                        }}
-                      />
-                    </ListItem>
-                  ))}
-                </List>
-              </Paper>
-            </Grid>
-          </Grid>
+          <Typography
+            variant="h4"
+            component="h2"
+            sx={{
+              textAlign: 'center',
+              fontWeight: 'bold',
+              mb: 6,
+              color: '#1e3c72',
+            }}
+          >
+            Industrial Waste Types
+          </Typography>
+          <Box sx={{ maxWidth: 800, mx: 'auto' }}>
+            <Paper sx={{ p: 4, borderRadius: 3 }}>
+              <Grid container spacing={3}>
+                {wasteTypes.map((type, index) => (
+                  <Grid size={{ xs: 12, sm: 6 }} key={index}>
+                    <Box sx={{ display: 'flex', alignItems: 'center' }}>
+                      <CheckCircle sx={{ color: '#00bcd4', mr: 2, fontSize: 24 }} />
+                      <Typography
+                        variant="body1"
+                        sx={{ fontWeight: 500 }}
+                      >
+                        {type}
+                      </Typography>
+                    </Box>
+                  </Grid>
+                ))}
+              </Grid>
+            </Paper>
+          </Box>
         </Container>
       </Box>
 

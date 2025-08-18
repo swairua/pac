@@ -240,75 +240,42 @@ function EWasteCollection() {
         </Container>
       </Box>
 
-      {/* Accepted Items & Certifications */}
+      {/* Accepted Items */}
       <Box sx={{ py: 8, backgroundColor: '#f8f9fa' }}>
         <Container maxWidth="lg">
-          <Grid container spacing={6}>
-            <Grid size={{ xs: 12, md: 6 }}>
-              <Typography
-                variant="h4"
-                component="h2"
-                sx={{
-                  fontWeight: 'bold',
-                  mb: 4,
-                  color: '#1e3c72',
-                }}
-              >
-                What We Accept
-              </Typography>
-              <Paper sx={{ p: 4, borderRadius: 3 }}>
-                <List>
-                  {acceptedItems.map((item, index) => (
-                    <ListItem key={index} sx={{ py: 1 }}>
-                      <ListItemIcon>
-                        <CheckCircle sx={{ color: '#00bcd4' }} />
-                      </ListItemIcon>
-                      <ListItemText 
-                        primary={item}
+          <Typography
+            variant="h4"
+            component="h2"
+            sx={{
+              textAlign: 'center',
+              fontWeight: 'bold',
+              mb: 6,
+              color: '#1e3c72',
+            }}
+          >
+            What We Accept
+          </Typography>
+          <Box sx={{ maxWidth: 800, mx: 'auto' }}>
+            <Paper sx={{ p: 4, borderRadius: 3 }}>
+              <Grid container spacing={3}>
+                {acceptedItems.map((item, index) => (
+                  <Grid size={{ xs: 12, sm: 6 }} key={index}>
+                    <Box sx={{ display: 'flex', alignItems: 'center' }}>
+                      <CheckCircle sx={{ color: '#00bcd4', mr: 2, fontSize: 24 }} />
+                      <Typography
+                        variant="body1"
                         sx={{
-                          '& .MuiListItemText-primary': {
-                            fontWeight: 500,
-                          }
+                          fontWeight: 500,
                         }}
-                      />
-                    </ListItem>
-                  ))}
-                </List>
-              </Paper>
-            </Grid>
-            <Grid size={{ xs: 12, md: 6 }}>
-              <Typography
-                variant="h4"
-                component="h2"
-                sx={{
-                  fontWeight: 'bold',
-                  mb: 4,
-                  color: '#1e3c72',
-                }}
-              >
-                Certifications & Compliance
-              </Typography>
-              <Paper sx={{ p: 4, borderRadius: 3 }}>
-                <List>
-                  {certifications.map((cert, index) => (
-                    <ListItem key={index} sx={{ py: 1 }}>
-                      <ListItemIcon>
-                        <Shield sx={{ color: '#00bcd4' }} />
-                      </ListItemIcon>
-                      <ListItemText 
-                        primary={cert}
-                        sx={{
-                          '& .MuiListItemText-primary': {
-                            fontWeight: 500,
-                          }
-                        }}
-                      />
-                    </ListItem>
-                  ))}
-                </List>
-              </Paper>
-            </Grid>
-          </Grid>
+                      >
+                        {item}
+                      </Typography>
+                    </Box>
+                  </Grid>
+                ))}
+              </Grid>
+            </Paper>
+          </Box>
         </Container>
       </Box>
 
