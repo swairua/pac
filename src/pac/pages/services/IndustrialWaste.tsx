@@ -5,10 +5,6 @@ import {
   Grid,
   Card,
   CardContent,
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
   Button,
   Paper,
   Alert,
@@ -17,7 +13,6 @@ import {
 import {
   Factory,
   CheckCircle,
-  Security,
   Engineering,
   Science,
 } from '@mui/icons-material';
