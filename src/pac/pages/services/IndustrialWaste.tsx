@@ -5,10 +5,6 @@ import {
   Grid,
   Card,
   CardContent,
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
   Button,
   Paper,
   Alert,
@@ -17,7 +13,6 @@ import {
 import {
   Factory,
   CheckCircle,
-  Security,
   Engineering,
   Science,
 } from '@mui/icons-material';
@@ -41,7 +36,7 @@ function IndustrialWaste() {
       description: 'Professional dismantling and recycling of industrial equipment'
     },
     {
-      icon: <Shield />,
+      icon: <Engineering />,
       title: 'Compliance Management',
       description: 'Full regulatory compliance and documentation for all waste streams'
     }
