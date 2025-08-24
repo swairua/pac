@@ -133,7 +133,7 @@ function Contact() {
 
             <div style="background: #1e3c72; color: white; padding: 15px; border-radius: 0 0 8px 8px; text-align: center; font-size: 12px;">
               <p style="margin: 0;">This quote request was submitted through the PAC Recycle Works website</p>
-              <p style="margin: 5px 0 0 0;">📧 contact@pacrecycleworks.com | 📞 +1 (234) 555-5555</p>
+              <p style="margin: 5px 0 0 0;">📧 contact@pacrecycleworks.com | 📞 +1(281) 643-8645</p>
             </div>
           </div>
         `,
@@ -154,7 +154,7 @@ ${formData.message || 'No message provided'}
 This quote request was submitted through the PAC Recycle Works website.
 Please respond within 24 hours for optimal customer service.
 
-Contact: contact@pacrecycleworks.com | +1 (234) 555-5555
+Contact: contact@pacrecycleworks.com | +1(281) 643-8645
         `,
         timestamp: new Date().toISOString()
       };
@@ -276,7 +276,7 @@ Contact: contact@pacrecycleworks.com | +1 (234) 555-5555
     {
       icon: <Phone />,
       title: 'Phone',
-      details: ['Main: +1 (234) 555-5555', 'Emergency: +1 (234) 555-5555'],
+      details: ['Main: +1(281) 643-8645', 'Emergency: +1(281) 643-8645'],
     },
     {
       icon: <Email />,
@@ -326,7 +326,7 @@ Contact: contact@pacrecycleworks.com | +1 (234) 555-5555
               Thank you for contacting PAC Recycle Works. We've received your message and will get back to you within 24 hours.
             </Typography>
             <Typography variant="body1" sx={{ mb: 4 }}>
-              For urgent matters, please call us directly at <strong>+1 (234) 555-5555</strong>.
+              For urgent matters, please call us directly at <strong>+1(281) 643-8645</strong>.
             </Typography>
             <Button
               variant="contained"
@@ -565,7 +565,7 @@ Contact: contact@pacrecycleworks.com | +1 (234) 555-5555
                 <Alert severity="info" sx={{ mt: 4 }}>
                   <Typography variant="body2">
                     <strong>Emergency Service:</strong> For urgent waste management needs outside
-                  business hours, call our 24/7 emergency line at +1 (234) 555-5555.
+                  business hours, call our 24/7 emergency line at +1(281) 643-8645.
                   </Typography>
                 </Alert>
               </Box>
@@ -702,7 +702,7 @@ Contact: contact@pacrecycleworks.com | +1 (234) 555-5555
                 width: '100%'
               }}>
                 <Typography variant="body2" sx={{ color: '#e65100', fontWeight: 'bold' }}>
-                  📞 Call us: +1 (234) 555-5555
+                  📞 Call us: +1(281) 643-8645
                 </Typography>
                 <Typography variant="body2" sx={{ color: '#e65100' }}>
                   📧 Email: contact@pacrecycleworks.com

@@ -194,7 +194,7 @@ function Footer() {
               <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
                 <Phone sx={{ color: '#00bcd4', fontSize: 20 }} />
                 <Typography variant="body2">
-                  +1 (234) 555-5555
+                  +1(281) 643-8645
                 </Typography>
               </Box>
               <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>

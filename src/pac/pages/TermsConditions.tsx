@@ -402,7 +402,7 @@ function TermsConditions() {
                 6611 Supply Row Unit A, Houston, Texas 77011
               </Typography>
               <Typography variant="body1" sx={{ mb: 1 }}>
-                <strong>Phone:</strong> +1 (234) 555-5555
+                <strong>Phone:</strong> +1(281) 643-8645
               </Typography>
               <Typography variant="body1" sx={{ mb: 1 }}>
                 <strong>Legal:</strong> <Link href="mailto:legal@pacrecycleworks.com">legal@pacrecycleworks.com</Link>
